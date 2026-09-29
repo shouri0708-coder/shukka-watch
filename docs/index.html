@@ -42,8 +42,8 @@ let tab=D.watch.length?'watch':'changes';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
 $('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
-const tabCount={limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.type==='resolved'||h.type==='better').length};
-function nav(){$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
+function tabCounts(){const co=cutoff();return{limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.date>=co&&h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.date>=co&&(h.type==='resolved'||h.type==='better')).length};}
+function nav(){const tabCount=tabCounts();$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
 $('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
 $('#q').oninput=()=>{limit=200;render();};$('#days').onchange=render;
 const nz=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\s　]/g,'');
