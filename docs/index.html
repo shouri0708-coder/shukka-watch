@@ -43,10 +43,11 @@ const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
 const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
 const tabs=[['watch','自店採用'],['changes','変化'],['limited','出荷調整'],['stop','出荷停止'],['resolved','解除']];
 let tab=D.watch.length?'watch':'changes';
-$('#optLatest').textContent='最新（'+(+D.date.slice(4,6))+'/'+(+D.date.slice(6,8))+'）';
+const md=(+D.date.slice(4,6))+'/'+(+D.date.slice(6,8));
+$('#optLatest').textContent=md+' 公表分のみ';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
-$('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
+$('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>${md} 新規・悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>${md} 解除・改善</span></div>`;
 function tabCounts(){const co=cutoff();return{limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.date>=co&&h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.date>=co&&(h.type==='resolved'||h.type==='better')).length};}
 function nav(){const tabCount=tabCounts();$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
 $('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
