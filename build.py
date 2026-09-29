@@ -240,12 +240,12 @@ const D=__DATA__;
 const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
 const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
-const tabs=[['watch','自店採用'],['changes','変化'],['active','継続中'],['resolved','解除']];
+const tabs=[['watch','自店採用'],['changes','変化'],['limited','限定出荷'],['stop','供給停止'],['resolved','解除']];
 let tab=D.watch.length?'watch':'changes';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
 $('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
-const tabCount={active:D.active.length,changes:D.history.filter(h=>h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.type==='resolved'||h.type==='better').length};
+const tabCount={limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.type==='resolved'||h.type==='better').length};
 function nav(){$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
 $('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
 $('#q').oninput=()=>{limit=200;render();};$('#days').onchange=render;
@@ -257,7 +257,7 @@ function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span 
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
- if(tab==='active'){list=D.active.filter(i=>hit(i,q)).sort((a,b)=>(b.new-a.new)||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
+ if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(b.new-a.new)||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
  else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
    $('#cnt').textContent=`変化 ${ev.length}件 ／ 継続中 ${act.length}件`;
    $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
