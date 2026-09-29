@@ -233,7 +233,7 @@ main{padding:0 16px 40px}
 <div class="kpi" id="kpi"></div>
 <nav id="nav"></nav>
 <div class="bar"><input type="search" id="q" placeholder="🔍 検索：品名・成分名・メーカー・YJコード（全角半角どちらでも）" autocomplete="off"></div>
-<div class="bar"><span id="cnt" class="sub"></span><select id="days" style="flex:0 0 auto;min-width:110px"><option value="1">今回分</option><option value="7" selected>7日</option><option value="30">30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
+<div class="bar"><span id="cnt" class="sub"></span><select id="days" style="flex:0 0 auto;min-width:110px"><option value="1" id="optLatest">最新</option><option value="7" selected>7日</option><option value="30">30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
 <main id="main"></main>
 <script>
 const D=__DATA__;
@@ -242,6 +242,7 @@ const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
 const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
 const tabs=[['watch','自店採用'],['changes','変化'],['limited','出荷調整'],['stop','出荷停止'],['resolved','解除']];
 let tab=D.watch.length?'watch':'changes';
+$('#optLatest').textContent='最新（'+(+D.date.slice(4,6))+'/'+(+D.date.slice(6,8))+'）';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
 $('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
