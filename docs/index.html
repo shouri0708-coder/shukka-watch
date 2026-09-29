@@ -19,6 +19,7 @@ main{padding:0 16px 40px}
 .item>div:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
 .since{margin-left:auto;font-size:13px;font-weight:600;color:var(--tx);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;white-space:nowrap}
 .since b{color:var(--red)}
+.ol{font-size:13px;color:var(--mut);margin-top:2px}.ol.red{color:var(--red);font-weight:700;font-size:14px}
 .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .item.w{background:var(--wat);border-color:var(--org)}
 .nm{font-weight:600}.mk{color:var(--mut);font-size:13px}
@@ -56,11 +57,18 @@ const nz=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u309
 [...D.active,...D.history].forEach(o=>o._s=nz([o.name,o.generic,o.maker,o.yj,o.reason,o.spec].join('|')));
 function hit(o,q){if(!q)return true;return q.split(/\s+/).every(w=>o._s.includes(w));}
 function cutoff(){const n=+$('#days').value;if(n>=99999)return'0';const d=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8));d.setDate(d.getDate()-n+1);return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
-function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${(i.since===D.date||i.upd===D.date)?'<span class="tag t-new">新規</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:''}</div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div></div>`;}
-function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
+function outlook(o){o=String(o||'').trim();if(!o)return '';const m=o.match(/^([アイウエ])[\.．]?\s*(.*)$/);const k=m?m[1]:'',rest=(m?m[2]:o).replace(/^[-－]\s*/,'').trim();
+ if(k==='ア')return `<div class="ol red">▶ 再開見込み：${esc(rest||"時期未記載")}</div>`;
+ if(k==='ウ')return `<div class="ol">再開見込み：未定</div>`;
+ if(k==='イ')return `<div class="ol">再開見込み：なし${rest?'（'+esc(rest)+'）':''}</div>`;
+ return rest?`<div class="ol">${esc(rest)}</div>`:'';}
+const isNew=i=>i.since===D.date||i.upd===D.date;
+function itemCard(i){const r=(i.reason||'').replace(/^[０-９0-9]+[\.．]\s*/,'').replace(/^[-－]$/,'');const v=(i.vol||'').replace(/^[A-Za-zＡ-Ｚプラス]+[\.．]\s*/,'');
+ return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${isNew(i)?`<span class="tag t-new">${md}新規</span>`:''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:''}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
+function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
- if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(((b.since===D.date||b.upd===D.date)?1:0)-((a.since===D.date||a.upd===D.date)?1:0))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
+ if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(isNew(b)-isNew(a))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
  else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
    $('#cnt').textContent=`変化 ${ev.length}件 ／ 継続中 ${act.length}件`;
    $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
