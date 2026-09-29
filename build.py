@@ -233,7 +233,7 @@ main{padding:0 16px 40px}
 <div class="kpi" id="kpi"></div>
 <nav id="nav"></nav>
 <div class="bar"><input type="search" id="q" placeholder="🔍 検索：品名・成分名・メーカー・YJコード（全角半角どちらでも）" autocomplete="off"></div>
-<div class="bar"><span id="cnt" class="sub"></span><select id="days" style="flex:0 0 auto;min-width:110px"><option value="1" id="optLatest">最新</option><option value="7" selected>7日</option><option value="30">30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
+<div class="bar"><span id="cnt" class="sub"></span><select id="days" style="flex:0 0 auto;min-width:110px"><option value="1" id="optLatest">最新</option><option value="7" selected>7日</option><option value="30">30日</option></select></div>
 <main id="main"></main>
 <script>
 const D=__DATA__;
@@ -254,11 +254,11 @@ const nz=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u309
 [...D.active,...D.history].forEach(o=>o._s=nz([o.name,o.generic,o.maker,o.yj,o.reason,o.spec].join('|')));
 function hit(o,q){if(!q)return true;return q.split(/\s+/).every(w=>o._s.includes(w));}
 function cutoff(){const n=+$('#days').value;if(n>=99999)return'0';const d=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8));d.setDate(d.getDate()-n+1);return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
-function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${i.new?'<span class="tag t-new">New</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span></div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div>${i.since?`<div class="d">継続開始 ${fmt(i.since)}〜</div>`:''}</div>`;}
+function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${(i.since===D.date||i.upd===D.date)?'<span class="tag t-new">新規</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span></div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div>${i.since?`<div class="d">継続開始 ${fmt(i.since)}〜</div>`:''}</div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
- if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(b.new-a.new)||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
+ if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(((b.since===D.date||b.upd===D.date)?1:0)-((a.since===D.date||a.upd===D.date)?1:0))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
  else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
    $('#cnt').textContent=`変化 ${ev.length}件 ／ 継続中 ${act.length}件`;
    $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
