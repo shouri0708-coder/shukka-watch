@@ -221,7 +221,7 @@ input[type=search],select{flex:1;min-width:160px;padding:10px 12px;font-size:16p
 main{padding:0 16px 40px}
 .item>div:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
 .since{margin-left:auto;font-size:13px;font-weight:600;color:var(--tx);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;white-space:nowrap}
-.since b{color:var(--red)}
+.since b{color:var(--red)}.since.old{color:var(--mut);font-weight:400}
 .ol{font-size:13px;color:var(--mut);margin-top:2px}.ol.red{color:var(--red);font-weight:700;font-size:14px}
 .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .item.w{background:var(--wat);border-color:var(--org)}
@@ -265,9 +265,9 @@ function outlook(o){o=String(o||'').trim();if(!o)return '';const m=o.match(/^([�
  if(k==='ウ')return `<div class="ol">再開見込み：未定</div>`;
  if(k==='イ')return `<div class="ol">再開見込み：なし${rest?'（'+esc(rest)+'）':''}</div>`;
  return rest?`<div class="ol">${esc(rest)}</div>`:'';}
-const isNew=i=>i.since===D.date||i.upd===D.date;
+const isNew=i=>i.since===D.date;
 function itemCard(i){const r=(i.reason||'').replace(/^[０-９0-9]+[\.．]\s*/,'').replace(/^[-－]$/,'');const v=(i.vol||'').replace(/^[A-Za-zＡ-Ｚプラス]+[\.．]\s*/,'');
- return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${isNew(i)?`<span class="tag t-new">${md}新規</span>`:''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:''}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
+ return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${isNew(i)?`<span class="tag t-new">${md}新規</span>`:''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
@@ -304,14 +304,16 @@ def main():
         events = diff(prev, cur, date)
         history = [h for h in history if h["date"] != date] + events
 
-    # since（継続開始日）: 前回から引き継ぎ、無ければExcelの⑬更新日、それも無ければ公表日
+    # since（継続開始日）: 前回から引き継ぎ。前回通常→今回調整なら公表日。初見はExcelの⑬更新日（無ければ空=2025/5以前から継続）
     for yj, it in cur.items():
         p = prev.get(yj)
         if it["ship"] in ("limited", "stop"):
-            if p and p.get("ship") in ("limited", "stop") and p.get("since"):
-                it["since"] = p["since"]
+            if p and p.get("ship") in ("limited", "stop"):
+                it["since"] = p.get("since", "") or it.get("upd", "")
+            elif p:
+                it["since"] = date
             else:
-                it["since"] = it.get("upd") or date
+                it["since"] = it.get("upd") or ("" if first_run else date)
         else:
             it["since"] = ""
 
