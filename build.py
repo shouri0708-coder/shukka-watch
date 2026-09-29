@@ -1,0 +1,290 @@
+# -*- coding: utf-8 -*-
+"""data/ の最新Excelを読み、前回状態と比較して index.html を生成する。"""
+import os, re, json, sys, datetime, html
+from collections import Counter
+
+BASE = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(BASE, "data")
+STATE = os.path.join(BASE, "state.json")
+HIST = os.path.join(BASE, "history.json")
+WATCH = os.path.join(BASE, "watch_list.txt")
+OUT = os.path.join(BASE, "docs", "index.html")
+
+try:
+    import openpyxl
+except ImportError:
+    print("openpyxl が必要です:  py -m pip install openpyxl")
+    sys.exit(1)
+
+# ---------- Excel 読み込み ----------
+KEYS = {
+    "yj":     ["yj", "ｙｊ"],
+    "name":   ["販売名", "品名", "商品名", "品目名", "製品名"],
+    "maker":  ["製造販売業者", "企業名", "メーカー", "会社名", "製販"],
+    "ship":   ["出荷対応"],
+    "vol":    ["出荷量"],
+    "reason": ["理由"],
+    "new":    ["更新有無", "更新"],
+    "outlook":["見込", "解消", "見通し"],
+    "generic":["成分名", "一般名"],
+    "basic":  ["基礎的", "安定確保", "確保"],
+}
+
+YJ_RE = re.compile(r"^\d{7}[A-Z]\d{4}$")
+
+def norm(s):
+    return re.sub(r"\s+", "", str(s or "")).lower()
+
+def detect_header(ws, max_scan=20):
+    rows = []
+    for i, row in enumerate(ws.iter_rows(min_row=1, max_row=max_scan, values_only=True)):
+        rows.append([norm(c) for c in row])
+    best, best_i = -1, 0
+    for i, r in enumerate(rows):
+        joined = "|".join(r)
+        hits = sum(1 for ks in KEYS.values() if any(k in joined for k in ks))
+        if hits > best:
+            best, best_i = hits, i
+    # 2段ヘッダ対応: ヘッダ行とその次の行を結合
+    hdr = rows[best_i]
+    nxt = rows[best_i + 1] if best_i + 1 < len(rows) else []
+    if any(YJ_RE.match(c.upper()) for c in nxt):  # 次行がデータならヘッダ1段
+        nxt = []
+    merged = []
+    for j in range(max(len(hdr), len(nxt))):
+        a = hdr[j] if j < len(hdr) else ""
+        b = nxt[j] if j < len(nxt) else ""
+        merged.append(a + b)
+    return best_i, merged
+
+def map_columns(headers):
+    col = {}
+    for key, kws in KEYS.items():
+        for j, h in enumerate(headers):
+            if h and any(k in h for k in kws) and j not in col.values():
+                col[key] = j
+                break
+    return col
+
+def classify_ship(s):
+    s = str(s or "")
+    if "供給停止" in s or "停止" in s: return "stop"
+    if "限定" in s: return "limited"
+    if "通常" in s: return "normal"
+    return "other" if s.strip() else ""
+
+def load_excel(path):
+    wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    ws = max(wb.worksheets, key=lambda w: w.max_row or 0)
+    hidx, headers = detect_header(ws)
+    col = map_columns(headers)
+    print("シート:", ws.title, "/ ヘッダ行:", hidx + 1)
+    print("列マップ:", {k: headers[v][:12] for k, v in col.items()})
+    items = {}
+    start = hidx + 2
+    # YJ列が見つからない場合は値のパターンで探す
+    yj_col = col.get("yj")
+    for row in ws.iter_rows(min_row=start, values_only=True):
+        if not row or all(c in (None, "") for c in row):
+            continue
+        cells = [("" if c is None else str(c)).strip() for c in row]
+        if yj_col is None:
+            for j, c in enumerate(cells):
+                if YJ_RE.match(c):
+                    yj_col = j; col["yj"] = j; break
+            if yj_col is None:
+                continue
+        yj = cells[yj_col] if yj_col < len(cells) else ""
+        if not YJ_RE.match(yj):
+            continue
+        def g(k):
+            j = col.get(k)
+            return cells[j] if j is not None and j < len(cells) else ""
+        ship_raw = g("ship")
+        vol_raw = g("vol")
+        it = {
+            "yj": yj, "name": g("name"), "maker": g("maker"),
+            "generic": g("generic"),
+            "ship": classify_ship(ship_raw), "ship_raw": ship_raw,
+            "vol": vol_raw, "reason": g("reason"), "outlook": g("outlook"),
+            "new": bool(re.search(r"new|新", g("new"), re.I)),
+        }
+        # 同一YJが複数行（包装違い等）ある場合は悪い方を優先
+        rank = {"stop": 3, "limited": 2, "other": 1, "normal": 0, "": -1}
+        prev = items.get(yj)
+        if prev is None or rank[it["ship"]] > rank[prev["ship"]]:
+            items[yj] = it
+        elif it["new"]:
+            prev["new"] = True
+    print("品目数:", len(items), Counter(i["ship"] for i in items.values()))
+    return items
+
+# ---------- 差分 ----------
+def load_json(p, default):
+    if os.path.exists(p):
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    return default
+
+def save_json(p, obj):
+    with open(p, "w", encoding="utf-8") as f:
+        json.dump(obj, f, ensure_ascii=False, indent=1)
+
+def diff(prev_items, cur_items, date):
+    ev = []
+    for yj, cur in cur_items.items():
+        p = prev_items.get(yj)
+        c = cur["ship"]
+        if p is None:
+            if prev_items and c in ("limited", "stop"):
+                ev.append(("new", yj, "", c))
+            continue
+        b = p["ship"]
+        if b == c:
+            continue
+        if b == "normal" and c in ("limited", "stop"): t = "new"
+        elif b in ("limited", "stop") and c == "normal": t = "resolved"
+        elif b == "limited" and c == "stop": t = "worse"
+        elif b == "stop" and c == "limited": t = "better"
+        else: t = "change"
+        ev.append((t, yj, b, c))
+    for yj, p in prev_items.items():
+        if yj not in cur_items and p["ship"] in ("limited", "stop"):
+            ev.append(("removed", yj, p["ship"], ""))
+    out = []
+    for t, yj, b, c in ev:
+        src = cur_items.get(yj) or prev_items.get(yj)
+        out.append({"date": date, "type": t, "yj": yj, "name": src["name"],
+                    "maker": src["maker"], "from": b, "to": c,
+                    "reason": src.get("reason", ""), "outlook": src.get("outlook", "")})
+    return out
+
+# ---------- HTML ----------
+LABEL = {"normal": "通常出荷", "limited": "限定出荷", "stop": "供給停止", "other": "その他", "": "-"}
+TYPE_LABEL = {"new": "新規", "resolved": "解除", "worse": "悪化", "better": "改善", "change": "変更", "removed": "掲載終了"}
+
+def build_html(date, items, history, watch, first_run):
+    active = [i for i in items.values() if i["ship"] in ("limited", "stop")]
+    cnt = Counter(i["ship"] for i in items.values())
+    payload = {
+        "date": date, "first_run": first_run,
+        "counts": {"limited": cnt["limited"], "stop": cnt["stop"], "normal": cnt["normal"], "total": len(items)},
+        "active": [{k: i[k] for k in ("yj", "name", "maker", "generic", "ship", "ship_raw", "vol", "reason", "outlook", "new")} | {"since": i.get("since", "")} for i in active],
+        "history": history[-3000:],
+        "watch": watch,
+        "label": LABEL, "tlabel": TYPE_LABEL,
+    }
+    js = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
+    return TEMPLATE.replace("__DATA__", js)
+
+TEMPLATE = r"""<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>出荷調整ウォッチ</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--tx:#1d2330;--mut:#667085;--line:#e4e7ec;--red:#d92d20;--org:#f79009;--grn:#12b76a;--blu:#2e90fa;--wat:#fff4e5}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--tx:#e6e9f0;--mut:#98a2b3;--line:#2a3040;--wat:#3a2a12}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 -apple-system,"Segoe UI","Hiragino Sans","Yu Gothic UI",sans-serif}
+header{padding:14px 16px 6px}h1{font-size:20px;margin:0}.sub{color:var(--mut);font-size:13px}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;padding:8px 16px}
+.kpi div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.kpi b{font-size:22px;display:block}.kpi span{font-size:12px;color:var(--mut)}
+nav{display:flex;gap:6px;padding:8px 16px;overflow-x:auto}
+nav button{border:1px solid var(--line);background:var(--card);color:var(--tx);padding:6px 12px;border-radius:999px;white-space:nowrap;cursor:pointer}
+nav button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.bar{padding:0 16px 8px;display:flex;gap:8px;flex-wrap:wrap}
+input[type=search],select{flex:1;min-width:160px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--tx);font-size:15px}
+main{padding:0 16px 40px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
+.item.w{background:var(--wat);border-color:var(--org)}
+.nm{font-weight:600}.mk{color:var(--mut);font-size:13px}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;color:#fff;margin-right:4px;vertical-align:middle}
+.t-limited{background:var(--org)}.t-stop{background:var(--red)}.t-normal{background:var(--grn)}.t-other{background:var(--mut)}
+.t-new{background:var(--red)}.t-resolved{background:var(--grn)}.t-worse{background:#b42318}.t-better{background:var(--blu)}.t-change,.t-removed{background:var(--mut)}
+.rs{font-size:13px;color:var(--mut)}.d{font-size:12px;color:var(--mut)}
+.empty{color:var(--mut);padding:24px;text-align:center}
+.more{width:100%;padding:10px;border:1px dashed var(--line);background:none;color:var(--mut);border-radius:8px;cursor:pointer}
+</style></head><body>
+<header><h1>出荷調整ウォッチ</h1><div class="sub" id="sub"></div></header>
+<div class="kpi" id="kpi"></div>
+<nav id="nav"></nav>
+<div class="bar"><input type="search" id="q" placeholder="品名・成分・メーカー・YJで検索"><select id="days"><option value="1">今回分</option><option value="7">7日</option><option value="30" selected>30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
+<main id="main"></main>
+<script>
+const D=__DATA__;
+const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
+const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
+const tabs=[['watch','自店採用'],['changes','変化'],['active','継続中'],['resolved','解除']];
+let tab=D.watch.length?'watch':'changes';
+$('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：次回から差分が出ます）':'');
+const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
+$('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
+function nav(){$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}</button>`).join('');}
+$('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
+$('#q').oninput=render;$('#days').onchange=render;
+function hit(o,q){if(!q)return true;q=q.toLowerCase();return ['name','generic','maker','yj','reason'].some(k=>(o[k]||'').toLowerCase().includes(q));}
+function cutoff(){const n=+$('#days').value;if(n>=99999)return'0';const d=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8));d.setDate(d.getDate()-n+1);return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
+function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${i.new?'<span class="tag t-new">New</span>':''}<span class="nm">${esc(i.name)}</span></div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div>${i.since?`<div class="d">継続開始 ${fmt(i.since)}〜</div>`:''}</div>`;}
+function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
+let limit=200;
+function render(){nav();const q=$('#q').value.trim();const co=cutoff();let list=[],card;
+ if(tab==='active'){list=D.active.filter(i=>hit(i,q)).sort((a,b)=>(b.new-a.new)||(a.ship==='stop'?-1:1));card=itemCard;}
+ else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
+   $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
+ else{list=D.history.filter(h=>h.date>=co&&hit(h,q)&&(tab==='changes'?h.type!=='resolved':h.type==='resolved'||h.type==='better')).reverse();card=evCard;}
+ $('#main').innerHTML=(list.slice(0,limit).map(card).join('')||`<div class="empty">該当なし${D.first_run&&tab!=='active'?'（初回は変化が出ません。「継続中」を見てください）':''}</div>`)+(list.length>limit?`<button class="more" onclick="limit+=300;render()">さらに表示（残り${list.length-limit}）</button>`:'');}
+render();
+</script></body></html>"""
+
+# ---------- main ----------
+def main():
+    latest = os.path.join(DATA, "latest.txt")
+    if not os.path.exists(latest):
+        print("先に fetch.py を実行してください"); sys.exit(1)
+    date = open(latest, encoding="utf-8").read().strip()
+    xlsx = os.path.join(DATA, f"{date}.xlsx")
+    cur = load_excel(xlsx)
+    if not cur:
+        print("品目が読めませんでした。列構成を確認してください。"); sys.exit(1)
+
+    state = load_json(STATE, {"asof": "", "items": {}})
+    history = load_json(HIST, [])
+    prev = state["items"]
+    first_run = not prev
+
+    if state.get("asof") == date:
+        print("同じ公表日のデータは処理済み。HTMLのみ再生成します。")
+        events = []
+    else:
+        events = diff(prev, cur, date)
+        history = [h for h in history if h["date"] != date] + events
+
+    # since（継続開始日）の引き継ぎ
+    for yj, it in cur.items():
+        p = prev.get(yj)
+        if it["ship"] in ("limited", "stop"):
+            if p and p.get("ship") in ("limited", "stop") and p.get("since"):
+                it["since"] = p["since"]
+            elif p and p.get("since") and p.get("ship") == it["ship"]:
+                it["since"] = p["since"]
+            else:
+                it["since"] = p.get("since", date) if (p and p.get("ship") in ("limited", "stop")) else date
+        else:
+            it["since"] = ""
+
+    watch = []
+    if os.path.exists(WATCH):
+        watch = [l.strip() for l in open(WATCH, encoding="utf-8") if l.strip() and not l.startswith("#")]
+
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w", encoding="utf-8") as f:
+        f.write(build_html(date, cur, history, watch, first_run))
+    save_json(STATE, {"asof": date, "items": cur})
+    save_json(HIST, history)
+    c = Counter(e["type"] for e in events)
+    print(f"完了: {OUT}")
+    print(f"変化: 新規{c['new']} 解除{c['resolved']} 悪化{c['worse']} 改善{c['better']} 掲載終了{c['removed']}")
+
+if __name__ == "__main__":
+    main()
