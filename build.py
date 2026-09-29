@@ -216,8 +216,8 @@ header{padding:14px 16px 6px}h1{font-size:20px;margin:0}.sub{color:var(--mut);fo
 nav{display:flex;gap:6px;padding:8px 16px;overflow-x:auto}
 nav button{border:1px solid var(--line);background:var(--card);color:var(--tx);padding:6px 12px;border-radius:999px;white-space:nowrap;cursor:pointer}
 nav button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
-.bar{padding:0 16px 8px;display:flex;gap:8px;flex-wrap:wrap}
-input[type=search],select{flex:1;min-width:160px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--tx);font-size:15px}
+.bar{padding:0 16px 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}#cnt{flex:1}
+input[type=search],select{flex:1;min-width:160px;padding:10px 12px;font-size:16px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--tx);font-size:15px}
 main{padding:0 16px 40px}
 .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .item.w{background:var(--wat);border-color:var(--org)}
@@ -232,7 +232,8 @@ main{padding:0 16px 40px}
 <header><h1>出荷調整ウォッチ</h1><div class="sub" id="sub"></div></header>
 <div class="kpi" id="kpi"></div>
 <nav id="nav"></nav>
-<div class="bar"><input type="search" id="q" placeholder="品名・成分・メーカー・YJで検索"><select id="days"><option value="1">今回分</option><option value="7">7日</option><option value="30" selected>30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
+<div class="bar"><input type="search" id="q" placeholder="🔍 検索：品名・成分名・メーカー・YJコード（全角半角どちらでも）" autocomplete="off"></div>
+<div class="bar"><span id="cnt" class="sub"></span><select id="days" style="flex:0 0 auto;min-width:110px"><option value="1">今回分</option><option value="7">7日</option><option value="30" selected>30日</option><option value="90">90日</option><option value="99999">全部</option></select></div>
 <main id="main"></main>
 <script>
 const D=__DATA__;
@@ -244,19 +245,24 @@ let tab=D.watch.length?'watch':'changes';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
 $('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>今回 新規/悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>今回 解除/改善</span></div>`;
-function nav(){$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}</button>`).join('');}
+const tabCount={active:D.active.length,changes:D.history.filter(h=>h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.type==='resolved'||h.type==='better').length};
+function nav(){$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
 $('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
-$('#q').oninput=render;$('#days').onchange=render;
-function hit(o,q){if(!q)return true;q=q.toLowerCase();return ['name','generic','maker','yj','reason'].some(k=>(o[k]||'').toLowerCase().includes(q));}
+$('#q').oninput=()=>{limit=200;render();};$('#days').onchange=render;
+const nz=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u3096]/g,c=>String.fromCharCode(c.charCodeAt(0)+0x60)).replace(/[\s　]/g,'');
+[...D.active,...D.history].forEach(o=>o._s=nz([o.name,o.generic,o.maker,o.yj,o.reason,o.spec].join('|')));
+function hit(o,q){if(!q)return true;return q.split(/\s+/).every(w=>o._s.includes(w));}
 function cutoff(){const n=+$('#days').value;if(n>=99999)return'0';const d=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8));d.setDate(d.getDate()-n+1);return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
 function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${i.new?'<span class="tag t-new">New</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span></div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div>${i.since?`<div class="d">継続開始 ${fmt(i.since)}〜</div>`:''}</div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
-function render(){nav();const q=$('#q').value.trim();const co=cutoff();let list=[],card;
+function render(){nav();const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
  if(tab==='active'){list=D.active.filter(i=>hit(i,q)).sort((a,b)=>(b.new-a.new)||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
  else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
+   $('#cnt').textContent=`変化 ${ev.length}件 ／ 継続中 ${act.length}件`;
    $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
- else{list=D.history.filter(h=>h.date>=co&&hit(h,q)&&(tab==='changes'?h.type!=='resolved':h.type==='resolved'||h.type==='better')).reverse();card=evCard;}
+ else{list=D.history.filter(h=>h.date>=co&&hit(h,q)&&(tab==='changes'?(h.type!=='resolved'&&h.type!=='better'):(h.type==='resolved'||h.type==='better'))).reverse();card=evCard;}
+ $('#cnt').textContent=`該当 ${list.length.toLocaleString()}件`+(list.length>limit?`（${limit}件表示）`:'');
  $('#main').innerHTML=(list.slice(0,limit).map(card).join('')||`<div class="empty">該当なし</div>`)+(list.length>limit?`<button class="more" onclick="limit+=300;render()">さらに表示（残り${list.length-limit}）</button>`:'');}
 render();
 </script></body></html>"""
