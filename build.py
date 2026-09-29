@@ -185,7 +185,7 @@ def diff(prev_items, cur_items, date):
 
 # ---------- HTML ----------
 LABEL = {"normal": "通常出荷", "limited": "限定出荷", "stop": "供給停止", "other": "その他", "": "-"}
-TYPE_LABEL = {"new": "新規", "resolved": "解除", "worse": "悪化", "better": "改善", "change": "変更", "removed": "掲載終了"}
+TYPE_LABEL = {"new": "NEW", "resolved": "解除", "worse": "悪化", "better": "改善", "change": "変更", "removed": "掲載終了"}
 
 def build_html(date, items, history, watch, first_run):
     active = [i for i in items.values() if i["ship"] in ("limited", "stop")]
@@ -267,7 +267,7 @@ function outlook(o){o=String(o||'').trim();if(!o)return '';const m=o.match(/^([�
  return rest?`<div class="ol">${esc(rest)}</div>`:'';}
 const isNew=i=>i.since===D.date;
 function itemCard(i){const r=(i.reason||'').replace(/^[０-９0-9]+[\.．]\s*/,'').replace(/^[-－]$/,'');const v=(i.vol||'').replace(/^[A-Za-zＡ-Ｚプラス]+[\.．]\s*/,'');
- return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${isNew(i)?`<span class="tag t-new">${md}新規</span>`:''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
+ return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span><span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜${isNew(i)?' <b>NEW</b>':''}</span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
