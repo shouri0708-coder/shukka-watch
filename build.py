@@ -204,7 +204,7 @@ def build_html(date, items, history, watch, first_run):
 TEMPLATE = r"""<!doctype html>
 <html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>出荷調整ウォッチ</title>
+<title>出荷調整リアルタイム状況</title>
 <style>
 :root{--bg:#f6f7f9;--card:#fff;--tx:#1d2330;--mut:#667085;--line:#e4e7ec;--red:#d92d20;--org:#f79009;--grn:#12b76a;--blu:#2e90fa;--wat:#fff4e5}
 @media(prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--tx:#e6e9f0;--mut:#98a2b3;--line:#2a3040;--wat:#3a2a12}}
@@ -233,7 +233,7 @@ main{padding:0 16px 40px}
 .empty{color:var(--mut);padding:24px;text-align:center}
 .more{width:100%;padding:10px;border:1px dashed var(--line);background:none;color:var(--mut);border-radius:8px;cursor:pointer}
 </style></head><body>
-<header><h1>出荷調整ウォッチ</h1><div class="sub" id="sub"></div></header>
+<header><h1>出荷調整リアルタイム状況</h1><div class="sub" id="sub"></div></header>
 <div class="kpi" id="kpi"></div>
 <nav id="nav"></nav>
 <div class="bar"><input type="search" id="q" placeholder="🔍 検索：品名・成分名・メーカー・YJコード（全角半角どちらでも）" autocomplete="off"></div>
