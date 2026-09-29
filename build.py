@@ -219,6 +219,9 @@ nav button.on{background:var(--tx);color:var(--bg);border-color:var(--tx)}
 .bar{padding:0 16px 8px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}#cnt{flex:1}
 input[type=search],select{flex:1;min-width:160px;padding:10px 12px;font-size:16px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--tx);font-size:15px}
 main{padding:0 16px 40px}
+.item>div:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
+.since{margin-left:auto;font-size:13px;font-weight:600;color:var(--tx);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;white-space:nowrap}
+.since b{color:var(--red)}
 .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .item.w{background:var(--wat);border-color:var(--org)}
 .nm{font-weight:600}.mk{color:var(--mut);font-size:13px}
@@ -238,6 +241,7 @@ main{padding:0 16px 40px}
 <script>
 const D=__DATA__;
 const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const days=d=>{const a=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8)),b=new Date(d.slice(0,4),d.slice(4,6)-1,d.slice(6,8));const n=Math.round((a-b)/864e5);return n<=0?'今日から':n<30?n+'日目':Math.floor(n/30)+'か月';};
 const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
 const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
 const tabs=[['watch','自店採用'],['changes','変化'],['limited','出荷調整'],['stop','出荷停止'],['resolved','解除']];
@@ -254,7 +258,7 @@ const nz=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[\u3041-\u309
 [...D.active,...D.history].forEach(o=>o._s=nz([o.name,o.generic,o.maker,o.yj,o.reason,o.spec].join('|')));
 function hit(o,q){if(!q)return true;return q.split(/\s+/).every(w=>o._s.includes(w));}
 function cutoff(){const n=+$('#days').value;if(n>=99999)return'0';const d=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8));d.setDate(d.getDate()-n+1);return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
-function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${(i.since===D.date||i.upd===D.date)?'<span class="tag t-new">新規</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span></div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div>${i.since?`<div class="d">継続開始 ${fmt(i.since)}〜</div>`:''}</div>`;}
+function itemCard(i){return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span>${(i.since===D.date||i.upd===D.date)?'<span class="tag t-new">新規</span>':''}<span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜 <b>${days(i.since)}</b></span>`:''}</div><div class="mk">${esc(i.maker)} ${i.generic?'／'+esc(i.generic):''} ／ ${i.yj}</div><div class="rs">${esc(i.ship_raw)} ${i.vol?'／出荷量:'+esc(i.vol):''} ${i.reason?'／'+esc(i.reason):''} ${i.outlook?'／見込:'+esc(i.outlook):''}</div></div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'} ${h.reason?'／'+esc(h.reason):''} ${h.outlook?'／見込:'+esc(h.outlook):''}</div><div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
