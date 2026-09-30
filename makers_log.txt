@@ -1,0 +1,22 @@
+沢井製薬: 15件
+東和薬品: 0件
+日医工: 10件
+日本ジェネリック: 102件
+第一三共エスファ: 1288件
+EAファーマ: 10件
+塩野義製薬: 13件
+興和: 9件
+丸石製薬: 10件
+辰巳化学: 302件
+陽進堂: ERROR ConnectionError: HTTPSConnectionPool(host='www.yoshindo.co.jp', port=443): Max retries exceeded with url: /info/ (Caused by NameResolutionError("HTTPSConnection(host='www.yoshindo.co.jp', port=443): Failed to resolve 'www.yoshindo.co.jp' ([Errno -3] Temporary failure in name resolution)"))
+岩城製薬: 308件
+東洋製薬化成: 79件
+皇漢堂製薬: 16件
+全星薬品工業: ERROR HTTPError: 404 Client Error: Not Found for url: https://zensei-med.jp/news/kyokyu/
+三和化学研究所: 68件
+日本臓器製薬: 16件
+参天製薬: 87件
+キョーリンリメディオ: 0件
+高田製薬: 0件
+共和薬品工業: 0件
+新規 2333件 / 出力 294件
