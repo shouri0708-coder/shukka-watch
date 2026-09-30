@@ -229,7 +229,7 @@ main{padding:0 16px 40px}
 .nm{font-weight:600}.mk{color:var(--mut);font-size:13px}
 .tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;color:#fff;margin-right:4px;vertical-align:middle}
 .t-limited{background:var(--org)}.t-stop{background:var(--red)}.t-normal{background:var(--grn)}.t-other{background:var(--mut)}
-.t-new{background:var(--red)}.t-resolved{background:var(--grn)}.t-worse{background:#b42318}.t-better{background:var(--blu)}.t-change,.t-removed{background:var(--mut)}
+.t-new{background:var(--red)}.t-mk{background:#475467}.mkl{color:var(--tx);text-decoration:none}.mkl:hover{text-decoration:underline}.mkl small{color:var(--mut);font-weight:400}.t-resolved{background:var(--grn)}.t-worse{background:#b42318}.t-better{background:var(--blu)}.t-change,.t-removed{background:var(--mut)}
 .rs{font-size:13px;color:var(--mut)}.d{font-size:12px;color:var(--mut)}
 .empty{color:var(--mut);padding:24px;text-align:center}
 .more{width:100%;padding:10px;border:1px dashed var(--line);background:none;color:var(--mut);border-radius:8px;cursor:pointer}
@@ -246,14 +246,15 @@ const $=s=>document.querySelector(s);const esc=s=>String(s??'').replace(/[&<>"]/
 const days=d=>{const a=new Date(D.date.slice(0,4),D.date.slice(4,6)-1,D.date.slice(6,8)),b=new Date(d.slice(0,4),d.slice(4,6)-1,d.slice(6,8));const n=Math.round((a-b)/864e5);return n<=0?'今日から':n<30?n+'日目':Math.floor(n/30)+'か月';};
 const fmt=d=>d?d.slice(0,4)+'/'+d.slice(4,6)+'/'+d.slice(6,8):'';
 const watchHit=i=>D.watch.some(w=>w&&(i.yj===w||(i.name||'').includes(w)||(i.generic||'').includes(w)));
-const tabs=[['watch','自店採用'],['changes','変化'],['limited','出荷調整'],['stop','出荷停止'],['resolved','解除']];
+const tabs=[['watch','自店採用'],['changes','変化'],['limited','出荷調整'],['stop','出荷停止'],['resolved','解除'],['makers','メーカー新着']];
 let tab=D.watch.length?'watch':'changes';
+let MK=[];fetch('makers.json?'+Date.now()).then(r=>r.json()).then(j=>{MK=(j.items||[]).map(o=>Object.assign(o,{_s:nz([o.title,o.maker].join('|')),d:(o.date&&o.date>o.first_seen?o.date:o.first_seen)||o.date||''}));render();}).catch(()=>{});
 const md=(+D.date.slice(4,6))+'/'+(+D.date.slice(6,8));
 $('#optLatest').textContent=md+' 公表分のみ';
 $('#sub').textContent='厚労省 医療用医薬品供給状況 '+fmt(D.date)+' 公表分'+(D.first_run?'（初回取込：変化はExcelの更新日から推定）':'');
 const c=D.counts;const today=D.history.filter(h=>h.date===D.date);
 $('#kpi').innerHTML=`<div><b>${c.limited}</b><span>限定出荷</span></div><div><b>${c.stop}</b><span>供給停止</span></div><div><b style="color:var(--red)">${today.filter(h=>h.type==='new'||h.type==='worse').length}</b><span>${md} 新規・悪化</span></div><div><b style="color:var(--grn)">${today.filter(h=>h.type==='resolved'||h.type==='better').length}</b><span>${md} 解除・改善</span></div>`;
-function tabCounts(){const co=cutoff();return{limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.date>=co&&h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.date>=co&&(h.type==='resolved'||h.type==='better')).length};}
+function tabCounts(){const co=cutoff();return{limited:D.active.filter(i=>i.ship==='limited').length,stop:D.active.filter(i=>i.ship==='stop').length,changes:D.history.filter(h=>h.date>=co&&h.type!=='resolved'&&h.type!=='better').length,resolved:D.history.filter(h=>h.date>=co&&(h.type==='resolved'||h.type==='better')).length,makers:MK.filter(o=>o.d>=co).length};}
 function nav(){const tabCount=tabCounts();$('#nav').innerHTML=tabs.filter(t=>t[0]!=='watch'||D.watch.length).map(t=>`<button class="${t[0]===tab?'on':''}" data-t="${t[0]}">${t[1]}${tabCount[t[0]]!=null?' '+tabCount[t[0]]:''}</button>`).join('');}
 $('#nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.t;render();};
 $('#q').oninput=()=>{limit=200;render();};$('#days').onchange=render;
@@ -270,9 +271,11 @@ const isNew=i=>i.since===D.date;
 function itemCard(i){const r=(i.reason||'').replace(/^[０-９0-9]+[\.．]\s*/,'').replace(/^[-－]$/,'');const v=(i.vol||'').replace(/^[A-Za-zＡ-Ｚプラス]+[\.．]\s*/,'');
  return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span><span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜${isNew(i)?' <b>NEW</b>':''}</span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}<div class="lk"><a href="https://drugshortage.jp/list-all.php?keyword=${encodeURIComponent(i.name)}" target="_blank" rel="noopener">DSJPで見る ↗</a></div></div>`;}
 function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="lk"><a href="https://drugshortage.jp/list-all.php?keyword=${encodeURIComponent(h.name)}" target="_blank" rel="noopener">DSJPで見る ↗</a></div><div class="d">${fmt(h.date)}</div></div>`;}
+function mkCard(o){const isPdf=/\.pdf(\?|$)/i.test(o.url);return `<div class="item"><div><span class="tag t-mk">${esc(o.maker)}</span><span class="nm"><a class="mkl" href="${esc(o.url)}" target="_blank" rel="noopener">${esc(o.title)}${isPdf?' <small>PDF</small>':''} ↗</a></span></div><div class="d">${o.date?fmt(o.date):'掲載 '+fmt(o.first_seen)}</div></div>`;}
 let limit=200;
-function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
- if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(isNew(b)-isNew(a))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
+function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch'||tab==='makers')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
+ if(tab==='makers'){list=MK.filter(o=>o.d>=co&&hit(o,q));card=mkCard;}
+ else if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(isNew(b)-isNew(a))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
  else if(tab==='watch'){const act=D.active.filter(i=>watchHit(i)&&hit(i,q)).map(itemCard);const ev=D.history.filter(h=>watchHit(h)&&h.date>=co&&hit(h,q)).reverse().map(evCard);
    $('#cnt').textContent=`変化 ${ev.length}件 ／ 継続中 ${act.length}件`;
    $('#main').innerHTML=(ev.length?'<h3>変化</h3>'+ev.join(''):'')+(act.length?'<h3>継続中</h3>'+act.join(''):'')||'<div class="empty">自店採用品目に該当なし</div>';return;}
