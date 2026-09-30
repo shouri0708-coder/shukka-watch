@@ -33,16 +33,28 @@ def fetch(url):
         except Exception: pass
     return b.decode("utf-8", "replace")
 
-def find_date(el, depth=3):
-    """要素→親へ遡って最初に見つかる日付を YYYYMMDD で返す（日なしは 01）"""
-    cur = el
+def _ymd(m):
+    y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)
+    return f"{y:04d}{mo:02d}{d:02d}" if 1 <= mo <= 12 and 1 <= d <= 31 else ""
+
+def find_date(a, title, depth=6):
+    """リンク→親へ遡り、タイトル位置に最も近い日付を YYYYMMDD で返す"""
+    cur = a
     for _ in range(depth):
         if cur is None: break
         t = cur.get_text(" ", strip=True)
-        m = DATE.search(t)
-        if m:
-            y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)
-            if 1 <= mo <= 12 and 1 <= d <= 31: return f"{y:04d}{mo:02d}{d:02d}"
+        ms = list(DATE.finditer(t))
+        if ms:
+            if len(ms) == 1: return _ymd(ms[0])
+            i = t.find(title[:20]) if title else -1
+            if i >= 0:
+                before = [m for m in ms if m.start() <= i]
+                after = [m for m in ms if m.start() > i]
+                pick = before[-1] if before else after[0]
+                # 前後どちらが近いか（表形式: 日付|タイトル の順が多いので前を優先）
+                if before and after and (i - before[-1].end()) > (after[0].start() - i) + 40: pick = after[0]
+                return _ymd(pick)
+            return ""  # 複数日付でタイトル位置不明 → 断念
         cur = cur.parent
     return ""
 
@@ -63,7 +75,11 @@ def extract(maker, url, html):
         absu = urljoin(url, href)
         if absu in seen: continue
         seen.add(absu)
-        out.append({"maker": maker, "title": title[:140], "url": absu, "date": find_date(a), "src": url})
+        if absu.split("#")[0] == url.split("#")[0]: continue  # 自ページ・カテゴリ切替は除外
+        d = find_date(a, title)
+        if not d: continue  # 日付が取れないもの（メニュー等）は除外
+        if d > TODAY: continue
+        out.append({"maker": maker, "title": title[:140], "url": absu, "date": d, "src": url})
     return out
 
 def main():
