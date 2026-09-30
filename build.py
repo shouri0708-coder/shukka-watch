@@ -222,6 +222,7 @@ main{padding:0 16px 40px}
 .item>div:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px}
 .since{margin-left:auto;font-size:13px;font-weight:600;color:var(--tx);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:2px 8px;white-space:nowrap}
 .since b{color:var(--red)}.since.old{color:var(--mut);font-weight:400}
+.lk{margin-top:4px;font-size:13px}.lk a{color:var(--blu);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:2px 8px;display:inline-block}
 .ol{font-size:13px;color:var(--mut);margin-top:2px}.ol.red{color:var(--red);font-weight:700;font-size:14px}
 .item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px}
 .item.w{background:var(--wat);border-color:var(--org)}
@@ -267,8 +268,8 @@ function outlook(o){o=String(o||'').trim();if(!o)return '';const m=o.match(/^([�
  return rest?`<div class="ol">${esc(rest)}</div>`:'';}
 const isNew=i=>i.since===D.date;
 function itemCard(i){const r=(i.reason||'').replace(/^[０-９0-9]+[\.．]\s*/,'').replace(/^[-－]$/,'');const v=(i.vol||'').replace(/^[A-Za-zＡ-Ｚプラス]+[\.．]\s*/,'');
- return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span><span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜${isNew(i)?' <b>NEW</b>':''}</span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}</div>`;}
-function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="d">${fmt(h.date)}</div></div>`;}
+ return `<div class="item ${watchHit(i)?'w':''}"><div><span class="tag t-${i.ship}">${D.label[i.ship]}</span><span class="nm">${esc(i.name)}</span> <span class="mk">${esc(i.spec||'')}</span>${i.since?`<span class="since">${fmt(i.since)}〜${isNew(i)?' <b>NEW</b>':''}</span>`:`<span class="since old">2025/5以前〜</span>`}</div><div class="mk">${esc(i.maker)}${i.generic?'／'+esc(i.generic):''}</div><div class="rs">${esc(r)}${v&&v!=='出荷量通常'?'／'+esc(v):''}</div>${outlook(i.outlook)}<div class="lk"><a href="https://drugshortage.jp/list-all.php?keyword=${encodeURIComponent(i.name)}" target="_blank" rel="noopener">DSJPで見る ↗</a></div></div>`;}
+function evCard(h){return `<div class="item ${watchHit(h)?'w':''}"><div><span class="tag t-${h.type}">${D.tlabel[h.type]}</span><span class="nm">${esc(h.name)}</span></div><div class="mk">${esc(h.maker)} ／ ${h.yj}</div><div class="rs">${D.label[h.from]||'-'} → ${D.label[h.to]||'-'}${h.reason?'／'+esc(h.reason.replace(/^[０-９0-9]+[\.．]\s*/,'')):''}</div>${h.to!=='normal'?outlook(h.outlook):''}<div class="lk"><a href="https://drugshortage.jp/list-all.php?keyword=${encodeURIComponent(h.name)}" target="_blank" rel="noopener">DSJPで見る ↗</a></div><div class="d">${fmt(h.date)}</div></div>`;}
 let limit=200;
 function render(){nav();$('#days').style.display=(tab==='changes'||tab==='resolved'||tab==='watch')?'':'none';const q=$('#q').value.trim().split(/[\s　]+/).filter(Boolean).map(nz).join(' ');const co=cutoff();let list=[],card;
  if(tab==='limited'||tab==='stop'){list=D.active.filter(i=>i.ship===tab&&hit(i,q)).sort((a,b)=>(isNew(b)-isNew(a))||((b.upd||'')<(a.upd||'')?-1:(b.upd||'')>(a.upd||'')?1:0));card=itemCard;}
