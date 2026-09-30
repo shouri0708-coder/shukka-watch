@@ -15,6 +15,15 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.3
       "Accept-Language": "ja,en;q=0.8"}
 KW = re.compile(r"供給|出荷|限定|停止|中止|再開|休止|回収|欠品|集約|辞退|終了|一時|安定|案内|お知らせ|変更|発売")
 STRONG = re.compile(r"供給|出荷|限定|停止|中止|再開|休止|回収|欠品|集約|辞退|終了")
+SUPPLY = re.compile(r"供給|出荷|限定|停止|中止|再開|休止|欠品|集約|辞退|販売終了|製造終了|回収")
+NAVQ = re.compile(r"[?&](cat|cate|category|news-type|type|kind|tag|page|p)=", re.I)
+NOISE = re.compile(r"^(新着情報|お知らせ|安全性|添付文書|電子添文|包装変更|販売中止・|流通情報|供給・中止|供給関連|発売情報|その他|重要なお知らせ)")
+STRIP = re.compile(r"(20\d{2}\s*[./年\-]\s*\d{1,2}(\s*[./月\-]\s*\d{1,2})?\s*日?)|\b(PDF|NEW|New|new)\b|(供給に関するお知らせ|供給関連|発売情報|流通情報・回収情報|販売中止・経過措置|安全性情報|電子添文改訂|お知らせ文書を掲載しました。?|を掲載いたしました。?|を掲載しました。?)")
+
+def clean_title(t):
+    t = STRIP.sub(" ", t)
+    t = re.sub(r"\s+", " ", t).strip(" 　:：・|")
+    return t
 DATE = re.compile(r"(20\d{2})\s*[./年\-]\s*(\d{1,2})(?:\s*[./月\-]\s*(\d{1,2}))?")
 JST = datetime.timezone(datetime.timedelta(hours=9))
 TODAY = datetime.datetime.now(JST).strftime("%Y%m%d")
@@ -75,6 +84,9 @@ def extract(maker, url, html):
         if absu in seen: continue
         seen.add(absu)
         if absu.split("#")[0] == url.split("#")[0]: continue  # 自ページ・カテゴリ切替は除外
+        if NAVQ.search(absu) and not re.search(r"[?&](id|if_id|news_id|nid)=", absu): continue
+        title = clean_title(title)
+        if len(title) < 8 or NOISE.match(title) or not SUPPLY.search(title): continue
         d = find_date(a, title)
         if not d: continue  # 日付が取れないもの（メニュー等）は除外
         if d > TODAY: continue
