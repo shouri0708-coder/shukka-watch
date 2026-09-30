@@ -75,7 +75,8 @@
  },
  {
   "maker": "キョーリンリメディオ",
-  "url": "https://www.med.kyorin-rmd.com/news/"
+  "url": "https://www.med.kyorin-rmd.com/news/",
+  "enabled": false
  },
  {
   "maker": "高田製薬",
