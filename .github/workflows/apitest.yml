@@ -1,0 +1,11 @@
+name: apitest
+on: { workflow_dispatch: {} }
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sS -o out.json -w "HTTP %{http_code} size %{size_download}\n" -A "Mozilla/5.0 (X11; Linux x86_64) shukka-watch/1.0" -H "Accept: application/json" \
+            "https://iyakuhin-kyokyu.mhlw.go.jp/api/info-site/supply-status-report?component_nm=&standard_unit=&product_nm=&yj_cd=&mfr_nm=&sales_company_nm=&shipment_status=&medical_section=&medical_properties_class=&product_section=&ensuring_stability_medical=&basic_medical=&publication_date_from=2026-09-29&publication_date_to=&user_id=&favorite_flg=&sort=1&order=1&page=1&limit=2&search_type=1"
+          head -c 800 out.json; echo
+          curl -sS -o /dev/null -w "plain-UA HTTP %{http_code}\n" "https://iyakuhin-kyokyu.mhlw.go.jp/api/info-site/supply-status-report?page=1&limit=1&search_type=1&sort=1&order=1"
