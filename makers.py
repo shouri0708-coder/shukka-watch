@@ -37,24 +37,23 @@ def _ymd(m):
     y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)
     return f"{y:04d}{mo:02d}{d:02d}" if 1 <= mo <= 12 and 1 <= d <= 31 else ""
 
-def find_date(a, title, depth=6):
-    """リンク→親へ遡り、タイトル位置に最も近い日付を YYYYMMDD で返す"""
+def find_date(a, title, depth=6, maxdist=160):
+    """リンク→親へ遡り、タイトル位置から maxdist 文字以内で最も近い日付を YYYYMMDD で返す"""
     cur = a
     for _ in range(depth):
         if cur is None: break
         t = cur.get_text(" ", strip=True)
         ms = list(DATE.finditer(t))
         if ms:
-            if len(ms) == 1: return _ymd(ms[0])
             i = t.find(title[:20]) if title else -1
-            if i >= 0:
-                before = [m for m in ms if m.start() <= i]
-                after = [m for m in ms if m.start() > i]
-                pick = before[-1] if before else after[0]
-                # 前後どちらが近いか（表形式: 日付|タイトル の順が多いので前を優先）
-                if before and after and (i - before[-1].end()) > (after[0].start() - i) + 40: pick = after[0]
-                return _ymd(pick)
-            return ""  # 複数日付でタイトル位置不明 → 断念
+            if i < 0: i = 0
+            best, bd = None, 10**9
+            for m in ms:
+                dist = (i - m.end()) if m.end() <= i else (m.start() - (i + len(title[:20])))
+                if dist < 0: dist = 0
+                if m.end() > i: dist += 40  # 後ろの日付より前の日付を優先
+                if dist < bd: best, bd = m, dist
+            return _ymd(best) if bd <= maxdist else ""
         cur = cur.parent
     return ""
 
