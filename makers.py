@@ -20,6 +20,7 @@ NAVQ = re.compile(r"[?&](cat|cate|category|news-type|type|kind|tag|page|p)=", re
 NOISE = re.compile(r"^(新着情報|お知らせ|安全性|添付文書|電子添文|包装変更|販売中止・|流通情報|供給・中止|供給関連|発売情報|その他|重要なお知らせ)")
 DATE_TOK = re.compile(r"20\d{2}\s*[./年\-]\s*\d{1,2}(\s*[./月\-]\s*\d{1,2})?\s*日?")
 LABEL = re.compile(r"^(供給に関するお知らせ|供給関連|発売情報|流通情報・回収情報|販売中止・経過措置|安全性情報|電子添文改訂|重要なお知らせ|お知らせ|情報)\s*")
+LABEL2 = re.compile(r"^(販売中止|供給関連情報|供給関連|新発売|包装変更|中止・経過措置|重要なお知らせ|重要|供給)\s+(?=\S)")
 TAIL = re.compile(r"(お知らせ文書)?を掲載(いた)?しました。?$")
 DATE = re.compile(r"(20\d{2})\s*[./年\-]\s*(\d{1,2})(?:\s*[./月\-]\s*(\d{1,2}))?")
 JST = datetime.timezone(datetime.timedelta(hours=9))
@@ -29,8 +30,9 @@ def clean_title(t):
     t = DATE_TOK.sub(" ", t)
     t = re.sub(r"\b(PDF|NEW|New|new)\b", " ", t)
     t = re.sub(r"\s+", " ", t).strip(" 　:：・|")
-    for _ in range(3): t = LABEL.sub("", t).strip(" 　:：・|")
+    for _ in range(3): t = LABEL2.sub("", LABEL.sub("", t)).strip(" 　:：・|")
     t = TAIL.sub("", t).strip(" 　:：・|")
+    t = re.sub(r"[（(]\s*[^（()）]*向け[^（()）]*[)）]\s*$", "", t).strip()  # （医療関係者様向け | 特約店様向け）等
     return t
 
 def log(*a):
@@ -111,8 +113,8 @@ def extract(maker, url, html):
         if not href or href.startswith(("#", "javascript:", "mailto:")): continue
         title = a.get_text(" ", strip=True)
         ctx = a.parent.get_text(" ", strip=True) if a.parent else title
-        if len(title) < 4:  # 「詳細」「PDF」等のリンク文言は親テキストをタイトルに
-            title = ctx[:120]
+        if len(title) < 4 or (len(title) <= 14 and not SUPPLY.search(title) and SUPPLY.search(ctx)):
+            title = ctx[:140]  # 「詳細」「PDF」「医療関係者様向け」等のリンク文言は親テキストをタイトルに
         if len(title) < 6: continue
         if not (KW.search(title) or KW.search(ctx[:200])): continue
         if not STRONG.search(title) and not STRONG.search(ctx[:200]) and not href.lower().endswith(".pdf"): continue
@@ -127,6 +129,9 @@ def extract(maker, url, html):
         d = find_date(a, title)
         if not d: continue  # 日付が取れないもの（メニュー等）は除外
         if d > TODAY: continue
+        dk = (maker, d, title[:60])
+        if dk in seen: continue  # 同日・同タイトル（医療関係者向け/特約店向け 等）は1件に
+        seen.add(dk)
         out.append({"maker": maker, "title": title[:140], "url": absu, "date": d, "src": url})
     return out
 
@@ -148,7 +153,7 @@ def main():
             for it in items:
                 k = it["url"]
                 if k not in state:
-                    it["first_seen"] = it["date"] if (first_run and it["date"]) else TODAY
+                    it["first_seen"] = it["date"] or TODAY
                     state[k] = it; new_cnt += 1
                 else:
                     state[k]["title"] = it["title"]; state[k]["date"] = it["date"] or state[k].get("date", "")
