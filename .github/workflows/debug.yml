@@ -1,0 +1,15 @@
+name: debug
+on: { workflow_dispatch: {} }
+jobs:
+  d:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests beautifulsoup4 playwright && playwright install --with-deps chromium
+      - run: MAKERS_DEBUG=1 python makers.py || true
+      - run: |
+          git config user.name bot; git config user.email bot@users.noreply.github.com
+          git checkout -- . ; git add -f debug makers_log.txt && git commit -m "debug html" && git push

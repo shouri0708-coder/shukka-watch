@@ -47,6 +47,37 @@ def fetch(url):
         except Exception: pass
     return b.decode("utf-8", "replace")
 
+GATE = r"はい|医療関係者(です|の方|用)|医療従事者|同意(する|して)|閲覧する|入る|進む|確認しました|OK|承諾|Yes"
+def fetch_browser(url, wait_ms=3000):
+    """JS描画・確認ゲートのあるページを Playwright で取得"""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA["User-Agent"], locale="ja-JP", viewport={"width": 1280, "height": 2000})
+        pg = ctx.new_page()
+        pg.goto(url, wait_until="domcontentloaded", timeout=60000)
+        pg.wait_for_timeout(wait_ms)
+        js = """(re)=>{const r=new RegExp(re);const els=[...document.querySelectorAll('a,button,input[type=button],input[type=submit],label,div[role=button],span[role=button]')];
+                 for(const e of els){const t=(e.innerText||e.value||'').trim();if(t&&t.length<=24&&r.test(t)){e.click();return t;}}return '';}"""
+        for _ in range(3):
+            try: hit = pg.evaluate(js, GATE)
+            except Exception: hit = ""
+            if not hit: break
+            log(f"  gate click: {hit}")
+            pg.wait_for_timeout(2500)
+        if pg.url.split("#")[0] != url.split("#")[0]:
+            try:
+                pg.goto(url, wait_until="domcontentloaded", timeout=60000); pg.wait_for_timeout(wait_ms)
+            except Exception: pass
+        # 「もっと見る」系を数回押して一覧を伸ばす
+        for _ in range(3):
+            try: more = pg.evaluate(js, r"^(もっと見る|さらに表示|More|次へ|すべて表示)$")
+            except Exception: more = ""
+            if not more: break
+            pg.wait_for_timeout(1500)
+        html = pg.content(); b.close()
+    return html
+
 def _ymd(m):
     y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3) or 1)
     return f"{y:04d}{mo:02d}{d:02d}" if 1 <= mo <= 12 and 1 <= d <= 31 else ""
@@ -108,7 +139,10 @@ def main():
     for m in conf:
         if not m.get("enabled", True): continue
         try:
-            html = fetch(m["url"])
+            html = fetch_browser(m["url"]) if m.get("mode") == "browser" else fetch(m["url"])
+            if os.environ.get("MAKERS_DEBUG"):
+                os.makedirs(os.path.join(BASE, "debug"), exist_ok=True)
+                open(os.path.join(BASE, "debug", f"{m['maker']}.html"), "w", encoding="utf-8").write(html)
             items = extract(m["maker"], m["url"], html)
             log(f"{m['maker']}: {len(items)}件")
             for it in items:
