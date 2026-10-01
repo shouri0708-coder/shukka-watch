@@ -4794,5 +4794,148 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "6131001M1118",
+  "name": "アモキシシリンカプセル１２５ｍｇ「日医工」",
+  "maker": "日医工ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "6219001H1129",
+  "name": "サラゾスルファピリジン腸溶錠５００ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "6219001H2117",
+  "name": "サラゾスルファピリジン腸溶錠２５０ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "new",
+  "yj": "1149117F1128",
+  "name": "トアラセット配合錠「オーハラ」",
+  "maker": "大原薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "4490017M1125",
+  "name": "プランルカストカプセル１１２．５ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "2655708N1296",
+  "name": "ビホナゾールクリーム１％「ＹＤ」",
+  "maker": "陽進堂ホールディングス",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "6343439A2020",
+  "name": "ハイゼントラ２０％皮下注２ｇ／１０ｍＬ",
+  "maker": "ＣＳＬベーリング",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "6343439A3027",
+  "name": "ハイゼントラ２０％皮下注４ｇ／２０ｍＬ",
+  "maker": "ＣＳＬベーリング",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "3999411G2040",
+  "name": "オザグレルＮａ点滴静注４０ｍｇシリンジ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "3922400D3136",
+  "name": "グルタチオン注射用２００ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "3327401A4290",
+  "name": "トラネキサム酸注射液１０００ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "3334402P1056",
+  "name": "ヘパリンＮａ透析用２００単位／ｍＬシリンジ２０ｍＬ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261001",
+  "type": "resolved",
+  "yj": "2399401A1156",
+  "name": "メトクロプラミド注１０ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
