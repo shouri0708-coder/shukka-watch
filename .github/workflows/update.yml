@@ -1,7 +1,7 @@
 name: update
 on:
   schedule:
-    - cron: "0 0,3,6,9 * * 1-5"   # UTC → JST 9,12,15,18時（平日）
+    - cron: "23 23,1,3,5,7,9,11,13 * * *"   # UTC → JST 8:23,10:23,…,22:23（毎日。0分は混雑で飛ぶため23分）
   workflow_dispatch:
 jobs:
   update:
