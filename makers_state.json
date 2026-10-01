@@ -8526,5 +8526,29 @@
 "date": "20240101",
 "src": "https://www.santen.co.jp/medical-channel/di/information/",
 "first_seen": "20240101"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261001.pdf": {
+"maker": "丸石製薬",
+"title": "出荷状況一覧表（10月1日現在）",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261001.pdf",
+"date": "20261001",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261001"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/monilac-syrup__genteisyukka_20261001.pdf": {
+"maker": "丸石製薬",
+"title": "モニラック®・シロップ 65％ 限定出荷のお知らせ",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/monilac-syrup__genteisyukka_20261001.pdf",
+"date": "20261001",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261001"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/macrogol4000__genteisyukka_20261001.pdf": {
+"maker": "丸石製薬",
+"title": "マクロゴール4000 限定出荷のお知らせ",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/macrogol4000__genteisyukka_20261001.pdf",
+"date": "20261001",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261001"
 }
 }
