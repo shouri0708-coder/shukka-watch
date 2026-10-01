@@ -48,7 +48,7 @@ def fetch(url):
     return b.decode("utf-8", "replace")
 
 GATE = r"はい|医療関係者(です|の方|用)|医療従事者|同意(する|して)|閲覧する|入る|進む|確認しました|OK|承諾|Yes"
-def fetch_browser(url, wait_ms=3000):
+def fetch_browser(url, wait_ms=3000, gate=None):
     """JS描画・確認ゲートのあるページを Playwright で取得"""
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
@@ -60,7 +60,7 @@ def fetch_browser(url, wait_ms=3000):
         js = """(re)=>{const r=new RegExp(re);const els=[...document.querySelectorAll('a,button,input[type=button],input[type=submit],label,div[role=button],span[role=button]')];
                  for(const e of els){const t=(e.innerText||e.value||'').trim();if(t&&t.length<=24&&r.test(t)){e.click();return t;}}return '';}"""
         for _ in range(3):
-            try: hit = pg.evaluate(js, GATE)
+            try: hit = pg.evaluate(js, gate or GATE)
             except Exception: hit = ""
             if not hit: break
             log(f"  gate click: {hit}")
@@ -139,7 +139,7 @@ def main():
     for m in conf:
         if not m.get("enabled", True): continue
         try:
-            html = fetch_browser(m["url"]) if m.get("mode") == "browser" else fetch(m["url"])
+            html = fetch_browser(m["url"], gate=m.get("gate")) if m.get("mode") == "browser" else fetch(m["url"])
             if os.environ.get("MAKERS_DEBUG"):
                 os.makedirs(os.path.join(BASE, "debug"), exist_ok=True)
                 open(os.path.join(BASE, "debug", f"{m['maker']}.html"), "w", encoding="utf-8").write(html)

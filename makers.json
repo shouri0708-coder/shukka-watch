@@ -7,7 +7,8 @@
   "maker": "東和薬品",
   "url": "https://med.towayakuhin.co.jp/medical/product/information_supply.php",
   "enabled": true,
-  "mode": "browser"
+  "mode": "browser",
+  "gate": "^薬剤師（薬局）$"
  },
  {
   "maker": "日医工",
@@ -99,12 +100,12 @@
  },
  {
   "maker": "武田テバ(T'sファーマ)",
-  "url": "https://www.med.ts-pharma.com/di-net/product/news/package/index.html",
+  "url": "https://www.med.ts-pharma.com/di-net/news/sale/index.html",
   "mode": "browser"
  },
  {
   "maker": "サンド",
-  "url": "https://www.sandoz.jp/medical/supply/",
+  "url": "https://www.sandoz.jp/medical/product-notice/?tab=tab2",
   "mode": "browser"
  },
  {
