@@ -1,295 +1,304 @@
 <!DOCTYPE html><html><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' data: 'unsafe-inline' 'unsafe-eval' blob: rtmp: rtp: fonts.google.com fonts.googleapis.com fonts.gstatic.com tagmanager.google.com www.googletagmanager.com/a www.googletagmanager.com/debug/ www.googletagmanager.com/gtm.js www.googletagmanager.com/ns.html www.googletagmanager.com/static/service_worker/ www.googletagmanager.com/td *.analytics.google.com *.google-analytics.com analytics.google.com google-analytics.com stats.g.doubleclick.net www.google.com www.google.com/measurement/conversion www.googletagmanager.com/gtag/ *.privacysandbox.googleadservices.com adservice.google.co.jp adservice.google.com bid.g.doubleclick.net googleads.g.doubleclick.net pagead2.googleadservices.com privacysandbox.googleadservices.com www.google.ar www.google.at www.google.au www.google.be www.google.bg www.google.br www.google.ca www.google.ch www.google.cl www.google.co www.google.co.id www.google.co.il www.google.co.jp www.google.co.jp/.well-known/private-click-measurement/trigger-attribution/ www.google.co.ke www.google.co.kr www.google.co.nz www.google.co.za www.google.com.ar www.google.com.au www.google.com.br www.google.com.co www.google.com.mx www.google.com.my www.google.com.ng www.google.com.pe www.google.com.ph www.google.com.sg www.google.com.tw www.google.com.ua www.google.com/.well-known/private-click-measurement/trigger-attribution/ www.google.cz www.google.de www.google.dk www.google.es www.google.fi www.google.fr www.google.gr www.google.hr www.google.hu www.google.id www.google.ie www.google.il www.google.it www.google.ke www.google.kr www.google.lt www.google.lv www.google.mx www.google.my www.google.ng www.google.nl www.google.no www.google.nz www.google.pe www.google.ph www.google.pl www.google.ro www.google.rs www.google.se www.google.sg www.google.tw www.google.ua www.google.uk www.google.za www.googleadservices.com *.c.2mdn.net ad-apac.doubleclick.net ad.doubleclick.net c.2mdn.net gcdn.2mdn.net googleads4.g.doubleclick.net s0.2mdn.net s1.2mdn.net static.doubleclick.net td.doubleclick.net www.googletagmanager.com cdn.jquerytools.org cdnjs.cloudflare.com code.jquery.com *.googlevideo.com gdata.youtube.com googlevideo.com i.ytimg.com img.youtube.com jnn-pa.googleapis.com s.youtube.com s.ytimg.com www.youtube-nocookie.com www.youtube.com youtube.com yt3.ggpht.com ajax.googleapis.com apis.google.com apis.google.com/js/client.js chart.apis.google.com imasdk.googleapis.com csi.gstatic.com khms0.googleapis.com khms1.googleapis.com lh3.ggpht.com maps-api-ssl.google.com maps.google.co.jp maps.google.com maps.googleapis.com maps.gstatic.com mapsengine.google.com mt.googleapis.com unpkg.com app-as.readspeaker.com app-eas.readspeaker.com cdn-eas.readspeaker.com cdn1.readspeaker.com f1-as.readspeaker.com f1-na.readspeaker.com f1.as.readspeaker.com media-eas.readspeaker.com vttts-eas.readspeaker.com *.cmp-origin.datasign.co *.webtru.io as.datasign.co cmp-origin.datasign.co cmp.datasign.co cmp.webtru.cloud-circus.com csp.datasign.co fe.datasign.co log.cmp.datasign.co static.cmp.datasign.co webtru.io *.fontawesome.com fontawesome.com a.o2u.jp cdn.o2u.jp development-a.o2u.jp *.clarity.ms c.bing.com clarity.ms cdn.jsdelivr.net file.towayakuhin.co.jp file-test.towayakuhin.co.jp http://file-test.towayakuhin.co.jp http://file.towayakuhin.co.jp yubinbango.github.io https://file.towayakuhin.co.jp www.towayakuhin.co.jp med.towayakuhin.co.jp a4b7f3a528.cmp-origin.datasign.co;connect-src 'self' data: 'unsafe-inline' 'unsafe-eval' blob: rtmp: rtp: ws: wss: fonts.google.com fonts.googleapis.com fonts.gstatic.com tagmanager.google.com www.googletagmanager.com/a www.googletagmanager.com/debug/ www.googletagmanager.com/gtm.js www.googletagmanager.com/ns.html www.googletagmanager.com/static/service_worker/ www.googletagmanager.com/td *.analytics.google.com *.google-analytics.com analytics.google.com google-analytics.com stats.g.doubleclick.net www.google.com www.google.com/measurement/conversion www.googletagmanager.com/gtag/ *.privacysandbox.googleadservices.com adservice.google.co.jp adservice.google.com bid.g.doubleclick.net googleads.g.doubleclick.net pagead2.googleadservices.com privacysandbox.googleadservices.com www.google.ar www.google.at www.google.au www.google.be www.google.bg www.google.br www.google.ca www.google.ch www.google.cl www.google.co www.google.co.id www.google.co.il www.google.co.jp www.google.co.jp/.well-known/private-click-measurement/trigger-attribution/ www.google.co.ke www.google.co.kr www.google.co.nz www.google.co.za www.google.com.ar www.google.com.au www.google.com.br www.google.com.co www.google.com.mx www.google.com.my www.google.com.ng www.google.com.pe www.google.com.ph www.google.com.sg www.google.com.tw www.google.com.ua www.google.com/.well-known/private-click-measurement/trigger-attribution/ www.google.cz www.google.de www.google.dk www.google.es www.google.fi www.google.fr www.google.gr www.google.hr www.google.hu www.google.id www.google.ie www.google.il www.google.it www.google.ke www.google.kr www.google.lt www.google.lv www.google.mx www.google.my www.google.ng www.google.nl www.google.no www.google.nz www.google.pe www.google.ph www.google.pl www.google.ro www.google.rs www.google.se www.google.sg www.google.tw www.google.ua www.google.uk www.google.za www.googleadservices.com *.c.2mdn.net ad-apac.doubleclick.net ad.doubleclick.net c.2mdn.net gcdn.2mdn.net googleads4.g.doubleclick.net s0.2mdn.net s1.2mdn.net static.doubleclick.net td.doubleclick.net www.googletagmanager.com cdn.jquerytools.org cdnjs.cloudflare.com code.jquery.com *.googlevideo.com gdata.youtube.com googlevideo.com i.ytimg.com img.youtube.com jnn-pa.googleapis.com s.youtube.com s.ytimg.com www.youtube-nocookie.com www.youtube.com youtube.com yt3.ggpht.com ajax.googleapis.com apis.google.com apis.google.com/js/client.js chart.apis.google.com imasdk.googleapis.com csi.gstatic.com khms0.googleapis.com khms1.googleapis.com lh3.ggpht.com maps-api-ssl.google.com maps.google.co.jp maps.google.com maps.googleapis.com maps.gstatic.com mapsengine.google.com mt.googleapis.com unpkg.com app-as.readspeaker.com app-eas.readspeaker.com cdn-eas.readspeaker.com cdn1.readspeaker.com f1-as.readspeaker.com f1-na.readspeaker.com f1.as.readspeaker.com media-eas.readspeaker.com vttts-eas.readspeaker.com *.cmp-origin.datasign.co *.webtru.io as.datasign.co cmp-origin.datasign.co cmp.datasign.co cmp.webtru.cloud-circus.com csp.datasign.co fe.datasign.co log.cmp.datasign.co static.cmp.datasign.co webtru.io *.fontawesome.com fontawesome.com a.o2u.jp cdn.o2u.jp development-a.o2u.jp *.clarity.ms c.bing.com clarity.ms cdn.jsdelivr.net file.towayakuhin.co.jp file-test.towayakuhin.co.jp http://file-test.towayakuhin.co.jp http://file.towayakuhin.co.jp yubinbango.github.io https://file.towayakuhin.co.jp www.towayakuhin.co.jp med.towayakuhin.co.jp a4b7f3a528.cmp-origin.datasign.co;style-src 'self' data: 'unsafe-inline' 'unsafe-eval' blob: rtmp: rtp: fonts.google.com fonts.googleapis.com fonts.gstatic.com tagmanager.google.com www.googletagmanager.com/a www.googletagmanager.com/debug/ www.googletagmanager.com/gtm.js www.googletagmanager.com/ns.html www.googletagmanager.com/static/service_worker/ www.googletagmanager.com/td *.analytics.google.com *.google-analytics.com analytics.google.com google-analytics.com stats.g.doubleclick.net www.google.com www.google.com/measurement/conversion www.googletagmanager.com/gtag/ *.privacysandbox.googleadservices.com adservice.google.co.jp adservice.google.com bid.g.doubleclick.net googleads.g.doubleclick.net pagead2.googleadservices.com privacysandbox.googleadservices.com www.google.ar www.google.at www.google.au www.google.be www.google.bg www.google.br www.google.ca www.google.ch www.google.cl www.google.co www.google.co.id www.google.co.il www.google.co.jp www.google.co.jp/.well-known/private-click-measurement/trigger-attribution/ www.google.co.ke www.google.co.kr www.google.co.nz www.google.co.za www.google.com.ar www.google.com.au www.google.com.br www.google.com.co www.google.com.mx www.google.com.my www.google.com.ng www.google.com.pe www.google.com.ph www.google.com.sg www.google.com.tw www.google.com.ua www.google.com/.well-known/private-click-measurement/trigger-attribution/ www.google.cz www.google.de www.google.dk www.google.es www.google.fi www.google.fr www.google.gr www.google.hr www.google.hu www.google.id www.google.ie www.google.il www.google.it www.google.ke www.google.kr www.google.lt www.google.lv www.google.mx www.google.my www.google.ng www.google.nl www.google.no www.google.nz www.google.pe www.google.ph www.google.pl www.google.ro www.google.rs www.google.se www.google.sg www.google.tw www.google.ua www.google.uk www.google.za www.googleadservices.com *.c.2mdn.net ad-apac.doubleclick.net ad.doubleclick.net c.2mdn.net gcdn.2mdn.net googleads4.g.doubleclick.net s0.2mdn.net s1.2mdn.net static.doubleclick.net td.doubleclick.net www.googletagmanager.com cdn.jquerytools.org cdnjs.cloudflare.com code.jquery.com *.googlevideo.com gdata.youtube.com googlevideo.com i.ytimg.com img.youtube.com jnn-pa.googleapis.com s.youtube.com s.ytimg.com www.youtube-nocookie.com www.youtube.com youtube.com yt3.ggpht.com ajax.googleapis.com apis.google.com apis.google.com/js/client.js chart.apis.google.com imasdk.googleapis.com csi.gstatic.com khms0.googleapis.com khms1.googleapis.com lh3.ggpht.com maps-api-ssl.google.com maps.google.co.jp maps.google.com maps.googleapis.com maps.gstatic.com mapsengine.google.com mt.googleapis.com unpkg.com app-as.readspeaker.com app-eas.readspeaker.com cdn-eas.readspeaker.com cdn1.readspeaker.com f1-as.readspeaker.com f1-na.readspeaker.com f1.as.readspeaker.com media-eas.readspeaker.com vttts-eas.readspeaker.com *.cmp-origin.datasign.co *.webtru.io as.datasign.co cmp-origin.datasign.co cmp.datasign.co cmp.webtru.cloud-circus.com csp.datasign.co fe.datasign.co log.cmp.datasign.co static.cmp.datasign.co webtru.io *.fontawesome.com fontawesome.com a.o2u.jp cdn.o2u.jp development-a.o2u.jp *.clarity.ms c.bing.com clarity.ms cdn.jsdelivr.net file.towayakuhin.co.jp file-test.towayakuhin.co.jp http://file-test.towayakuhin.co.jp http://file.towayakuhin.co.jp yubinbango.github.io https://file.towayakuhin.co.jp www.towayakuhin.co.jp med.towayakuhin.co.jp a4b7f3a528.cmp-origin.datasign.co;">
-    <!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script async="" src="https://scripts.clarity.ms/0.8.70/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/byneo4hqvg"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-TFNLR3RFRY&amp;cx=c&amp;gtm=4e69t1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-2QBV6CK6NC&amp;cx=c&amp;gtm=4e69t1"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-3EBQNQZRTY&amp;cx=c&amp;gtm=4e69t1"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KHZBFN6"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KHZBFN6');</script>
-    <!-- End Google Tag Manager -->
-    <meta charset="utf-8">
-    <title>職種選択 | 東和薬品</title>
-    <script src="/common/assets/js/dynamicViewport.js"></script>
-    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-    <meta name="description" content="ジェネリック医薬品を提供する東和薬品株式会社の医療関係者向け総合情報サイトです。医療関係者の皆様を対象に東和薬品の製品や取り組みをご紹介しています。">
-    <meta property="og:title" content="職種選択 | 東和薬品">
-    <meta property="og:description" content="ジェネリック医薬品を提供する東和薬品株式会社の医療関係者向け総合情報サイトです。医療関係者の皆様を対象に東和薬品の製品や取り組みをご紹介しています。">
-    <meta property="og:url" content="https://med.towayakuhin.co.jp/medical/job_selector">
-    <meta property="og:image" content="https://med.towayakuhin.co.jp/common/assets/images/ogimage.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="_section" content="medical">
-    <link rel="canonical" href="https://med.towayakuhin.co.jp/medical/job_selector">
-    <link rel="stylesheet" type="text/css" href="/common/assets/css/common.css">
-
-            <link rel="icon" sizes="16x16" href="/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="/medical/assets/css/local.css">
-            
-    <meta name="robots" content="noindex">
-    <link rel="stylesheet" type="text/css" href="/common/assets/lib/slick/slick.css">
-<script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/686836141/?random=1790821692755&amp;cv=11&amp;fst=1790821692755&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be69t1za200xecxf1&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=115616985~115938465~115938468~118012009~118897920~118897930~120213116~120385422~120469145~120469153~121246027~121246035&amp;u_w=1280&amp;u_h=2000&amp;url=https%3A%2F%2Fmed.towayakuhin.co.jp%2Fmedical%2Fjob_selector&amp;rcb=8&amp;frm=0&amp;tiba=%E8%81%B7%E7%A8%AE%E9%81%B8%E6%8A%9E%20%7C%20%E6%9D%B1%E5%92%8C%E8%96%AC%E5%93%81&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=206411241.1790821689&amp;uaa=x86&amp;uab=64&amp;uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;ept=9&amp;rfmt=3&amp;fmt=4"></script><script src="https://static.cmp.datasign.co/v2/assets/cmp_ui.js?h=a4b7f3a528" data-folder-hash="a4b7f3a528" data-has-multiple-domains="true" data-vertical-value="undefined" data-desktop-vertical-value="undefined" data-horizon-value="undefined" data-desktop-horizon-value="undefined" data-vertical-position="undefined" data-hide-icon="false" data-theme-color="#03A000" data-gtm-integration="false" data-clarity-integration="false" data-display-mode="OptOutMode" data-deniable-consent-mode="false" data-opt-out-mode-without-dialog="false" data-opt-out-configure-all="false" data-i18n-is-customized="true" data-trans-json-url="https://static.cmp.datasign.co/v2/{{path}}/translation.json" data-cmpjs-script-src="https://cmp.datasign.co/v2/a4b7f3a528/cmp.js" data-applicable-law="CPRA" data-font-size-inherit-body="false" data-embed-disclosure-mode="false" data-dialog-reopen-timestamp="null" data-dialog-focus-trap="false" data-external-services-json-url="https://static.cmp.datasign.co/v2/a4b7f3a528/external_services.json" data-cookies-json-url="https://static.cmp.datasign.co/v2/a4b7f3a528/cookies.json" data-is-g-p-c="false" data-show-powered-by="false" data-custom-text-rules="{}" data-privacy-policy-url="https://www.towayakuhin.co.jp/cookie/" data-privacy-policy-urls="{&quot;en&quot;: &quot;https://www.towayakuhin.co.jp/english/cookie/&quot;}" data-logo-url="https://www.towayakuhin.co.jp/common/img/logo.png" data-logo-alt="東和薬品" data-position="left" data-color="light" data-cpra-settings="{&quot;isEnabled&quot;:true}"></script></head>
-
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHZBFN6');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<title>供給情報 | 東和薬品</title>
+<script src="/common/assets/js/dynamicViewport.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="東和薬品の医療関係者向けサイト。供給状況に関するお知らせを随時更新しています。限定出荷・通常出荷対象製品一覧をご覧いただけます。">
+<meta property="og:title" content="供給情報 | 東和薬品">
+<meta property="og:description" content="東和薬品の医療関係者向けサイト。供給状況に関するお知らせを随時更新しています。限定出荷・通常出荷対象製品一覧をご覧いただけます。">
+<meta property="og:url" content="http://med.towayakuhin.co.jp/medical/product/information_supply.php">
+<meta property="og:image" content="http://med.towayakuhin.co.jp/common/assets/images/ogimage.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="http://med.towayakuhin.co.jp/medical/product/information_supply.php">
+<link rel="stylesheet" type="text/css" href="/common/assets/css/common.css">
+<link rel="stylesheet" type="text/css" href="/medical/assets/css/local.css">
+<meta property="ctg" content="/med"><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/686836141/?random=1790823117313&amp;cv=11&amp;fst=1790823117313&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be69t1z8d_AW-686836141za208xecxf1&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=115938465~115938468~118897920~118897930~120213116~120385423~120469145~120469153~121280971&amp;u_w=1280&amp;u_h=2000&amp;url=https%3A%2F%2Fmed.towayakuhin.co.jp%2Fmedical%2Fproduct%2Finformation_supply.php&amp;ref=https%3A%2F%2Fmed.towayakuhin.co.jp%2Fmedical%2Fjob_selector&amp;rcb=10&amp;frm=0&amp;tiba=%E4%BE%9B%E7%B5%A6%E6%83%85%E5%A0%B1%20%7C%20%E6%9D%B1%E5%92%8C%E8%96%AC%E5%93%81&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=446530532.1790823113&amp;uaa=x86&amp;uab=64&amp;uafvl=HeadlessChrome%3B153.0.8010.12%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.12&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;ept=9&amp;rfmt=3&amp;fmt=4"></script><script src="https://static.cmp.datasign.co/v2/assets/cmp_ui.js?h=a4b7f3a528" data-folder-hash="a4b7f3a528" data-has-multiple-domains="true" data-vertical-value="undefined" data-desktop-vertical-value="undefined" data-horizon-value="undefined" data-desktop-horizon-value="undefined" data-vertical-position="undefined" data-hide-icon="false" data-theme-color="#03A000" data-gtm-integration="false" data-clarity-integration="false" data-display-mode="OptOutMode" data-deniable-consent-mode="false" data-opt-out-mode-without-dialog="false" data-opt-out-configure-all="false" data-i18n-is-customized="true" data-trans-json-url="https://static.cmp.datasign.co/v2/{{path}}/translation.json" data-cmpjs-script-src="https://cmp.datasign.co/v2/a4b7f3a528/cmp.js" data-applicable-law="CPRA" data-font-size-inherit-body="false" data-embed-disclosure-mode="false" data-dialog-reopen-timestamp="null" data-dialog-focus-trap="false" data-external-services-json-url="https://static.cmp.datasign.co/v2/a4b7f3a528/external_services.json" data-cookies-json-url="https://static.cmp.datasign.co/v2/a4b7f3a528/cookies.json" data-is-g-p-c="false" data-show-powered-by="false" data-custom-text-rules="{}" data-privacy-policy-url="https://www.towayakuhin.co.jp/cookie/" data-privacy-policy-urls="{&quot;en&quot;: &quot;https://www.towayakuhin.co.jp/english/cookie/&quot;}" data-logo-url="https://www.towayakuhin.co.jp/common/img/logo.png" data-logo-alt="東和薬品" data-position="left" data-color="light" data-cpra-settings="{&quot;isEnabled&quot;:true}"></script></head>
 <body class="isPC"><div id="datasign_cmp__host" data-nosnippet=""></div>
-    <!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHZBFN6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="wrapper" id="pageTop">
-    <div class="siteHeader">
-        <header>
-            <div id="siteID">
-                
-                <a href="/medical">
-                    <img src="/common/assets/images/logo.png" alt="東和薬品">
-                    <b>医療関係者向けサイト</b>
-                                    </a>
-                
-            </div>
-            <div class="toggle"><span><i>MENU</i></span></div>
-            <div class="toggled">
-                <nav class="globalNav">
-                    <ul>
-                        <li class="homeLink"><a href="https://med.towayakuhin.co.jp/medical">TOPページ</a></li>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/product">製品情報</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/product">製品情報TOP</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/new.php">新製品情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/search.php">製品情報一覧</a></li>
-                                <li><a href="/medical/product/rivaluen/">リバルエン®LAパッチ情報サイト</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/info.php">お知らせ一覧</a></li>
-                                <li><a href="/medical/product/information_supply.php">供給情報</a></li>
-                                <li><a href="/medical/product/supply_system.php">後発品の安定供給に関連する情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/search_uselimit.php">使用期限検索</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_efficacy.php">適応不一致品目一覧</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_transitional.php">販売中止品目一覧</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_download.php">資料一括ダウンロード</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/m_product_login.php">医療用麻薬情報（会員限定）</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://med.towayakuhin.co.jp/medical/product/patients_doc.php">資材一覧 / 請求</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/ouraction">東和品質の製品づくり</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/ouraction">東和品質の製品づくりTOP</a></li>
-                                <li><a href="/medical/ouraction/about.php">原薬</a></li>
-                                <li><a href="/medical/ouraction/product.php">製品開発</a></li>
-                                <li><a href="/medical/ouraction/quality.php">製造管理・品質管理</a></li>
-                                <li><a href="/medical/ouraction/availability.php">安定供給</a></li>
-                                <li><a href="/medical/ouraction/production.php">情報提供・収集</a></li>
-                                <li><a href="/medical/ouraction/research.php">研究活動</a></li>
-                                <li><a href="/medical/ouraction/authorized.php">東和薬品のオーソライズド・ジェネリック</a></li>
-                                <li><a href="/medical/ouraction/eldecalcitol.php">東和薬品のエディロール錠</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/ingenuity">製剤工夫</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/ingenuity">製剤工夫TOP</a></li>
-                                <li><a href="/medical/ingenuity/innovation.php">東和薬品の技術イノベーション</a></li>
-                                <li><a href="/medical/ingenuity/ractab.php">東和薬品のOD錠/RACTAB</a></li>
-                                <li><a href="/medical/ingenuity/addition.php">剤形・規格の追加</a></li>
-                                <li><a href="/medical/ingenuity/miniaturize.php">製剤の大きさへの工夫</a></li>
-                                <li><a href="/medical/ingenuity/scored.php">割線の付与</a></li>
-                                <li><a href="/medical/ingenuity/imprint.php">製剤への製品名印刷</a></li>
-                                <li><a href="/medical/ingenuity/drinkingease.php">苦みと風味への工夫</a></li>
-                                <li><a href="/medical/ingenuity/stability.php">安定な製剤の開発</a></li>
-                                <li><a href="/medical/ingenuity/extension.php">有効期間の延長</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/ingenuity/packaging.php">包装の工夫</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/useful">お役立ち情報</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/useful">お役立ち情報TOP</a></li>
-                                <li><a href="/medical/useful/admininfo.php">医療行政情報</a></li>
-                                <li><a href="/medical/useful/journal.php">医療関係者向け情報誌</a></li>
-                                <li><a href="/medical/useful/seminar.php">学会・セミナー共催情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/useful/sagaku.php">薬剤費患者負担比較</a></li>
-                                <li><a href="/medical/useful/tdm.php">TDMソフトウェア</a></li>
-                                <li><a href="/medical/useful/mail.php">メール配信サービス</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="siteFunction">
-                    <ul>
-                        <li><a href="https://www.towayakuhin.co.jp/" target="_blank" class="cp">東和薬品コーポレートサイト</a></li>
-                        <li><a href="https://www.towayakuhin.co.jp/inquiry/medical_inquiry.php" target="_blank" class="contact">お問い合わせ</a></li>
-                        <li><a href="/medical/location.php" class="location">営業拠点</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-    </div>
-    <main class="pageBody isIndex" role="main">
-    </main>
-    <div class="siteFooter">
-    <footer>
-                    <div class="conversion">
-                <dl class="contact product">
-                    <dt><b>医療関係者専用</b>製品に関するお問い合わせ</dt>
-                    <dd class="phone">
-                        <span class="label">学術部<br>DIセンター</span><a class="phoneLink" href="tel:0120-108-932">0120-108-932</a>
-                        <p>平日8時30分～18時30分<small>（土日、祝日、その他弊社の休業日を除きます。）</small></p>
-                    </dd>
-                    <dd class="btn"><a href="https://www.towayakuhin.co.jp/inquiry/medical/" target="_blank" class="btn rev link">フォームでのお問い合わせはこちら</a></dd>
-                </dl>
-                <dl class="contact sales">
-                <dt>営業拠点・販売の<br class="pcBr">お問い合わせ</dt>
-                    <dd>全国の営業拠点の所在地 <br class="pcBr"> 販売お問い合わせ先はこちら</dd>
-                    <dd class="btn"><a href="/medical/location.php" class="btn rev link">営業拠点一覧</a></dd>
-                </dl>
-                <div class="info">
-                    <a href="/medical/product/supply_system.php">
-                        <dl>
-                            <dt>後発品の安定供給に関連する情報</dt>
-                            <dd>「後発品の安定供給に関連する情報の公表等に関するガイドライン」に準拠した情報を公開しております。</dd>
-                        </dl>
-                    </a>
-                    <a href="/medical/useful/mail.php">
-                        <dl>
-                            <dt>医療関係者向けメール配信サービス</dt>
-                            <dd>弊社製品等に関するウェブサイト更新情報をメールにてお知らせいたします。</dd>
-                        </dl>
-                    </a>
-                </div>
-            </div>
+<div class="siteHeader">
+<header>
+<div id="siteID"><a href="/medical/"><img src="/common/assets/images/logo.png" alt="東和薬品"><b>医療関係者向けサイト</b></a></div>
+<div class="toggle"><span><i>MENU</i></span></div>
+<div class="toggled">
+<nav class="globalNav">
+<ul>
+<li class="homeLink"><a href="/medical/">TOPページ</a></li>
+<li class="hasChildren"><a href="/medical/product/">製品情報</a>
+<ul>
+<li class="topLink"><a href="/medical/product/">製品情報TOP</a></li>
+<li><a href="/medical/product/new.php">新製品情報</a></li>
+<li><a href="/medical/product/search.php">製品情報一覧</a></li>
+<li><a href="/medical/product/rivaluen/">リバルエン®LAパッチ情報サイト</a></li>
+<li><a href="/medical/product/info.php">お知らせ一覧</a></li>
+<li><a href="/medical/product/information_supply.php">供給情報</a></li>
+<li><a href="/medical/product/supply_system.php">後発品の安定供給に関連する情報</a></li>
+<li><a href="/medical/product/search_uselimit.php">使用期限検索</a></li>
+<li><a href="/medical/product/list_efficacy.php">適応不一致品目一覧</a></li>
+<li><a href="/medical/product/list_transitional.php">販売中止品目一覧</a></li>
+<li><a href="/medical/product/list_download.php">資料一括ダウンロード</a></li>
+<li><a href="/medical/product/m_product_login.php">医療用麻薬情報（会員限定）</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="/medical/product/patients_doc.php">資材一覧 / 請求</a></li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/ouraction/">東和品質の製品づくり</a>
+<ul>
+<li class="topLink"><a href="/medical/ouraction/">東和品質の製品づくりTOP</a></li>
+<li><a href="/medical/ouraction/about.php">原薬</a></li>
+<li><a href="/medical/ouraction/product.php">製品開発</a></li>
+<li><a href="/medical/ouraction/quality.php">製造管理・品質管理</a></li>
+<li><a href="/medical/ouraction/availability.php">安定供給</a></li>
+<li><a href="/medical/ouraction/production.php">情報提供・収集</a></li>
+<li><a href="/medical/ouraction/research.php">研究活動</a></li>
+<li><a href="/medical/ouraction/authorized.php">東和薬品のオーソライズド・ジェネリック</a></li>
+<li><a href="/medical/ouraction/eldecalcitol.php">東和薬品のエディロール錠</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/ingenuity/">製剤工夫</a>
+<ul>
+<li class="topLink"><a href="/medical/ingenuity/">製剤工夫TOP</a></li>
+<li><a href="/medical/ingenuity/innovation.php">東和薬品の技術イノベーション</a></li>
+<li><a href="/medical/ingenuity/ractab.php">東和薬品のOD錠/RACTAB</a></li>
+<li><a href="/medical/ingenuity/addition.php">剤形・規格の追加</a></li>
+<li><a href="/medical/ingenuity/miniaturize.php">製剤の大きさへの工夫</a></li>
+<li><a href="/medical/ingenuity/scored.php">割線の付与</a></li>
+<li><a href="/medical/ingenuity/imprint.php">製剤への製品名印刷</a></li>
+<li><a href="/medical/ingenuity/drinkingease.php">苦みと風味への工夫</a></li>
+<li><a href="/medical/ingenuity/stability.php">安定な製剤の開発</a></li>
+<li><a href="/medical/ingenuity/extension.php">有効期間の延長</a></li>
+<li><a href="/medical/ingenuity/packaging.php">包装の工夫</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/useful/">お役立ち情報</a>
+<ul>
+<li class="topLink"><a href="/medical/useful/">お役立ち情報TOP</a></li>
+<li><a href="/medical/useful/admininfo.php">医療行政情報</a></li>
+<li><a href="/medical/useful/journal.php">医療関係者向け情報誌</a></li>
+<li><a href="/medical/useful/seminar.php">学会・セミナー共催情報</a></li>
+<li><a href="/medical/useful/sagaku.php">薬剤費患者負担比較</a></li>
+<li><a href="/medical/useful/tdm.php">TDMソフトウェア</a></li>
+<li><a href="/medical/useful/mail.php">メール配信サービス</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+<div class="siteFunction">
+<ul>
+<li><a href="https://www.towayakuhin.co.jp/" target="_blank" class="cp">東和薬品コーポレートサイト</a></li>
+<li><a href="https://www.towayakuhin.co.jp/inquiry/medical_inquiry.php" target="_blank" class="contact">お問い合わせ</a></li>
+<li><a href="/medical/location.php" class="location">営業拠点</a></li>
+</ul>
+</div>
+</div>
+</header>
+</div>
+    <nav class="breadcrumbs">
+        <ul>
+            <li><a href="/medical/">TOP</a></li>
+            <li><a href="/medical/product/">製品情報</a></li>
+            <li>供給情報</li>
+        </ul>
+    </nav>
 
-            <div class="siteMap">
-                <div class="lists">
-                    <ul>
-                        <li class="homeLink"><a href="https://med.towayakuhin.co.jp/medical">TOPページ</a></li>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/product">製品情報</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/product">製品情報TOP</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/new.php">新製品情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/search.php">製品情報一覧</a></li>
-                                <li><a href="/medical/product/rivaluen/">リバルエン®LAパッチ情報サイト</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/info.php">お知らせ一覧</a></li>
-                                <li><a href="/medical/product/information_supply.php">供給情報</a></li>
-                                <li><a href="/medical/product/supply_system.php">後発品の安定供給に関連する情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/search_uselimit.php">使用期限検索</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_efficacy.php">適応不一致品目一覧</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_transitional.php">販売中止品目一覧</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/list_download.php">資料一括ダウンロード</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/product/m_product_login.php">医療用麻薬情報（会員限定）</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><a href="https://med.towayakuhin.co.jp/medical/product/patients_doc.php">資材一覧 / 請求</a></li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/ouraction">東和品質の製品づくり</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/ouraction">東和品質の製品づくりTOP</a></li>
-                                <li><a href="/medical/ouraction/about.php">原薬</a></li>
-                                <li><a href="/medical/ouraction/product.php">製品開発</a></li>
-                                <li><a href="/medical/ouraction/quality.php">製造管理・品質管理</a></li>
-                                <li><a href="/medical/ouraction/availability.php">安定供給</a></li>
-                                <li><a href="/medical/ouraction/production.php">情報提供・収集</a></li>
-                                <li><a href="/medical/ouraction/research.php">研究活動</a></li>
-                                <li><a href="/medical/ouraction/authorized.php">東和薬品のオーソライズド・ジェネリック</a></li>
-                                <li><a href="/medical/ouraction/eldecalcitol.php">東和薬品のエディロール錠</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/ingenuity">製剤工夫</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/ingenuity">製剤工夫TOP</a></li>
-                                <li><a href="/medical/ingenuity/innovation.php">東和薬品の技術イノベーション</a></li>
-                                <li><a href="/medical/ingenuity/ractab.php">東和薬品のOD錠/RACTAB</a></li>
-                                <li><a href="/medical/ingenuity/addition.php">剤形・規格の追加</a></li>
-                                <li><a href="/medical/ingenuity/miniaturize.php">製剤の大きさへの工夫</a></li>
-                                <li><a href="/medical/ingenuity/scored.php">割線の付与</a></li>
-                                <li><a href="/medical/ingenuity/imprint.php">製剤への製品名印刷</a></li>
-                                <li><a href="/medical/ingenuity/drinkingease.php">苦みと風味への工夫</a></li>
-                                <li><a href="/medical/ingenuity/stability.php">安定な製剤の開発</a></li>
-                                <li><a href="/medical/ingenuity/extension.php">有効期間の延長</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/ingenuity/packaging.php">包装の工夫</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="hasChildren"><a href="https://med.towayakuhin.co.jp/medical/useful">お役立ち情報</a>
-                            <ul>
-                                <li class="topLink"><a href="https://med.towayakuhin.co.jp/medical/useful">お役立ち情報TOP</a></li>
-                                <li><a href="/medical/useful/admininfo.php">医療行政情報</a></li>
-                                <li><a href="/medical/useful/journal.php">医療関係者向け情報誌</a></li>
-                                <li><a href="/medical/useful/seminar.php">学会・セミナー情報</a></li>
-                                <li><a href="https://med.towayakuhin.co.jp/medical/useful/sagaku.php">薬剤費患者負担比較</a></li>
-                                <li><a href="/medical/useful/tdm.php">TDMソフトウェア</a></li>
-                                <li><a href="/medical/useful/mail.php">メール配信サービス</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li><a href="/medical/product/help.php">ヘルプ</a></li>
-                    </ul>
-                </div>
-            </div>
-                <div class="bottom">
-           <div class="pmark"><img src="/common/assets/images/pmark.png" alt="プライバシーマーク"></div>
-            <ul>
-                <li><a href="https://www.towayakuhin.co.jp/privacy/" target="_blank">個人情報保護方針</a></li>
-                <li><a href="https://www.towayakuhin.co.jp/specific/" target="_blank">特定個人情報取扱方針</a></li>
-                <li><a href="https://www.towayakuhin.co.jp/agreement/" target="_blank">ご利用に際して</a></li>
-                <li><a href="/medical/sitemap.php">サイトマップ</a></li>
-            </ul>
-            <small>© Copyright TOWA PHARMACEUTICAL CO.,LTD. All Rights Reserved.</small>
+    <main role="main" class="pageBody">
+        <div class="regularHeader lv1">
+            <h1>供給情報</h1>
         </div>
-    </footer>
+        <div class="regularHeader lv2">
+            <h2>供給状況に関するお知らせ<br class="spBr">（最新情報に随時更新）</h2>
+        </div>
+        
+        <div class="supplyInfo">
+                                            <h3 class="black">
+                                    全製品供給状況一覧                                </h3>
+                                                        <ul>
+                                <li class="red">
+                                    <a href="https://med.towayakuhin.co.jp/medical/product/fileloader.php?id=80558&amp;t=6" target="_blank" rel="noopener">
+                                        2026年9月30日更新【PDF】<br>
+                                            <i class="icn file pdf">PDF</i>
+                                                                            </a>
+                                </li>
+                            </ul>
+                                                <ul>
+                                <li class="red">
+                                    <a href="https://med.towayakuhin.co.jp/medical/product/fileloader.php?id=80563&amp;t=6" target="_blank" rel="noopener">
+                                        2026年9月30日更新【Excel】                                            <i class="icn file xls">XLS</i>
+                                                                            </a>
+                                </li>
+                            </ul>
+                                                        <h3 class="general">その他のお知らせ</h3>
+                                                    <ul>
+                                <li class="black">
+                                    <a href="/medical/product/fileloader.php?id=74190&amp;t=4" target="_blank" rel="noopener">
+                                        2022年3月14日<br>
+訂正のお知らせ<br>
+『「医療用医薬品の供給不足に係る対応について」の別添１に係る医薬品の供給状況の調査結果について』<br>
+に関する訂正のお知らせ                                            <i class="icn file pdf">PDF</i>
+                                                                            </a>
+                                </li>
+                            </ul>
+                                                <ul>
+                                <li class="black">
+                                    <a href="/cms_assets/info20210914.pdf" target="_blank" rel="noopener">
+                                        2021年9月14日<br>
+患者さん向け<br>
+「トーワ」製品を服用されている患者さんとそのご家族の皆様へ　弊社製品の供給に関するお知らせ                                            <i class="icn file pdf">PDF</i>
+                                                                            </a>
+                                </li>
+                            </ul>
+                                        </div>
+    </main>
+<div class="siteFooter">
+<footer>
+<div class="conversion">
+<dl class="contact product">
+<dt><b>医療関係者専用</b>製品に関するお問い合わせ</dt>
+<dd class="phone">
+<span class="label">学術部<br>DIセンター</span><a class="phoneLink" href="tel:0120-108-932">0120-108-932</a>
+<p>平日8時30分～18時30分<small>（土日、祝日、その他弊社の休業日を除きます。）</small></p>
+</dd>
+<dd class="btn"><a href="https://www.towayakuhin.co.jp/inquiry/medical/" target="_blank" class="btn rev link">フォームでのお問い合わせはこちら</a></dd>
+</dl>
+<dl class="contact sales">
+<dt>営業拠点・販売の<br class="pcBr">お問い合わせ</dt>
+<dd>全国の営業拠点の所在地 <br class="pcBr"> 販売お問い合わせ先はこちら</dd>
+<dd class="btn"><a href="/medical/location.php" class="btn rev link">営業拠点一覧</a></dd>
+</dl>
+<div class="info">
+<a href="/medical/product/supply_system.php">
+<dl>
+<dt>後発品の安定供給に関連する情報</dt>
+<dd>「後発品の安定供給に関連する情報の公表等に関するガイドライン」に準拠した情報を公開しております。</dd>
+</dl>
+</a>
+<a href="/medical/useful/mail.php">
+<dl>
+<dt>医療関係者向けメール配信サービス</dt>
+<dd>弊社製品等に関するウェブサイト更新情報をメールにてお知らせいたします。</dd>
+</dl>
+</a>
+</div>
+</div>
+
+<div class="siteMap">
+<div class="lists">
+<ul>
+<li class="homeLink"><a href="/medical/">TOPページ</a></li>
+<li class="hasChildren"><a href="/medical/product/">製品情報</a>
+<ul>
+<li class="topLink"><a href="/medical/product/">製品情報TOP</a></li>
+<li><a href="/medical/product/new.php">新製品情報</a></li>
+<li><a href="/medical/product/search.php">製品情報一覧</a></li>
+<li><a href="/medical/product/rivaluen/">リバルエン®LAパッチ情報サイト</a></li>
+<li><a href="/medical/product/info.php">お知らせ一覧</a></li>
+<li><a href="/medical/product/information_supply.php">供給情報</a></li>
+<li><a href="/medical/product/supply_system.php">後発品の安定供給に関連する情報</a></li>
+<li><a href="/medical/product/search_uselimit.php">使用期限検索</a></li>
+<li><a href="/medical/product/list_efficacy.php">適応不一致品目一覧</a></li>
+<li><a href="/medical/product/list_transitional.php">販売中止品目一覧</a></li>
+<li><a href="/medical/product/list_download.php">資料一括ダウンロード</a></li>
+<li><a href="/medical/product/m_product_login.php">医療用麻薬情報（会員限定）</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="/medical/product/patients_doc.php">資材一覧 / 請求</a></li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/ouraction/">東和品質の製品づくり</a>
+<ul>
+<li class="topLink"><a href="/medical/ouraction/">東和品質の製品づくりTOP</a></li>
+<li><a href="/medical/ouraction/about.php">原薬</a></li>
+<li><a href="/medical/ouraction/product.php">製品開発</a></li>
+<li><a href="/medical/ouraction/quality.php">製造管理・品質管理</a></li>
+<li><a href="/medical/ouraction/availability.php">安定供給</a></li>
+<li><a href="/medical/ouraction/production.php">情報提供・収集</a></li>
+<li><a href="/medical/ouraction/research.php">研究活動</a></li>
+<li><a href="/medical/ouraction/authorized.php">東和薬品のオーソライズド・ジェネリック</a></li>
+<li><a href="/medical/ouraction/eldecalcitol.php">東和薬品のエディロール錠</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/ingenuity/">製剤工夫</a>
+<ul>
+<li class="topLink"><a href="/medical/ingenuity/">製剤工夫TOP</a></li>
+<li><a href="/medical/ingenuity/innovation.php">東和薬品の技術イノベーション</a></li>
+<li><a href="/medical/ingenuity/ractab.php">東和薬品のOD錠/RACTAB</a></li>
+<li><a href="/medical/ingenuity/addition.php">剤形・規格の追加</a></li>
+<li><a href="/medical/ingenuity/miniaturize.php">製剤の大きさへの工夫</a></li>
+<li><a href="/medical/ingenuity/scored.php">割線の付与</a></li>
+<li><a href="/medical/ingenuity/imprint.php">製剤への製品名印刷</a></li>
+<li><a href="/medical/ingenuity/drinkingease.php">苦みと風味への工夫</a></li>
+<li><a href="/medical/ingenuity/stability.php">安定な製剤の開発</a></li>
+<li><a href="/medical/ingenuity/extension.php">有効期間の延長</a></li>
+<li><a href="/medical/ingenuity/packaging.php">包装の工夫</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="hasChildren"><a href="/medical/useful/">お役立ち情報</a>
+<ul>
+<li class="topLink"><a href="/medical/useful/">お役立ち情報TOP</a></li>
+<li><a href="/medical/useful/admininfo.php">医療行政情報</a></li>
+<li><a href="/medical/useful/journal.php">医療関係者向け情報誌</a></li>
+<li><a href="/medical/useful/seminar.php">学会・セミナー情報</a></li>
+<li><a href="/medical/useful/sagaku.php">薬剤費患者負担比較</a></li>
+<li><a href="/medical/useful/tdm.php">TDMソフトウェア</a></li>
+<li><a href="/medical/useful/mail.php">メール配信サービス</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="/medical/product/help.php">ヘルプ</a></li>
+</ul>
+</div>
+</div>
+<div class="bottom">
+<div class="pmark"><img src="/common/assets/images/pmark.png" alt="プライバシーマーク"></div>
+<ul>
+<li><a href="https://www.towayakuhin.co.jp/privacy/" target="_blank">個人情報保護方針</a></li>
+<li><a href="https://www.towayakuhin.co.jp/specific/" target="_blank">特定個人情報取扱方針</a></li>
+<li><a href="https://www.towayakuhin.co.jp/agreement/" target="_blank">ご利用に際して</a></li>
+<li><a href="/medical/sitemap.php">サイトマップ</a></li>
+</ul>
+<small>© Copyright TOWA PHARMACEUTICAL CO.,LTD. All Rights Reserved.</small>
+</div>
+</footer>
 </div>
 <div class="scroller">
-    <div class="up"></div>
-    <div class="down"></div>
+<div class="up"></div>
+<div class="down"></div>
 </div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script src="/common/assets/lib/slick/slick.min.js"></script>
-<script src="/common/assets/js/script.js"></script>	<div class="confirmModal" id="medicalconfirm">
-    <div class="confirm">
-        <header>
-            <img src="/common/assets/images/logo.png" width="180" height="36" alt="東和薬品"> 医療関係者向けサイト
-        </header>
-        <p>このWebサイトは、弊社医療用医薬品を適正にご使用いただくため、国内の医療関係者の方を対象に情報を提供しています。<br>
-            一般の方に対する情報提供を目的としたものではないことをご了承ください。</p>
-        <div class="selector">
-            <p>医療関係者の方は職種を以下よりお選びください。</p>
-            <ul>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=1" class="doctor" data-category="doctor-inhouse">医師（勤務医）</a>
-                </li>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=1" class="doctor" data-category="doctor-practicing">医師（開業医）</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=2" class="pharmacist" data-category="pharmacist-hosptal">薬剤師（病院）</a>
-                </li>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=2" class="pharmacist" data-category="pharmacist-pharmacy">薬剤師（薬局）</a>
-                </li>
-            </ul>
-            <ul>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=3" class="nurse" data-category="nurse">看護師</a>
-                </li>
-                <li><a href="https://med.towayakuhin.co.jp/medical/job_selector?job=4" class="other" data-category="other">その他医療関係者</a>
-                </li>
-            </ul>
-        </div>
-        <p class="goHome"><a href="https://www.towayakuhin.co.jp/">医療関係者以外の方はこちら（コーポレートサイトへ）</a></p>
-    </div>
-</div>
-
-
-
+<script src="/common/assets/js/toppage.js"></script><script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","byneo4hqvg");</script><script type="text/javascript" id="" charset="">(function(){window.dataLayer=window.dataLayer||[];if(document.querySelectorAll("video"))for(var a=document.querySelectorAll("video"),c=0;c<a.length;c++)(function(b){a[b].addEventListener("play",function(){dataLayer.push({event:"video_start",video_src:a[b].src})});a[b].addEventListener("ended",function(){dataLayer.push({event:"video_complete",video_src:a[b].src})})})(c)})();</script>
+<script src="/common/assets/js/script.js"></script>
+<script src="/common/assets/js/dummy.js"></script>
 <div style="display: none; visibility: hidden;"><script>document.addEventListener("cmpWidget:cspInserted",function(){var a=new WebtruCmpApi(version="1.0");a.on(WebtruCmpApi.EVENT_CMP_SAVE,function(b){location.reload()})});</script>
 
-<script src="https://cmp.datasign.co/v2/a4b7f3a528/cmp.js" async="null"></script></div><script type="text/javascript" id="" charset="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","byneo4hqvg");</script><div style="display: none; visibility: hidden;">
+<script src="https://cmp.datasign.co/v2/a4b7f3a528/cmp.js" async="null"></script></div><div style="display: none; visibility: hidden;">
 <script async="null" src="https://www.googletagmanager.com/gtag/js?id=AW-686836141"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","AW-686836141");</script>
 </div><div style="display: none; visibility: hidden;">
-<script>gtag("event","conversion",{send_to:"AW-686836141/p-NtCMD36ckBEK2TwccC",transaction_id:""});</script></div><script type="text/javascript" id="" charset="">(function(){window.dataLayer=window.dataLayer||[];if(document.querySelectorAll("video"))for(var a=document.querySelectorAll("video"),c=0;c<a.length;c++)(function(b){a[b].addEventListener("play",function(){dataLayer.push({event:"video_start",video_src:a[b].src})});a[b].addEventListener("ended",function(){dataLayer.push({event:"video_complete",video_src:a[b].src})})})(c)})();</script><iframe id="__webtru_cmp_storage_iframe__" src="https://a4b7f3a528.cmp-origin.datasign.co/index.html" style="display: none;"></iframe></body></html>
+<script>gtag("event","conversion",{send_to:"AW-686836141/p-NtCMD36ckBEK2TwccC",transaction_id:""});</script></div><iframe id="__webtru_cmp_storage_iframe__" src="https://a4b7f3a528.cmp-origin.datasign.co/index.html" style="display: none;"></iframe></body></html>
