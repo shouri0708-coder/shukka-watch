@@ -1,0 +1,3058 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>医療関係者お知らせ文書</title>
+<meta name="keywords" content="医療関係者お知らせ文書,ジェネリック,ステロイド外用剤,抗真菌薬,受託開発,美容医療向け化粧品,ナビジョン" />
+<meta name="description" content="医療関係者お知らせ文書│岩城製薬株式会社では、医薬品およびファインケミカル製品の開発・製造を行い「高品質で使いやすい製品を社会に提供し、活用していただく」ことを目指しております。蒲田に製剤工場および製剤研究・合成研究部門、静岡に合成工場を持ち、受託製造にも積極的に取り組んでおります。" />
+
+<link rel="preconnect" href="//fonts.gstatic.com">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">
+<link rel="stylesheet" href="//use.typekit.net/pja1ajd.css"><!-- adobe fonts -->
+
+<link rel="stylesheet" href="/dcms_media/css/base.css" />
+<link rel="stylesheet" href="/dcms_media/css/layout.css" />
+<link rel="stylesheet" href="/dcms_media/css/common.css" />
+<link rel="stylesheet" href="/dcms_media/css/original.css" />
+<link rel="stylesheet" href="/dcms_media/css/original2.css" />
+<link rel="stylesheet" href="/dcms_media/css/slick.css" />
+
+<script src="/dcms_media/js/jquery-1.11.1.min.js"></script>
+<script src="/dcms_media/js/current.js"></script>
+<script src="/dcms_media/js/scrolltopcontrol.js"></script>
+<script src="/dcms_media/js/jquery.matchHeight-min.js"></script>	
+<script src="/dcms_media/js/jquery.biggerlink.target.js"></script>
+<script src="/dcms_media/js/slick.min.js"></script>	
+<script src="/dcms_media/js/custom.js"></script>
+		
+
+<script>
+var lh = "";
+  lh = location.href;
+if (lh.match(/dcmsadm/)){
+} else {
+  document.write('<link rel="stylesheet" href="/dcms_media/css/publicside.css" />');
+  $(document).ready(function(){
+    $('#pagetitle').insertBefore('#locator');
+    $('.matchH').matchHeight();
+    $('.matchH2').matchHeight();
+    $('.matchH3').matchHeight();
+    $(".biggerlink").biggerlink();
+
+    $("header .gnavi_btn_sp").on("click", function() {
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$("header .gnavi_area").slideToggle();
+			
+		} else {
+      $("header .gnavi_area").slideToggle();
+      $("header .gnavi_btn_sp").addClass("active");
+			
+			if ($(".search_btn").hasClass("active")){
+				$(".search_btn").removeClass("active");
+				$(".search_area").removeClass("active");
+			}
+		}
+    });
+
+$("header .mm_btn").on("click", function() {
+	if($(this).hasClass("active")){
+ 			$(this).removeClass("active");
+		} else {
+			$("header .mm_btn").removeClass("active");
+			$(this).addClass("active");
+			$(".search_area").removeClass("active");
+			$(".search_btn").removeClass("active");
+		}	
+});
+
+$(".search_btn").on("click", function () {		
+	if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(".search_area").removeClass("active");
+		} else {				
+			$(".search_btn").addClass("active");
+			$(".search_area").addClass("active");
+			$(".mm_btn").removeClass("active");	
+			
+		    if ($("header .gnavi_btn_sp").hasClass("active")){
+				$("header .gnavi_area").slideToggle();
+				$("header .gnavi_btn_sp").removeClass("active")
+			}
+		}		
+ });
+
+$(document).click(function(event) {
+  if(!$(event.target).closest("header").length) {	  
+  	$(".mm_btn").removeClass("active");	
+	$(".search_btn").removeClass("active");
+	$(".search_area").removeClass("active");
+  }
+});
+
+    var $win = $(window);
+    $win.on('load resize',function(){
+      var windowWidth = window.innerWidth;
+      if(windowWidth <= 1380){
+        $('header .gnavi_area').insertAfter('#header_area');
+      } else {
+        $('header .gnavi_area').insertAfter('.gnavi_btn_sp');
+      }
+      if(windowWidth <= 1380){
+        $(".sp_btn").on("click", function() {
+          $("#subnav_list").slideToggle();
+          $(".sp_btn").toggleClass("active");
+        });
+      }
+    });
+    $('a[href^=#]').click(function() {
+      var speed = 300; // ミリ秒
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+    });
+    //mainimage
+    $('.main_area').slick({
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 3000,
+	   pauseOnHover:false
+        });
+  });
+
+  if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
+    $(function() {
+      $('.tel').each(function() {
+        var str = $(this).html();
+        if ($(this).children().is('img')) {
+          $(this).html($('<a>').attr('href', 'tel:' + $(this).children().attr('alt').replace(/-/g, '')).append(str + '</a>'));
+          } else {
+          $(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+        }
+      });
+    });
+  }
+}
+</script>
+<script>
+var agent = window.navigator.userAgent.toLowerCase();
+var ipad = agent.indexOf('ipad') > -1 || agent.indexOf('macintosh') > -1 && 'ontouchend' in document;
+if(ipad == true){
+        $(function() {
+      $('.tel').each(function() {
+        var str = $(this).html();
+        if ($(this).children().is('img')) {
+          $(this).html($('<a>').attr('href', 'tel:' + $(this).children().attr('alt').replace(/-/g, '')).append(str + '</a>'));
+          } else {
+          $(this).html($('<a>').attr('href', 'tel:' + $(this).text().replace(/-/g, '')).append(str + '</a>'));
+        }
+      });
+    });
+}else{
+}
+</script>
+<script>
+var lh = "";
+    lh = location.href;
+    if (lh.match(/dcmsadm/)){
+    } else {
+$(document).ready(function(){
+    //sitemap
+    window.onload = function () {
+        $("[href*='en.html']").parent('li').addClass('en_sitemaplist');
+        $("[href*='ch.html']").parent('li').addClass('ch_sitemaplist');
+    }
+});
+}
+</script>
+
+<script>
+// location.hash
+$(window).on("load", function () {
+    var urlHash = location.hash;
+    if (urlHash) {
+      var position = $("body").find(urlHash).offset().top;
+      var height = $("header").height() + 24;
+      var anchorLink = position - height;
+      $("body,html").scrollTop(anchorLink);
+      return false;
+    }
+});
+</script>
+<script defer src="https://trace.bluemonkey.jp/trace.js"></script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W8P2F4L');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W8P2F4L"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K65CR47');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K65CR47"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script id="_bownow_ts">
+var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://contents.bownow.jp/js/UTC_d5b0755c184c6bc054ad/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
+</script>
+</head>
+
+<body id="common" class="page_documents_for_medical">
+	<header role="presentation">
+<div id="header">
+<div id="header_area">
+<div id="header_logo"><a href="/"><img src="/dcms_media/image/common/logo.svg" alt="岩城製薬株式会社" width="424" height="127" /></a></div>
+<div class="gnavi_btn_sp">
+<div class="gnavi_btn_sp_in"><span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span> <span class="dmy"><!--btn--></span></div>
+</div>
+<ul class="header_language">
+<li class="on"><a href="/">JP</a></li>
+<li><a href="/en.html">EN</a></li>
+</ul>
+<div class="gnavi_area"><nav>
+<ul>
+<li><a href="/">HOME</a></li>
+<li class="megamenu"><span class="mm_btn">会社案内</span>
+<div class="mm_contents">
+<div class="inner">
+<div class="mm_title">
+<p class="jp_title">会社案内</p>
+<p class="en_title">COMPANY INFORMATION</p>
+</div>
+<ul>
+<li><a href="/company/message.html">トップメッセージ</a></li>
+<li><a href="/company/outline.html">会社概要</a></li>
+<li><a href="/company/base.html">拠点情報</a></li>
+<li><a href="/company/group.html">グループ会社</a></li>
+<li><a href="/company/recruit.html">採用情報</a></li>
+<li><a href="/financial_notice.html">電子公告・決算公告</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="megamenu"><span class="mm_btn">事業案内</span>
+<div class="mm_contents">
+<div class="inner">
+<div class="mm_title">
+<p class="jp_title">事業案内</p>
+<p class="en_title">BUSINESS</p>
+</div>
+<ul>
+<li><a href="/business_information.html">医療用・一般用医薬品</a></li>
+<li><a href="/business_information/non-prescription_drug.html">医薬品の製造受託事業及び研究受託事業</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="megamenu"><span class="mm_btn">製品情報</span>
+<div class="mm_contents">
+<div class="inner">
+<div class="mm_title">
+<p class="jp_title">製品情報</p>
+<p class="en_title">PRODUCTS</p>
+</div>
+<ul>
+<li><a href="/medical.html">医療関係者向け製品情報（医療用医薬品・一般用医薬品）</a></li>
+<li><a href="https://navision.iwakiseiyaku.co.jp/?_ga=2.50032367.850358359.1595316278-67146673.1591575026" rel="noopener" target="_blank">美容医療向け化粧品（ナビジョン）</a></li>
+<li><a href="https://illsera.iwakiseiyaku.co.jp/?_ga=2.137406195.2101781123.1740114330-689548191.1649224867">医療機関向けスキンケア化粧品（イルセラ）</a></li>
+<li><a href="/documents_for_patients.html">患者様向け資料</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li class="megamenu"><a href="/patients.html">一般・患者様へ</a></li>
+<li class="megamenu"><a href="/news.html">お知らせ</a></li>
+<li class="megamenu"><a href="/health_management.html">健康経営</a></li>
+<li class="megamenu"><a href="/compliance.html">コンプライアンス</a></li>
+<li class="megamenu"><span class="mm_btn">お問合せ</span>
+<div class="mm_contents">
+<div class="inner">
+<div class="mm_title">
+<p class="jp_title">お問合せ</p>
+<p class="en_title">CONTACT</p>
+</div>
+<ul>
+<li><a href="/contact_list/pharmaceuticals_form.html">医療用医薬品に関するお問い合わせ（病院・クリニック等で処方されるお薬）</a></li>
+<li><a href="/contact_list/vcetc_form.html">一般用医薬品に関するお問い合わせ（ビタミンC・うがいぐすり・ミノグロウ等）</a></li>
+<li><a href="https://navision.iwakiseiyaku.co.jp/contact">ナビジョンDR・美容医療向け化粧品に関するお問い合わせ</a></li>
+<li><a href="https://illsera.iwakiseiyaku.co.jp/contact.php">イルセラ・医療機関向けスキンケア化粧品に関するお問い合わせ（<span>M-BF</span>クリーム等）</a></li>
+<li><a href="/contact_list/contract_manufacturing_form.html">医薬品の製造受託に関するお問い合わせ</a></li>
+<li><a href="/contact_list/study_form.html">研究受託・共同研究・共同開発に関するお問い合わせ</a></li>
+<li><a href="/contact_list/licensing_form.html">ライセンシング・業務提携等の事業開発に関するお問い合わせ</a></li>
+<li><a href="/contact_list/company_form.html">採用及び岩城製薬に関するお問い合わせ</a></li>
+<li><a href="/contact_list/opinion_form.html">医療用医薬品の販売情報提供活動に関するご意見</a></li>
+<li><a href="/contact_list/compliance_form.html">求職者等に対するハラスメントに関するお問い合わせ</a></li>
+</ul>
+</div>
+</div>
+</li>
+<li><a href="/company/recruit.html">採用情報</a></li>
+</ul>
+</nav></div>
+<div class="search_btn"><!--search--></div>
+<div class="search_area">
+<div class="inner"><form action="/dcms-search/"><input class="search_txt" name="schKeyword" type="text" placeholder="サイト内検索" /> <input class="submit_btn" type="submit" value="" /></form></div>
+</div>
+</div>
+</div>
+</header>
+
+	<div id="locator">
+		<ol class="inner" itemscope itemtype="http://schema.org/BreadcrumbList"><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://www.iwakiseiyaku.co.jp/index.html" itemprop="item"><span itemprop="name">HOME</span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">医療関係者お知らせ文書</span><meta itemprop="position" content="2" /></li></ol>
+	</div>
+	<main>
+
+			
+			<!-- ブロック貼り付けエリア -->
+			<div id="dcms_layoutPageBlockPasteArea">
+			<!-- ブロック -->
+			<div id="dcms_layoutPageBlock">
+			<div id="pagetitle">
+<div class="pagetitle_block">
+<h1 class="pagetitle">医療関係者お知らせ文書<br /><span class="fsize_s">（医療用医薬品・一般用医薬品）</span></h1>
+<p class="pagetitle_en">DOCUMENT</p>
+<figure><img src="/dcms_media/image/pagetitle_documents_for_medical_img.jpg" alt="医療関係者お知らせ文書" width="360" height="460" /></figure>
+</div>
+</div>
+<p class="m80_pc m70_tablet m50_sp inner">以下よりご覧いただける各ページにて、当社製品に関する資料PDFをダウンロードいただけます。</p>
+<section class="document_for_medical m80_pc m70_tablet m50_sp inner">
+<dl>
+<dd class="font_blue">2026.8.6</dd>
+<dt class="ellipsis"><a href="https://seminar.m3dc-stream.com/info/iwakiseiyaku260704vod" rel="noopener" target="_blank">【視聴はこちら】Webセミナー（岩城製薬オンデマンド配信：配信期間8月20日～11月20日）を実施いたします。<br />　演目：小児アトピー性皮膚炎の実践的外用療法と患者指導<br />　演者：独立行政法人 国立病院機構 名古屋医療センター 小児科 医長　藤田医科大学ばんたね病院 小児科 准教授　二村昌樹先生</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.8.6</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/0820-1120iwondemand.pdf" rel="noopener" target="_blank">【案内状】Webセミナー（岩城製薬オンデマンド配信：配信期間8月20日～11月20日）の案内状を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/housouosirase20260925.pdf " rel="noopener" target="_blank">チューブ長および包装変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/seizoubangouosirase20260925.pdf" rel="noopener" target="_blank">製造番号設定方法変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/iwrosirase20260915.pdf" rel="noopener" target="_blank">イワコールラブ消毒液0.2％販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmlosirase20260915.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルローション０．１%「イワキ」出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20260904.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg／g「イワキ」10g×10_出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcosirase20260901.pdf" rel="noopener" target="_blank">ケトコナゾールクリーム２％「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20260901.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5㎎「イワキ」通常出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.9.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmcosirase20260901.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルクリーム0.1％「イワキ」、ローション0.1％「イワキ」通常出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.8.31</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prptenpu20260831.pdf " rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.8.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmoosirase20260817.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣自主回収（クラスⅡ）に関するお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.7.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ct10tosirase20260731.pdf" rel="noopener" target="_blank">セチリジン塩酸塩錠10㎎「イワキ」PTP100錠出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.7.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20260731.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg「イワキ」バラ1000錠 限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.7.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/seiseisuiosirase20260717.pdf" rel="noopener" target="_blank">精製水「NikP」の製造販売元変更のご案内(第二報)を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.7.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/luoosirase20260717.pdf" rel="noopener" target="_blank">ルリコナゾールクリーム、軟膏１％「イワキ」_限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.7.10</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tloosirase20260709.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.6.29</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvctosirase20260629.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg｢JG｣ の販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.6.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvtosirase20260624.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg｢イワキ｣ の販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.6.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvtosirase20260624.pdf" rel="noopener" target="_blank">レボフロキサシン錠500mg｢イワキ｣ の販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.6.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tloosirase20260622.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.6.5</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20260605.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20260528.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5ｍｇ「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.27</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbplosirase20260527.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05％「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.27</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20260527.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5ｍｇ「イワキ」の出荷停止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.27</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmoosirase20260527.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdoosirase20260522.pdf" rel="noopener" target="_blank">ビダラビン軟膏3％「イワキ」の通常出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv250tosirase20260522.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg「イワキ」の通常出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcosirase20260521.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1％「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzcif20260520.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzctenpu20260518.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzcosirase20260518.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の使用上の注意改訂のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpmyklosirase20260512.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05%「MYK」の容器・包装変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.5.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tfcosirase20260511.pdf" rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1％「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05cif20260421.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」 のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20260415.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20ｍｇ「イワキ」の出荷停止解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv250tif20260401.pdf" rel="noopener" target="_blank">レボフロキサシン錠500mg｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv250tif20260401.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcif20260401.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcif20260401.pdf" rel="noopener" target="_blank">ビホナゾール外用液1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcif20260401.pdf" rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cmgeif20260401.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpmykoif20260401.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル製品「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vbpmykoif20260401.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル製品「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-6.pdf " rel="noopener" target="_blank">薬価改定に伴うご案内を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-5.pdf " rel="noopener" target="_blank">選定療養に関わる医薬品一覧を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-4.pdf " rel="noopener" target="_blank">薬価一覧表を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-3.pdf " rel="noopener" target="_blank">一般名処方加算の対象となる製品についてを掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-2.pdf " rel="noopener" target="_blank">後発医薬品の出荷停止等を踏まえた診療報酬上の臨時的な取扱いについて掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouosirase20260401-1.pdf " rel="noopener" target="_blank">診療報酬上の加算等の算定対象となる後発医薬品を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.3.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tftosirase20260325.pdf" rel="noopener" target="_blank">テルビナフィン錠125ｍｇ「イワキ」一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.3.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20260316.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」一時出荷停止解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.27</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20260227.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20ｍｇ「イワキ」一時出荷停止解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatif20260224.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vattenpu20260224.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatosirase20260224.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣ の使用上の注意改訂のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv250tosirase20260209.pdf" rel="noopener" target="_blank">レボフロキサシン錠250ｍｇ「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lucosirase20260204.pdf" rel="noopener" target="_blank">ルリコナゾールクリーム1％「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.2.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lucosirase20260204.pdf" rel="noopener" target="_blank">ルリコナゾール軟膏1％「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.1.30</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20260130.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.1.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bzoosirase20260126.pdf" rel="noopener" target="_blank">ベンダザック軟膏3％「イワキ」一時出荷停止解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.1.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20260121.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20ｍｇ「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2026.1.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tfcosirase20260109.pdf" rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1％「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/seiseisuitenpu20251225.pdf" rel="noopener" target="_blank">精製水「ヤクハン」の添付文書を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20251223.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」一時出荷停止のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20251211.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」一時出荷停止解除と限定出荷のお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.8</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vbpmykotenpu20251208.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル製品「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.5</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vbpmykoif20251205.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル製品「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.12.2</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/p10osirase20251202.pdf" rel="noopener" target="_blank">ピリドキサール錠10ｍｇ「イセイ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lucosirase20251121.pdf" rel="noopener" target="_blank">ルリコナゾールクリーム1％「イワキ」の限定出荷のお詫びとお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/seiseisuiosirase20251121.pdf" rel="noopener" target="_blank">精製水「NikP」の製造販売元変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kyoosirase20251119.pdf" rel="noopener" target="_blank">キョウミノチン静注PLの取り扱い中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bzoosirase20251119.pdf" rel="noopener" target="_blank">ベンダザック軟膏3％「イワキ」一時出荷停止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cptosirase20251114.pdf" rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2mg「イワキ」販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.6</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20251106.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.11.5</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/hyposirase20251105.pdf" rel="noopener" target="_blank">ハイポアルコール ラベル変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20251031.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/luoosirase20251031.pdf" rel="noopener" target="_blank">ルリコナゾール軟膏1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcif20251024.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clctenpu20251023.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcosirase20251021.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1％「イワキ」一時出荷停止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dvif20251017.pdf" rel="noopener" target="_blank">ダイビタミックス注のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmcosirase20251001.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルクリーム0.1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20251001.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20251001.pdf" rel="noopener" target="_blank">デキサメタゾンクリーム0.1％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20251001.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tfcosirase20251001.pdf" rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.10.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdoosirase20251001.pdf" rel="noopener" target="_blank">ビダラビン軟膏3％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20250926.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μｇ/ｇ「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20250926.pdf" rel="noopener" target="_blank">ラノコナゾール外用液1％「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcosirase20250917.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1％「イワキ」一時出荷休止のお詫びとお知らせのご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lccosirase20250916.pdf" rel="noopener" target="_blank">ラノコナゾールクリーム1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/seiseisuiosirase20250912.pdf" rel="noopener" target="_blank">精製水「ＮiｋＰ」 表示変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prposirase20250912.pdf" rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.3</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcosirase20250903.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.9.3</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmlosirase20250903.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルローション0.1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.8.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdoif20250822.pdf" rel="noopener" target="_blank">ビダラビン軟膏3%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.8.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cmgeif20250822.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.8.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcif20250822.pdf" rel="noopener" target="_blank">ビホナゾールクリーム・外用液1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.8.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cmgetenpu20250815.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.8.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfctenpu20250815.pdf" rel="noopener" target="_blank">ビホナゾールクリーム・外用液1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.30</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20250730.pdf" rel="noopener" target="_blank">ラノコナゾール外用液1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/nzlosirase20250728.pdf" rel="noopener" target="_blank">ニゾラール®ローション２％塗布方法説明書変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tloosirase20250723.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1％「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20250722.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μｇ/ｇ「イワキ」一時出荷休止から限定出荷へ変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20250711.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20ｍｇ「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.7.2</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20250702.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep10tosirase20250625.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠10ｍｇ「イワキ」出荷再開のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/hanyouosirase20250624.pdf" rel="noopener" target="_blank">製造販売業者の社名変更のご案内（第二報）を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcoosirase20250611.pdf" rel="noopener" target="_blank">ラノコナゾール軟膏1％「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20250611.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5ｍｇ「イワキ」一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">サレックスクリーム0.05％一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステルクリーム0.05％「イワキ」一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏0.05％「イワキ」一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">ベンダザック軟膏3％「イワキ」一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.4</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20250604.pdf" rel="noopener" target="_blank">イワコールラブ消毒液0.2％一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.6.3</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdotenpu20250603.pdf" rel="noopener" target="_blank">ビダラビン軟膏3％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dpoif20250528.pdf" rel="noopener" target="_blank">デルモゾールDP軟膏・クリーム・ローション0.064%のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dfoif20250528.pdf" rel="noopener" target="_blank">ジフルプレドナート軟膏・クリーム・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpoif20250528.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcif20250528.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20250521.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20mg「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep10tosirase20250514.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠10mg「イワキ」の一時出荷休止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20250514.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g「イワキ」の一時出荷休止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.7</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dfoosirase20250507.pdf" rel="noopener" target="_blank">ジフルプレドナート軟膏0.05%「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.5.7</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/amoosirase20250507.pdf" rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」の一時出荷休止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20250401-1.pdf " rel="noopener" target="_blank">薬価改定に伴うご案内を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20250401-2.pdf " rel="noopener" target="_blank">薬価一覧表を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20250401-3.pdf " rel="noopener" target="_blank">調剤報酬点数表における後発医薬品調剤体制加算をはじめとする診療報酬上の加算等の算定対象となる後発医薬品を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20250401-4.pdf " rel="noopener" target="_blank">一般名処方加算となる製品についてを掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20250401-5.pdf " rel="noopener" target="_blank">選定療養の対象となる長期収載品に関する製品一覧を掲載しました。</a> </span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250415.pdf" rel="noopener" target="_blank">デキサメタゾンクリーム0.1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20250409.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μｇ/ｇ「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prposirase20250409.pdf" rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.2</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vbpmykotenpu20250402.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.2</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpmykltenpu20250402.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.2</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpmykotenpu20250402.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/hanyouosirase20250331.pdf" rel="noopener" target="_blank">製造販売会社の社名変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpmykoif20250331.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル製剤0.05%「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.4.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vbpmykoif20250331.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル製剤0.05%「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmlosirase20250319.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルローション0.1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmlosirase20250319.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏0.1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmlosirase20250319.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250319.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルローション0.1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250319.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルクリーム0.1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250319.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250319.pdf" rel="noopener" target="_blank">デキサメタゾンローション0.1%｢イワキ｣の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20250319.pdf" rel="noopener" target="_blank">デキサメタゾンクリーム0.1%｢イワキ｣の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ct5tosirase20250319.pdf" rel="noopener" target="_blank">セチリジン塩酸塩錠5mg｢イワキ｣の販売中止のご案内を掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pssosirase20250310.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.3</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoosirase20250303.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.3.3</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfcosirase20250303.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvnosirase20250219.pdf " rel="noopener" target="_blank">ポビドンヨードゲル10％「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lccosirase20250207.pdf " rel="noopener" target="_blank">ラノコナゾールクリーム1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmoosirase20250207.pdf " rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏０．１%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmoosirase20250207.pdf " rel="noopener" target="_blank">モメタゾンフランカルボン酸エステルクリーム０．１%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.6</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/sxcosirase20250206.pdf" rel="noopener" target="_blank">サレックスクリーム0.05%包装仕様変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.5</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvgif20250205.pdf" rel="noopener" target="_blank">ポビドンヨードガーグル液7%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.5</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzoif20250205.pdf " rel="noopener" target="_blank">ベンダザック軟膏3%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.5</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfcif20250205.pdf " rel="noopener" target="_blank">ビホナゾールクリーム・外用液1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.2.5</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzcif20250205.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.1.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20250127.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%「イワキ」の一部包装規格販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.1.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvosirase20250115.pdf " rel="noopener" target="_blank">ポビドンヨード外用液10%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.1.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfcosirase20250114.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.1.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lccosirase20250110.pdf " rel="noopener" target="_blank">ラノコナゾールクリーム1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2025.1.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20250107.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njspif20241227.pdf " rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvif20241227.pdf " rel="noopener" target="_blank">ポビドンヨード外用液10%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcoif20241227.pdf " rel="noopener" target="_blank">ラノコナゾール軟膏・クリーム・外用液1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfcif20241227.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム・外用液1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloosirase20241216.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmoosirase20241210.pdf " rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.9</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvnosirase20241208.pdf " rel="noopener" target="_blank">ポビドンヨードゲル10%「イワキ」の限定出荷における出荷状況および対応状況変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.9</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvosirase20241209.pdf " rel="noopener" target="_blank">ポビドンヨード外用液10%「イワキ」の限定出荷における出荷状況および対応状況変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.12.3</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nzlosirase20241203.pdf " rel="noopener" target="_blank">ニゾラールローション2%の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vbpmykoif20241129.pdf " rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏クリーム0.05%「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpmykoif20241129.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏クリームローション0.05%「MYK」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tftif20241129.pdf " rel="noopener" target="_blank">テルビナフィン錠125mg「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dut05cif20241129.pdf " rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloif20241129.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ep10tif20241129.pdf " rel="noopener" target="_blank">エピナスチン塩酸塩錠10mg 20mg「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfcosirase20241126.pdf " rel="noopener" target="_blank">ビホナゾールクリーム1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/clcosirase20241120.pdf " rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/apgeosirase20241120.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dxoif20241119.pdf " rel="noopener" target="_blank">デキサメタゾン軟膏・クリーム・ローション0.1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzcosirase20241119.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/【HP掲載用】整合性点検計画および進捗状況(241113最終報告).pdf " rel="noopener" target="_blank">「製造販売承認書と製造・試験方法の実態との整合性点検の進捗状況について（最終報告）」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/crosirase20241113.pdf " rel="noopener" target="_blank">クリストファン注の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloosirase20241111.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/apgeif20241111.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.11.5</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pssosirase20241105.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75%「イワキ」の一部包装規格における限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvgosirase20241028.pdf " rel="noopener" target="_blank">ポビドンヨードガーグル液7%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szlosirase20241028.pdf " rel="noopener" target="_blank">スピラゾンローション0.3%の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lucif20241023.pdf " rel="noopener" target="_blank">ルリコナゾール軟膏・クリーム1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/sxoif20241023.pdf " rel="noopener" target="_blank">サレックス軟膏・クリーム0.05％のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hakosirase20241022.pdf " rel="noopener" target="_blank">白色ワセリンのメーカー変更に関するお知らせ（続報）のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njsposirase20241022.pdf " rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏　調剤包装単位(ＧＳ1コード)包装容器におけるラベル表示訂正のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvnosirase20241011.pdf " rel="noopener" target="_blank">ポビドンヨードゲル10％「イワキ」の製造販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoosirase20241007.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/【HP掲載用】整合性点検計画および進捗状況(241004TW案).pdf " rel="noopener" target="_blank">「製造販売承認書と製造・試験方法の実態との整合性点検の進捗状況について（2024/10/4）」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.02</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dfoif20241002.pdf " rel="noopener" target="_blank">ジフルプレドナート軟膏・クリーム・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amoosirase20241001.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.10.2</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dxoosirase20241002.pdf " rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」の一部包装品製造販売中止のご案内を掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.9.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vdoosirase20240927.pdf " rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」の販売中止のご案内を掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.9.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lusosirase20240913.pdf " rel="noopener" target="_blank">ルリコナゾール外用液1%「イワキ」開発中止のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.9.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szlosirase20240910.pdf " rel="noopener" target="_blank">スピラゾンローション0.3％の限定出荷 のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.9.6</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/【HP掲載用】整合性点検計画および進捗状況(240905TW案).pdf " rel="noopener" target="_blank">「製造販売承認書と製造・試験方法の実態との整合性点検の進捗状況について（2024/9/5）」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20240828.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣ の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dgoif20240827.pdf " rel="noopener" target="_blank">デルモゾールG軟膏・クリーム・ローションのインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoif20240827.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmoif20240827.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpoif20240827.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoosirase20240819.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.8.8</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/【HP掲載用】整合性点検計画および進捗状況2024.8.8.pdf " rel="noopener" target="_blank">「製造販売承認書と製造・試験方法の実態との整合性点検の進捗状況について（7月末）」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/安定供給に関連する情報の公表（様式1）2024.6.26.pdf " rel="noopener" target="_blank">「後発品の安定供給に関連する情報の公表等に関するガイドライン」に基づく公表事項「安定供給に関連する情報の公表」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/安定供給体制等を指標とした情報提供項目（様式2）2024.6.26.pdf " rel="noopener" target="_blank">「後発品の安定供給に関連する情報の公表等に関するガイドライン」に基づく公表事項「安定供給体制等を指標とした情報提供項目」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/安定供給のための予備対応力（様式3）2024.6.26.pdf " rel="noopener" target="_blank">「後発品の安定供給に関連する情報の公表等に関するガイドライン」に基づく公表事項「安定供給のための予備対応力」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/供給計画と実績（様式4）2024.6.26.pdf " rel="noopener" target="_blank">「後発品の安定供給に関連する情報の公表等に関するガイドライン」に基づく公表事項「供給計画と実績」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="https://www.iwakiseiyaku.co.jp/dcms_media/other/hanyouosirase20221107.pdf" rel="noopener" target="_blank">新型コロナウイルス感染拡大防止対策に関連した製品に関するお問い合わせ受付へのお願い</a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.7.31</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfsosirase20240731.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩外用液1%｢イワキ｣ 限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.7.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20240710.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣一部包装規格における一時出荷停止解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.7.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloosirase20240710.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fin1tif20240627.pdf " rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/luctenpu20240627.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/baotenpu20240627.pdf " rel="noopener" target="_blank">ボンアルファ軟膏・クリーム・ローション2μg／gの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bahotenpu20240627.pdf " rel="noopener" target="_blank">ボンアルファハイ軟膏・ローション20μg／gの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpotenpu20240627.pdf " rel="noopener" target="_blank">デルモゾールDP軟膏・クリーム0.064％の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tosirase20240627.pdf " rel="noopener" target="_blank">レボフロキサシン錠500mg｢イワキ｣ の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/albosirase20240624.pdf " rel="noopener" target="_blank">タンニン酸アルブミン「NikP」販売中止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/sxotenpu20240614.pdf " rel="noopener" target="_blank">サレックス軟膏・クリーム0.05％の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcotenpu20240614.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg／g「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcctenpu20240614.pdf " rel="noopener" target="_blank">ラノコナゾールクリーム・外用液・軟膏1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmotenpu20240614.pdf " rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏・クリーム・ローション0.1％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzotenpu20240614.pdf " rel="noopener" target="_blank">ベンダザック軟膏3％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hakosirase20240614.pdf " rel="noopener" target="_blank">白色ワセリンの表示変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvosirase20240613.pdf " rel="noopener" target="_blank">ポビドンヨードガーグル液7%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvosirase20240613.pdf " rel="noopener" target="_blank">ポビドンヨード外用液10%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouosirase20240611.pdf " rel="noopener" target="_blank">白色ワセリンのメーカー変更に関するお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvotenpu20240604.pdf " rel="noopener" target="_blank">ベタメタゾン吉草酸エステル軟膏0.12％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vdotenpu20240604.pdf " rel="noopener" target="_blank">ビダラビン軟膏3％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dgotenpu20240604.pdf " rel="noopener" target="_blank">デルモゾールG軟膏・クリームの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dxotenpu20240604.pdf " rel="noopener" target="_blank">デキサメタゾン軟膏・クリーム・ローション0.1％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tlotenpu20240604.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szotenpu20240604.pdf " rel="noopener" target="_blank">スピラゾン軟膏・クリーム・ローション0.3％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dfotenpu20240604.pdf " rel="noopener" target="_blank">ジフルプレドナート軟膏・クリーム・ローション0.05％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmotenpu20240604.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cnotenpu20240604.pdf " rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏・クリーム・ローション0.05％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.6.4</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpotenpu20240604.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏0.05％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.30</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpmykotenpu20240530.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.30</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vbpmykotenpu20240530.pdf " rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.30</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20240530.pdf" rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njugosirase20240529.pdf " rel="noopener" target="_blank">ネオヨジンうがいぐすりの販売中止のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tftkanjaguide20240516.pdf" rel="noopener" target="_blank">テルビナフィン錠125mg「イワキ」の患者向け医薬品ガイドを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20240514.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」（ 5ｇ×50）の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20240509.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏0.1％「イワキ」（ 5ｇ×10）の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.8</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20240507.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.5.1</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amotenpu20240501.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1 ％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.30</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/njsposirase20240426.pdf" rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fin1tkanjaguide20240426.pdf" rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」の患者向け医薬品ガイドを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxcosirase20240424.pdf" rel="noopener" target="_blank">デキサメタゾンクリーム0.1％「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/njsposirase20240419.pdf" rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv250tosirase20240417.pdf" rel="noopener" target="_blank">レボフロキサシン錠250ｍｇ「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kyoosirase20240416.pdf" rel="noopener" target="_blank">キョウミノチン静注PLの限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdoosirase20240415.pdf" rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.3</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vdoosirase20240402.pdf" rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.4.3</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20240402.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.29</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cptosirase20240329.pdf" rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ２ｍｇ「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.29</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20240329.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏・クリーム0.1％「イワキ」の限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.29</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20240329.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」の一時出荷停止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv500tkanjaguide20240319.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg・500mg｢イワキ｣の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prpkanjaguide20240319.pdf" rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatkanjaguide20240319.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05ckanjaguide20240319.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcosirase20240315.pdf" rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxlosirase20240315.pdf" rel="noopener" target="_blank">デキサメタゾンローション0.1%「イワキ」の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dvosirase20240315.pdf" rel="noopener" target="_blank">ダイビタミックス注の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kyotenpu20240315.pdf " rel="noopener" target="_blank">キョウミノチン静注PLの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20240213.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣の一時出荷停止のお知らせを再掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/iwrtenpu20240311.pdf " rel="noopener" target="_blank">イワコールラブ消毒液0.2%の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/iwetenpu20240311.pdf " rel="noopener" target="_blank">イワコールエタノール消毒液0.5%の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tzrtenpu20240311.pdf " rel="noopener" target="_blank">トリゾンラブ消毒液0.2%の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/trizontenpu20240311.pdf " rel="noopener" target="_blank">トリゾン消毒液10%「YI」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/olitenpu20240311.pdf " rel="noopener" target="_blank">オリブ油の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/yodotenpu20240311.pdf " rel="noopener" target="_blank">ヨードチンキ「コザカイ・Ｍ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kiyodotenpu20240311.pdf " rel="noopener" target="_blank">希ヨードチンキ「コザカイ・Ｍ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/aen10tenpu20240311.pdf " rel="noopener" target="_blank">亜鉛華(10%)単軟膏「コザカイ・Ｍ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/aentantenpu20240311.pdf " rel="noopener" target="_blank">亜鉛華軟膏「コザカイ・Ｍ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/haktenpu20240311.pdf " rel="noopener" target="_blank">白色ワセリンの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/shoetatenpu20240311.pdf " rel="noopener" target="_blank">消毒用エタノール「コザカイ・Ｍ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.6</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep10tkanjaguide20240306.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠10mg・20㎎ 「イワキ」の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.6</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tlokanjaguide20240306.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20240301.pdf" rel="noopener" target="_blank">デキサメタゾン軟膏・ローション0.1%「イワキ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.3.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20240301.pdf" rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」一時出荷停止のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vatif20240229.pdf " rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmoif20240229.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ep20tosirase20240226.pdf " rel="noopener" target="_blank">エピナスチン塩酸塩錠10mgおよび20mg「イワキ」の限定出荷解除のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szoif20240222.pdf " rel="noopener" target="_blank">スピラゾン軟膏・クリーム・ローション0.3%のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/hanyouosirase20240221.pdf" rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」 限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nzlosirase20240220.pdf " rel="noopener" target="_blank">ニゾラールローション2%容器サイズ変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dxotenpu20240216.pdf " rel="noopener" target="_blank">デキサメタゾン軟膏0.1%「イワキ」及びクリーム及びローションの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfctenpu20240216.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1%「イワキ」及び外用液の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvtenpu20240216.pdf " rel="noopener" target="_blank">ポビドンヨード外用液10%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dut05ctenpu20240216.pdf " rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prptenpu20240216.pdf " rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpmykltenpu20240215.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpmykotenpu20240215.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vbpmykotenpu20240215.pdf " rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏・クリーム0.05%「MYK」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fin1ttenpu20240215.pdf " rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dvosirase20240214.pdf " rel="noopener" target="_blank">ダイビタミックス注の表示変更のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeosirase20240213.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣の一時出荷停止のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.2.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/clcif20240207.pdf " rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouosirase20240129.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」及びエピナスチン塩酸塩錠20mg及び10mg「イワキ」の限定出荷のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoif20240125.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeif20240125.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lvct5tif20240125.pdf " rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「JG」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/luctenpu20240125.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvgtenpu20240125.pdf " rel="noopener" target="_blank">ポビドンヨードガーグル液7%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvntenpu20240125.pdf " rel="noopener" target="_blank">ポビドンヨードゲル10%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/p10tenpu20240118.pdf " rel="noopener" target="_blank">ピリドキサール錠10mg「イセイ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tosirase20240116.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg・500mg 「イワキ」の限定出荷のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzotenpu20240112.pdf " rel="noopener" target="_blank">ベンダザック軟膏3%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njsptenpu20240112.pdf " rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfttenpu20240112.pdf " rel="noopener" target="_blank">テルビナフィン錠125mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dfotenpu20240112.pdf " rel="noopener" target="_blank">ジフルプレドナート軟膏・クリーム・ローション0.05%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzctenpu20240112.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.05</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pssosirase20240105.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75% 「イワキ」の限定出荷のお知らせを掲載いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2024.1.05</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpcosirase20240105.pdf " rel="noopener" target="_blank">デルモゾールDPクリーム0.064％の 5ｇ×50包装の中止をお知らせいたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpoif20231228.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amoif20231228.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1 ％「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ct10tif20231228.pdf " rel="noopener" target="_blank">セチリジン塩酸塩錠5mg・10mg｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vattenpu20231218.pdf " rel="noopener" target="_blank">バラシクロビル錠500mg｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ep20ttenpu20231218.pdf " rel="noopener" target="_blank">エピナスチン塩酸塩錠10mg・20mg 「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfctenpu20231218.pdf " rel="noopener" target="_blank">ビホナゾールクリーム・外用液1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmoosirase20231215.pdf " rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏・ローション0.1%「イワキ」の限定出荷のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/seiseisuitenpu20231212.pdf " rel="noopener" target="_blank">精製水「NikP」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dfoosirase20231212.pdf " rel="noopener" target="_blank">ジフルプレドナート軟膏0.05%「イワキ」、デルモゾールG軟膏の白色ワセリン変更のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcotenpu20231208.pdf " rel="noopener" target="_blank">ラノコナゾール軟膏・クリーム・外用液1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tlotenpu20231208.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.04</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dgoif20231204.pdf " rel="noopener" target="_blank">デルモゾールＧ軟膏・クリーム・ローション のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.12.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njsposirase20231201.pdf " rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏の限定出荷のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfsosirase20231129.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩外用液1％「イワキ」の限定出荷のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfcosirase20231117.pdf " rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」10g×10の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dvosirase20231117.pdf " rel="noopener" target="_blank">ダイビタミックス注の限定出荷のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmotenpu20231116.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/clctenpu20231116.pdf " rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/apgetenpu20231116.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouiryoufukusuuosirase20231113.pdf " rel="noopener" target="_blank">ラノコナゾール軟膏1％「イワキ」限定出荷解除のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vdoif20231108.pdf " rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」 のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.11.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lusosirase20231101.pdf " rel="noopener" target="_blank">ルリコナゾール外用液1%「イワキ」の販売延期のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/crtenpu20231026.pdf " rel="noopener" target="_blank">クリストファン注の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bnoosirase20231026.pdf" rel="noopener" target="_blank">ボンアルファ®・ボンアルファ®ハイの製造販売会社名変更のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/guidancesteroidtsunemi20231020.pdf " rel="noopener" target="_blank">指導せん「ステロイド外用薬を使用される患者様へ」を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgetenpu20231019.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpotenpu20231019.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏0.05%「イワキ」の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpltenpu20231019.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05%「イワキ」の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/sxotenpu20231019.pdf " rel="noopener" target="_blank">サレックス軟膏0.05%及びクリームの添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szotenpu20231019.pdf " rel="noopener" target="_blank">スピラゾン軟膏0.3%及びクリーム及びローションの添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcotenpu20231019.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25㎍/gの添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/acposirase20231016.pdf " rel="noopener" target="_blank">アスコルビン酸（ビタミンC原末）500g の限定出荷解除のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouiryoufukusuuosirase20231013.pdf " rel="noopener" target="_blank">複数製品における限定出荷解除をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prptenpu20231012.pdf " rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouiryoufukusuuosirase20231013.pdf " rel="noopener" target="_blank">複数製品における限定出荷解除をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.10.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouiryoufukusuuosirase20231010.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩クリーム1%「イワキ」（10g×10）、マキサカルシトール軟膏25μg/g「イワキ」（10g×1・10g×10・<br />10g×50）の限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pssif20230928.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75%</a><a href="/dcms_media/other/lv250tif20230928.pdf " rel="noopener" target="_blank">･</a><a href="/dcms_media/other/pssif20230928.pdf " rel="noopener" target="_blank"> 錠2.5mg「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv250tif20230928.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg･500mg｢イワキ｣ のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/apgeosirase20230927.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」 限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amotenpu20230927.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1 ％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/shoisotenpu20230920.pdf " rel="noopener" target="_blank">消毒用イソプロパノール液50%「ヤクハン」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/hanyouiryoufukusuuosirase20230912.pdf " rel="noopener" target="_blank">複数製品における限定出荷に関するご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fin1tif20230901.pdf" rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.9.1</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5ttenpu20230901.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg｢JG｣の添付文書を改訂しました。</a> &nbsp;</dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.30</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cnoif20230830.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏・クリーム・ローション0.05%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fin1tosirase20230829.pdf " rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」のお知らせ文書を掲載しました。</a>&nbsp;</dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fin1ttenpu20230829.pdf " rel="noopener" target="_blank">フィナステリド錠1ｍｇ「ＴＣＫ」の添付文書を改訂しました。</a> &nbsp;</dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dgotenpu20230825.pdf">デルモゾールＧ軟膏及びクリームの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dgltenpu20230825.pdf" rel="noopener" target="_blank">デルモゾールＧローションの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vdotenpu20230825.pdf" rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/albtenpu20230817.pdf " rel="noopener" target="_blank">タンニン酸アルブミン「NikP」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bnoif20230817.pdf " rel="noopener" target="_blank">ボンアルファ軟膏・クリーム・ローション2μg/gのインタビューフォームを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bahoif20230817.pdf " rel="noopener" target="_blank">ボンアルファハイ軟膏・ローション20μg/gのインタビューフォームを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.9</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/oxdtenpu20230809.pdf " rel="noopener" target="_blank">オキシドール「ヤクハン」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.8.1</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dvtenpu20230801.pdf " rel="noopener" target="_blank">ダイビタミックス注の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ct10ttenpu20230720.pdf " rel="noopener" target="_blank">セチリジン塩酸塩錠5mg・10m｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500ttenpu20230720.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg・500m｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/psstenpu20230720.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ps25ttenpu20230720.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vctosirase20230720.pdf " rel="noopener" target="_blank">ビタミンC錠500「イワキ」販売中止のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.03</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_122">ボンアルファ軟膏2㎍/gの添付文書等を掲載しました。</a><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.03</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_123">ボンアルファクリーム2㎍/gの添付文書等を掲載しました。</a><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.03</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_124">ボンアルファローション2㎍/gの添付文書等を掲載しました。</a><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.03</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_125">ボンアルファハイ軟膏20㎍/gの添付文書等を掲載しました。</a><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.7.03</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_126">ボンアルファハイローション20㎍/gの添付文書等を掲載しました。</a><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoosirase20230621.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amoosirase20230621.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.21</dd>
+<dt class="ellipsis">クロベタゾールプロピオン酸エステル軟膏・クリーム・ローション0.05%「MYK」の各種製品資料を掲載しました。</dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.20</dd>
+<dt class="ellipsis">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏・クリーム0.05%「MYK」の各種製品資料を掲載しました。</dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bnoosirase20230613.pdf " rel="noopener" target="_blank">ボンアルファ軟膏・クリーム・ローション2μg/gおよびボンアルファハイ軟膏・ハイローション20μg/gの製造販売承認承継品発売のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.12</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmoif20230612.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏・クリーム・ローション０．１%「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.6.7</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prpkanjaguide20230607.pdf " rel="noopener" target="_blank"> ピレチノール（アセトアミノフェン）の患者向医薬品ガイドを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.31</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lusosirase20230531.pdf " rel="noopener" target="_blank"> ルリコナゾール外用液1%「イワキ」のお知らせ文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.26</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpoif20230526.pdf" rel="noopener" target="_blank">デルモゾールDP軟膏・クリーム・ローション0.064%のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20230525.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の限定出荷継続のご案内文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tif20230516.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg・500mg「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/acptenpu20230515.pdf " rel="noopener" target="_blank">アスコルビン酸「イワキ」の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcotenpu20230515.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcoosirase20230515.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣のお知らせ文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.5.8</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvoif20230508.pdf" rel="noopener" target="_blank">ベタメタゾン吉草酸エステル軟膏・ローション0.12%「イワキ」のインタビューフォームを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20230424.pdf" rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g｢イワキ｣ 限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpmykoosirase20230420.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏・クリーム・ローション0.05 ％「ＭＹＫ」新発売のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vbpmykoosirase20230420.pdf" rel="noopener" target="_blank">ベタメタゾン酪酸エステルプロピオン酸エステル軟膏・クリーム0.05 ％「ＭＹＫ」新発売のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/iwrosirase20230419.pdf " rel="noopener" target="_blank">イワコールラブ消毒液0.2％５Lの販売中止案内を掲載します。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nrosirase20230414.pdf " rel="noopener" target="_blank">ノルニチカミン注の販売中止案内を掲載します。経過措置は2024年3月末を予定しております。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cnotenpu20230414.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏・クリーム・ローション0.05%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.14</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/fmotenpu20230414.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏・クリーム・ローション0.1%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.10</dd>
+<dt class="ellipsis"><span style="color: #0000ff;"><a style="color: #0000ff;" href="/dcms_media/other/bnoosirase20230410.pdf " rel="noopener" target="_blank"><span style="color: #000000;">ボンアルファ<sub>®</sub>・ボンアルファ<sub>®</sub>ハイの製造販売承認承継のご案内を掲載しました。</span><br /></a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.4.3</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ps25tsif20230401.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg/内用液0.75%「イワキ」のインタビューフォームを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.3.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tosirase20230323.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg・500mg｢イワキ｣使用上の注意改訂のお知らせを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.3.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500ttenpu20230323.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg・500mg｢イワキ｣の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.3.6</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpotenpu20230306.pdf" rel="noopener" target="_blank">デルモゾールDP軟膏・クリーム0.064%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.3.6</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpltenpu20230306.pdf" rel="noopener" target="_blank">デルモゾールDPローション0.064%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcoif20230228.pdf " rel="noopener" target="_blank">ラノコナゾールクリーム・軟膏・外用液1%「イワキ」のインタビューフォームを</a><a href="/dcms_media/other/bvltenpu20230222.pdf" rel="noopener" target="_blank">改訂</a><a href="/dcms_media/other/lcoif20230228.pdf " rel="noopener" target="_blank">しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prpkanjaguide20230204.pdf " rel="noopener" target="_blank">ピレチノール(アセトアミノフェン）患者向け医薬品ガイドを更新いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/sxoosirase20230224.pdf" rel="noopener" target="_blank">サレックス軟膏0.05%包装仕様変更のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvsosirase20230224.pdf" rel="noopener" target="_blank">ポビドンヨードスクラブ液7.5%「イワキ」、リン酸コデイン散１％「イワキ」の販売中止のご案内を掲載いたしました。<br />経過措置は2024年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvsosirase20230224.pdf" rel="noopener" target="_blank">グリセリン「NikP」、炭酸水素ナトリウム「NikP」、乳糖水和物（結晶）「NikP」、硫酸マグネシウム「NikP」の<br />販売中止のご案内を掲載いたしました。経過措置は2024年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvotenpu20230222.pdf" rel="noopener" target="_blank">ベタメタゾン吉草酸エステル軟膏0.12%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvltenpu20230222.pdf" rel="noopener" target="_blank">ベタメタゾン吉草酸エステルローション0.12%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/aen10osirase20230220.pdf" rel="noopener" target="_blank">亜鉛華(10%)単軟膏「コザカイ・Ｍ」限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lusosirase20230220.pdf " rel="noopener" target="_blank">ルリコナゾール外用液1%「イワキ」の製造販売承認取得のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.2</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mgwtenpu20230202.pdf " rel="noopener" target="_blank">ミノグロウの添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.2.2</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vcptenpu20230202.pdf " rel="noopener" target="_blank">ビタミンC「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.01.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vcposirese2023118.pdf " rel="noopener" target="_blank">ビタミンC錠500「イワキ」380錠　販売中止のご案内を掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.1.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prposirase20230117.pdf " rel="noopener" target="_blank">ピレチノール(アセトアミノフェン）使用上の注意改訂のお知らせを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.1.17</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prptenpu20230117.pdf " rel="noopener" target="_blank">ピレチノール(アセトアミノフェン）添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.1.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tzrosirase20230110.pdf " rel="noopener" target="_blank">トリゾンラブ消毒液0.2％ 500ml 限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2023.1.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzoosirase20230110.pdf" rel="noopener" target="_blank">ベンダザック軟膏3%｢イワキ｣10g×10限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.12.9</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lucosirase20221209.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」新発売のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.12.9</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/new_products.html" rel="noopener" target="_blank">薬価収載に伴い、ルリコナゾールクリーム・軟膏1%「イワキ」の添付文書、IFを更新し、くすりのしおりを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.12.9</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tzrosirase20221209.pdf " rel="noopener" target="_blank">トリゾンラブ消毒液0.2％ 500ml 限定出荷継続のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11.30</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kyoif20221130.pdf " rel="noopener" target="_blank">キョウミノチン静注PLのインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lucif20221128.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」のインタビューフォームを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tzrosirase20221122.pdf " rel="noopener" target="_blank">トリゾンラブ消毒液0.2％ 500ml 限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11.10</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzoosirase20221110.pdf" rel="noopener" target="_blank">ベンダザック軟膏3%｢イワキ｣10g×10限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.11.02</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/new_products.html" rel="noopener" target="_blank">新製品ルリコナゾールクリーム1%「イワキ」、ルリコナゾール軟膏0.1%「イワキ」サイトを設置しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.25</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ct5tosirase20221025.pdf" rel="noopener" target="_blank">セチリジン塩酸塩錠5mg｢イワキ｣出荷停止に関するご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.19</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloosirase20221019.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」5g×50限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv250tkanjaguide20221018.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg「イワキ」、レボフロキサシン錠500mg「イワキ」の患者向医薬品ガイドを改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/amoosirase20221013.pdf " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.13</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10881 " rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcsosirase20221013.pdf " rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.13</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10880 " rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.06</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nzltenpu20221006.pdf " rel="noopener" target="_blank">ニゾラールローション2%の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.06</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njsptenpu20221006.pdf " rel="noopener" target="_blank">ネオヨジンシュガーパスタ軟膏の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.06</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvstenpu20221006.pdf " rel="noopener" target="_blank">ポビドンヨードスクラブ液7.5%「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.10.06</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv250ttenpu20221006.pdf " rel="noopener" target="_blank">レボフロキサシン錠250mg「イワキ」、レボフロキサシン錠500mg「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.30</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cptosirase20220930.pdf " rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2mg「イワキ」限定出荷解除のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.27</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/albosirase20220927.pdf " rel="noopener" target="_blank">タンニン酸アルブミン「NikP」出荷再開のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tloosirase20220920.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」5g×50限定出荷のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.18</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20220918.pdf " rel="noopener" target="_blank">2022年9月付の経過措置一覧表をお知らせします。経過措置満了後にレセコンに表示される製品について説明しています。</a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.13</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_114 " rel="noopener" target="_blank">ルリコナゾールクリーム1%「イワキ」の製品ページを開設いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.13</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_115 " rel="noopener" target="_blank">ルリコナゾール軟膏1%「イワキ」の製品ページを開設いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/luctenpu20220913.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」の添付文書を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.13</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nrosirase20220913.pdf " rel="noopener" target="_blank">9月9日にお知らせしたノルニチカミン注自主回収（クラスⅡ）に関してお知らせを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.09</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10837 " rel="noopener" target="_blank">ノルニチカミン注自主回収（クラスⅡ）に関してに関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.09</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tosirase20220909.pdf " rel="noopener" target="_blank">レボフロキサシン錠500mg「イワキ」表示変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mgoxitenpu20220901.pdf " rel="noopener" target="_blank">重質酸化マグネシウム「NikP」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mgoxiosirase20220901.pdf " rel="noopener" target="_blank">重質酸化マグネシウム「NikP」の使用上の注意改訂のお知らせを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cptosirase20220901.pdf " rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2mg「イワキ」の需要増大のための限定出荷について、お知らせを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.09.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prposirase20220901.pdf " rel="noopener" target="_blank">ピレチノール（アセトアミノフェン）の需要増大のための限定出荷について、お知らせを掲載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/eposirase20220822.pdf " rel="noopener" target="_blank">8月22掲載のエピカルス配合錠の製造販売中止案内について<span style="text-decoration: underline;">情報訂正</span>いたしました。<br />代替候補品は規格が異なりますのでご注意ください。（エピカルス配合錠の倍量となります）<br />経過措置は2024年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgwosirase20220825.pdf">ミノグロウ出荷再開のお知らせを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/albosirase20220823.pdf " rel="noopener" target="_blank">タンニン酸アルブミン「NikP」自主回収（クラスⅡ）に関してお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.23</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10814" rel="noopener" target="_blank">タンニン酸アルブミン「NikP」自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.23</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/njugtenpu20220817.pdf " rel="noopener" target="_blank">ネオヨジンうがいぐすりの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/apgetenpu20220822.pdf " rel="noopener" target="_blank">アダパレンゲル0.1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tlotenpu20220822.pdf " rel="noopener" target="_blank">タクロリムス軟膏0.1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dut05ctenpu20220822.pdf " rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vattenpu20220822.pdf " rel="noopener" target="_blank">バラシクロビル錠500mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mcotenpu20220822.pdf " rel="noopener" target="_blank">マキサカルシトール軟膏25μg/g「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05cif20220818.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」のインタビューフォームを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lucosirase20220815.pdf " rel="noopener" target="_blank">ルリコナゾールクリーム・軟膏1%「イワキ」の製造販売承認取得のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dcsosirase20220815.pdf " rel="noopener" target="_blank">ディクアノン配合内用液の販売中止のご案内を掲載しました。経過措置は2025年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.15</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tzrosirase20220815.pdf " rel="noopener" target="_blank">トリゾンラブ消毒液0.2％５L容器変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ps25ttenpu20220808.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg・7.5mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/psstenpu20220808.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/vdotenpu20220808.pdf " rel="noopener" target="_blank">ビダラビン軟膏3%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/prptenpu20220808.pdf " rel="noopener" target="_blank">「日本薬局方 アセトアミノフェン （ピレチノール）」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.08</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvgtenpu20220808.pdf " rel="noopener" target="_blank">ポビドンヨードガーグル液7％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/acptenpu20220802.pdf">アスコルビン酸「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep10ttenpu20220802.pdf">エピナスチン塩酸塩錠10mg・20mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfttenpu20220801.pdf " rel="noopener" target="_blank">テルビナフィン錠125㎎「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/tfstenpu20220801.pdf " rel="noopener" target="_blank">テルビナフィン塩酸塩外用液・クリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ct10ttenpu20220801.pdf " rel="noopener" target="_blank">セチリジン塩酸塩錠10mg・5mg｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgetenpu20220801.pdf " rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pcptenpu20220801.pdf " rel="noopener" target="_blank">リン酸コデイン散１％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvltenpu20220801.pdf " rel="noopener" target="_blank">ベタメタゾン吉草酸エステルローション0.12%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.08.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bvotenpu20220801.pdf " rel="noopener" target="_blank">ベタメタゾン吉草酸エステル軟膏0.12%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmoif20220729.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cptif20220729.pdf" rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2mg「イワキ」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.29</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cmgeif20220729.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%｢イワキ｣のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.28</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lcctenpu20220728.pdf " rel="noopener" target="_blank">ラノコナゾールクリーム・外用液・軟膏1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lvct5tif20220722.pdf " rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「JG」のインタビューフォームを改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dpotenpu20220721.pdf" rel="noopener" target="_blank">デルモゾールDP軟膏・クリーム・ローション0.064%の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bfctenpu20220721.pdf" rel="noopener" target="_blank">ビホナゾールクリーム・外用液1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/bzotenpu20220721.pdf" rel="noopener" target="_blank">ベンダザック軟膏3%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/pvntenpu20220721.pdf" rel="noopener" target="_blank">ポビドンヨードゲル10%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lvct5ttenpu20220721.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「JG」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ddotenpu20220721.pdf" rel="noopener" target="_blank">デプロドンプロピオン酸エステル軟膏・クリーム0.3% 「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cpttenpu20220721.pdf " rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cnotenpu20220721.pdf " rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏・クリーム・ローション0.05%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/clctenpu20220721.pdf " rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dfotenpu20220707.pdf " rel="noopener" target="_blank">ジフルプレドナート軟膏・クリーム・ローション0.05%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmotenpu20220707.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmotenpu20220707.pdf">モメタゾンフランカルボン酸エステル軟膏・クリーム・ローション0.1％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dgotenpu20220707.pdf">デルモゾールＧ軟膏・クリームの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpotenpu20220707.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏0.05％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.07</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/cbpltenpu20220707.pdf " rel="noopener" target="_blank">クロベタゾールプロピオン酸エステルローション0.05％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/dxctenpu20220701.pdf " rel="noopener" target="_blank">デキサメタゾン軟膏・クリーム・ローション0.1%｢イワキ｣の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/szotenpu20220701.pdf " rel="noopener" target="_blank">スピラゾン軟膏・クリーム・ローション0.3%の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/nzltenpu20220701.pdf" rel="noopener" target="_blank">ニゾラール®ローション2％の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dgltenpu20220701.pdf" rel="noopener" target="_blank">デルモゾールＧローションの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzctenpu20220701.pdf" rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/sxotenpu20220823.pdf" rel="noopener" target="_blank">サレックス軟膏・クリーム0.05％の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.07.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/amotenpu20220701.pdf" rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1 ％「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.06.27</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ddcosirase20220627.pdf" rel="noopener" target="_blank">デプロドンプロピオン酸エステル軟膏・クリーム0.3％「イワキ」の製造販売中止のご案内を収載いたしました。<br />経過措置は2023年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.06.20</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ussosirase20220620.pdf" rel="noopener" target="_blank">ウスノン消毒液10%500mLの販売中止のご案内を収載いたしました。経過措置は2023年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/lv500tosirase20220524.pdf " rel="noopener" target="_blank">レボフロキサシン錠500mg「イワキ」表示変更のご案内を掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgwosirase20220524.pdf" rel="noopener" target="_blank">ミノグロウ欠品に関するお詫びを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5tif20220519.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg｢JG｣のインタビューフォームを改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clctenpu20220523.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/clcosirase20220523.pdf" rel="noopener" target="_blank">クロトリマゾールクリーム1%「イワキ」の使用上の注意改訂をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfctenpu20220523.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20220523.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1%「イワキ」の使用上の注意改訂をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfctenpu20220523.pdf" rel="noopener" target="_blank">ビホナゾール外用液1%「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.05.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20220523.pdf" rel="noopener" target="_blank">ビホナゾール外用液1%「イワキ」の使用上の注意改訂をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.04.18</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/kzcif20220418.pdf " rel="noopener" target="_blank">ケトコナゾールクリーム2%「イワキ」のインタビューフォームを改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.04.04</dd>
+<dt class="ellipsis"><span style="color: #000000;"><a style="color: #000000;" href="/dcms_media/other/hanyouinformation20220404.pdf " rel="noopener" target="_blank">2022年4月　薬価改定に伴う基礎的医薬品及びコード変更品のお知らせ</a></span></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.04.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/medical_search/external_use/item_113" rel="noopener" target="_blank">ニゾラール®ローション2%の製品情報を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.31</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmoosirase20220331.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」包装変更のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.24</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/nzlosirase20220324.pdf " rel="noopener" target="_blank">ニゾラール®ローション2％の製造販売承認承継品のご案内をお知らせいたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/glytenpu20220316.pdf " rel="noopener" target="_blank">グリセリン「NikP」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.16</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/seiseisuitenpu20220316.pdf " rel="noopener" target="_blank">精製水「NikP」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/shoisotenpu20220311.pdf " rel="noopener" target="_blank">消毒用イソプロパノール液50%「ヤクハン」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.03.11</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/oxdtenpu20220311.pdf " rel="noopener" target="_blank">オキシドール「ヤクハン」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.02.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20220214.pdf" rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.02.14</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10558" rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.01.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/nzlosirase20220124.pdf" rel="noopener" target="_blank">ニゾラール®ローション2％の販売移管についてお知らせいたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.01.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgoxiosirase20220120.pdf" rel="noopener" target="_blank">重質酸化マグネシウム「NikP」500g包装の販売中止案内を掲載します。経過措置は2023年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2022.01.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tloif20220112.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%｢イワキ｣のインタビューフォームを改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.12.09</dd>
+<dt class="ellipsis">
+<div><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tlotenpu20211209.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%｢イワキ｣の添付文書を改訂いたしました。</a></div>
+</dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.12.09</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tloosirase20211209.pdf" rel="noopener" target="_blank">タクロリムス軟膏0.1%｢イワキ｣の使用上の注意改訂をお知らせいたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.11.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmoosirase20211119.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」包装変更のご案内。<br />（11/26チューブサイズの誤表示修正を行いました。）</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.11.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmoosirase20211118.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」出荷再開及び包装変更のご案内<br />（11/26チューブサイズの誤表示修正を行いました。）</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.10.20</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/gmoosirase20211020.pdf " rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1%「イワキ」10g×10納期遅延のお詫びを収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.09.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ps75tosirase20210922.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム錠7.5mg「イワキ」製造販売中止案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.09.22</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/ps75tosirase20210921.pdf " rel="noopener" target="_blank">ピコスルファートナトリウム錠7.5mg「イワキ」（及び旧販売名シンラック錠7.5）自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.09.22</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10313" rel="noopener" target="_blank">ピコスルファートナトリウム錠7.5mg「イワキ」（及び旧販売名シンラック錠7.5）自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.08.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20210825.pdf" rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.08.25</dd>
+<dt class="ellipsis"><a href="https://www.info.pmda.go.jp/rgo/MainServlet?recallno=2-10268" rel="noopener" target="_blank">ラノコナゾール外用液１％「イワキ」自主回収（クラスⅡ）に関してpmdaに情報公開されました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.08.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/caosirase20210823.pdf" rel="noopener" target="_blank">乳酸カルシウム「NikP」の販売中止案内を掲載します。経過措置は2022年3月末を予定しています。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/p10osirase20210721.pdf" rel="noopener" target="_blank">ピリドキサール錠10mg「イセイ」　包装、印刷箱のデザインを変更いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.07.21</dd>
+<dt class="ellipsis"><a href="/dcms_media/other/mgoxiosirase20210721.pdf" rel="noopener" target="_blank">質酸化マグネシウム「NikP」1kg×5包装の販売中止案内を掲載します。500gについては継続いたします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.07.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgsultenpu20210721.pdf" rel="noopener" target="_blank">日本薬局方 硫酸マグネシウムの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.07.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgsulosirase20210721.pdf">日本薬局方硫酸マグネシウムの使用上の注意改訂をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05cosirase20210624.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」新発売のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05ckanjaguide20210624.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の患者向医薬品ガイドを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dutguidancefukuyakusidou20210624.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の患者様用資料を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ussosirase20210615.pdf" rel="noopener" target="_blank">ウスノン消毒液10%　3Lの製造販売中止のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20210615.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠20mg 「イワキ」PTP500T納期遅延のお詫びを収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.07</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps75tosirase20210607.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠 7.5mg「イワキ」バラ500T 納期遅延のお詫びを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.06.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dut05ctenpu20210601.pdf" rel="noopener" target="_blank">デュタステリドカプセル0.5mgZA「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.05.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzlosirase20210512.pdf" rel="noopener" target="_blank">ニトラゼンローション２％・ケトコナゾールローション２％「イワキ」 自主回収（クラスⅡ）に関するお詫びとお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.05.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20210511.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg「イワキ」、ピコスルファートナトリウム錠7.5mg「イワキ」出荷再開のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.04.28</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/p10tenpu20210601.pdf" rel="noopener" target="_blank">ピリドキサール錠10 ㎎ 「イセイ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.04.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzlosirase20210421.pdf" rel="noopener" target="_blank">ケトコナゾールローション2%「イワキ」製造販売中止のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.04.09</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/op25tosirase20210409.pdf" rel="noopener" target="_blank">オロパタジン塩酸塩OD錠2.5mg「イワキ」製造販売中止のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.04.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgsultenpu20210601.pdf" rel="noopener" target="_blank">日本薬局方 硫酸マグネシウムの添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.0401</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/mgsulosirase20210401.pdf">日本薬局方硫酸マグネシウムの使用上の注意改訂をお知らせします。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.03.26</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prpkanjaguide20210601.pdf" rel="noopener" target="_blank">ピレチノールの患者向け医薬品ガイドを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.03.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prptenpu20210601.pdf" rel="noopener" target="_blank">「日本薬局方 アセトアミノフェン （ピレチノール）」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.03.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/prposirase20210301.pdf" rel="noopener" target="_blank">「日本薬局方 アセトアミノフェン （ピレチノール）」使用上の注意改訂のお知らせを収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.02.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dcstenpu20210601.pdf" rel="noopener" target="_blank">ディクアノン配合内用液の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.02.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cnlosirase20210225.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステルローション0.05%「イワキ」包装変更のご案内を収載しました.</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.02.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bvlosirase20210225.pdf">ベタメタゾン吉草酸エステルローション0.12%「イワキ」包装変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2021.01.20</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cmgeosirase20210120.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1%「イワキ」出荷再開のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tkanjaguide20210601.pdf">エピナスチン塩酸塩錠 10mg・20mg「イワキ」の患者向医薬品ガイドを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5tif20210601.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「JG」のインタビューフォームを改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20ttenpu20210601.pdf" rel="noopener" target="_blank">エピナスチン塩酸塩錠10・20mg「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmotenpu20210601.pdf" rel="noopener" target="_blank">モメタゾンフランカルボン酸エステル軟膏・クリーム・ローション0.1%「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ddotenpu20210601.pdf" rel="noopener" target="_blank">デプロドンプロピオン酸エステル軟膏・クリーム0.3%「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/amotenpu20210601.pdf" rel="noopener" target="_blank">アルクロメタゾンプロピオン酸エステル軟膏0.1%「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fmoosirase20201216.pdf" rel="noopener" target="_blank">フランカルボン酸モメタゾン軟膏 0.1%「イワキ」、クリーム 、ローション 0.1%「イワキ」販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ep20tosirase20201216.pdf" rel="noopener" target="_blank">ユピテル錠10、ユピテル錠20 販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ddoosirase20201216.pdf" rel="noopener" target="_blank">アロミドン軟膏 0.3％・アロミドンクリーム0.3%販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/amoosirase20201216.pdf" rel="noopener" target="_blank">ビトラ軟膏0.1% 販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/op5tosirase20201216.pdf">オロパタジン塩酸塩OD錠5mg「イワキ」製造販売中止のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.08</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/szlosirase20201208.pdf" rel="noopener" target="_blank">スピラゾンロ－ション0.3％ 包装変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.12.08</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dflosirase20211208.pdf" rel="noopener" target="_blank">ジフルプレドナートローション0.05％「イワキ」包装変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.11.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/fin1tif20210601.pdf" rel="noopener" target="_blank">フィナステリド錠１ｍｇ「ＴＣＫ」のインタビューフォームを改定しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.10.21</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kettenpu20210601.pdf" rel="noopener" target="_blank">血沈用チトラート「ハラサワ」の添付文書を改定いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.09.29</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lccosirase20200929.pdf" rel="noopener" target="_blank">ラノコナゾールクリーム1%「イワキ」、軟膏、外用液の表示変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.09.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20200924.pdf" rel="noopener" target="_blank">ラノコナゾール外用液1％「イワキ」自主回収（クラスⅡ）に関するお詫びとお知らせ　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcsosirase20200924.pdf" rel="noopener" target="_blank">第36回日本臨床皮膚科医会総会・臨床学術大会（2020年9月21日、22日　アクトシティ浜松）に出展いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.09.11</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcctenpu20210601.pdf" rel="noopener" target="_blank">ラノコナゾールクリーム1％「イワキ」、軟膏、外用液の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.08.25</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cpttenpu20210601.pdf" rel="noopener" target="_blank">セチルピリジニウム塩化物トローチ2 mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.08.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcoosirase20200819.pdf" rel="noopener" target="_blank">ラノコナゾール軟膏1％「イワキ」　出荷再開のご案内。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.08.18</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/szcosirase20200818.pdf" rel="noopener" target="_blank">スピラゾンクリーム0.3％の変更のご案内　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.07.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcoosirase20200731.pdf" rel="noopener" target="_blank">ラノコナゾール軟膏1％「イワキ」　納期再遅延のお詫びを掲載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.07.16</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lcoosirase20200716.pdf" rel="noopener" target="_blank">ラノコナゾール軟膏1％「イワキ」　納期遅延のお詫びを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.07.02</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpoosirase20200702.pdf" rel="noopener" target="_blank">クロベタゾールプロピオン酸エステル軟膏0.05％「イワキ」の包装変更のご案内　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5ttenpu20210601.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「JG]の添付文書を収載致しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dfotenpu20210601.pdf" rel="noopener" target="_blank">ジフルプレドナート軟膏０．０５％「イワキ」、クリーム、ローションの添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cnotenpu20210601.pdf" rel="noopener" target="_blank">クロベタゾン酪酸エステル軟膏0.05％「イワキ」、クリーム、ローションの添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bvltenpu20210601.pdf" rel="noopener" target="_blank">ベタメタゾン吉草酸エステルローション0. 12％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bvotenpu20210601.pdf" rel="noopener" target="_blank">ベタメタゾン吉草酸エステル軟膏0. 12％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvgtenpu20210601.pdf" rel="noopener" target="_blank">ポビドンヨードガーグル液7 ％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvntenpu20210601.pdf" rel="noopener" target="_blank">ポビドンヨードゲル10％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvstenpu20210601.pdf" rel="noopener" target="_blank">ポビドンヨード スクラブ7.5％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvsosirase20200619.pdf" rel="noopener" target="_blank">ネオヨジンスクラブ7.5％ 販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvnosirase20200619.pdf" rel="noopener" target="_blank">ネオヨジンゲル10％ 販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvgosirase20200619.pdf" rel="noopener" target="_blank">ネオヨジンガーグル7％ 販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dfoosirase20200619.pdf" rel="noopener" target="_blank">スチブロン軟膏0.05%・スチブロンクリーム0.05%・スチブロンローション0.05%販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cnoosirase20200619.pdf" rel="noopener" target="_blank">パルデス軟膏0.05%・パルデスクリーム0.05%・パルデスローション0.05%　販売名変更のご案内　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bvoosirase20200619.pdf" rel="noopener" target="_blank">デルモゾール軟膏0.12%・デルモゾールローション0.12%　販売名変更のご案内　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.19</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5tosirase20200619.pdf" rel="noopener" target="_blank">レボセチリジン塩酸塩錠5mg「ＪＧ」新発売のご案内 　を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.06.01</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatkanjaguide20210601.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg「イワキ」の患者向け医薬品ガイドを収載致しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.05.07</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vtoosirase20200507.pdf" rel="noopener" target="_blank">ビトラ軟膏0.1% 5g×10、500g 納期遅延のお詫び を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.04.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lvct5tosirase20200420.pdf" rel="noopener" target="_blank">レボセチリジン錠5mg「JG」6月新発売のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.04.15</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cmgeosirase20200415.pdf" rel="noopener" target="_blank">クリンダマイシンリン酸エステルゲル1％「イワキ」供給に関するお詫びとご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.04.13</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmoosirase20200413.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」の包装変更お知らせ文章を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.04.07</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/gmotenpu20210601.pdf" rel="noopener" target="_blank">ゲンタマイシン硫酸塩軟膏0.1％「イワキ」の添付文書を改訂いたしました</a><a href="#">。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.04.02</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatguidancefukuyakusidou20210601.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg「イワキ」につきまして患者様用資料を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.03.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vattenpu20210601.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg「イワキ」の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2020.03.31</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/vatosirase20200331.pdf" rel="noopener" target="_blank">バラシクロビル錠500mg「イワキ」の「使用上の注意」改訂のお知らせを収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.12.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pvosirase20191223.pdf" rel="noopener" target="_blank">ネオヨジン外用液10％販売名及び包装変更のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.12.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/dxoosirase20191223.pdf" rel="noopener" target="_blank">デキサメサゾン軟膏0.1％「イワキ」・クリーム、ローション　販売名変更のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.12.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/cbpoosirase20191223.pdf" rel="noopener" target="_blank">デルトピカ軟膏0.05％・デルトピカローション0.05％ 販売名変更のご案内を収載いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.09.24</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv500tosirase20190924.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg「イワキ」、レボフロキサシン錠500mg「イワキ」の「使用上の注意」改訂お知らせ文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.0924</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/lv500ttenpu20210601.pdf" rel="noopener" target="_blank">レボフロキサシン錠250mg「イワキ」、レボフロキサシン錠500mg「イワキ」の添付文書を改訂いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.09.04</dd>
+<dt class="ellipsis"><a href="#">医療用医薬品原薬原産国につきまして医薬品個別情報ページに収載を開始いたしました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.08.05</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfctenpu20210601.pdf" rel="noopener" target="_blank">ビホナゾールクリーム1％「イワキ」、ビホナゾール外用液1％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.08.05</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25tosirase20190805.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg「イワキ」、ピコスルファートナトリウム錠7.5mg「イワキ」バラ錠梱包サイズ変更のご案内</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/ps25ttenpu20210601.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム錠2.5mg「イワキ」、ピコスルファートナトリウム錠7.5mg「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.23</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/psstenpu20210601.pdf" rel="noopener" target="_blank">ピコスルファートナトリウム内用液0.75％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pcptenpu20210601.pdf" rel="noopener" target="_blank">コデインリン酸塩散1％の添付文書を改訂しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.12</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pcposirase20190712.pdf" rel="noopener" target="_blank">コデインリン酸塩散1％の使用上の注意改訂文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.08</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/tfcosirase20190708.pdf" rel="noopener" target="_blank">テビーナクリーム1％・テビーナ液1％・テビーナ錠125mgの販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.08</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/pssosirase20190708.pdf">シンラック内用液0.75％・シンラック錠2.5・シンラック錠7.5の販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.07.08</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/bfcosirase20190708.pdf" rel="noopener" target="_blank">ビクロノールクリーム1％、ビクロノール外用液1％販売名変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.06.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcosirase20190617.pdf" rel="noopener" target="_blank">ニトラゼン軟膏2％、ニトラゼンローション2％の製品名変更案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.06.17</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kzctenpu20210601.pdf" rel="noopener" target="_blank">ケトコナゾールクリーム2％「イワキ」、ケトコナゾールローション2％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.06.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgetenpu20210601.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」の添付文書を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.06.14</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/apgeosirase20190614.pdf" rel="noopener" target="_blank">アダパレンゲル0.1％「イワキ」新発売のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.06.03</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/crosirase20190613.pdf" rel="noopener" target="_blank">クリストファン注20ｍＬ×50Ａ　包装変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.05.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/szoosirase20190522.pdf" rel="noopener" target="_blank">デルモゾール軟膏0.12％500ｇ スピラゾン軟膏0.3％500ｇ 包装変更のご案内を収載しました。</a></dt>
+</dl>
+<dl>
+<dd class="font_blue">2019.05.22</dd>
+<dt class="ellipsis"><a href="https://www.iwakiseiyaku.co.jp/dcms_media/other/kyoosirase20190522.pdf" rel="noopener" target="_blank">キョウミノチン静注PL 20ｍL×50A　内袋（パウチ）変更のご案内を収載しました。</a></dt>
+</dl>
+</section>
+
+			</div>
+			<!-- // ブロック -->
+			</div>
+			<!-- // ブロック貼り付けエリア -->
+			
+
+	</main>
+	<section class="f_contact">
+<div class="inner">
+<div class="f_contact_in">
+<p class="title_en">Inquiries</p>
+<h2>お問い合わせ</h2>
+<ul class="f_contact_link">
+<li><a href="/contact_list/pharmaceuticals_form.html"><span class="txt_l">医療用医薬品</span>に関するお問い合わせ<br />（病院・クリニック等で処方されるお薬）</a></li>
+<li><a href="/contact_list/vcetc_form.html"><span class="txt_l">一般用医薬品</span>に関するお問い合わせ<br />（ビタミンC・うがいぐすり・ミノグロウ等）</a></li>
+<li><a href="https://navision.iwakiseiyaku.co.jp/contact?_ga=2.106585283.1959093341.1623026294-1609889748.1559637291"><span class="txt_l">ナビジョンDR・美容医療向け</span><br /><span class="txt_l">化粧品</span>に関するお問い合わせ</a></li>
+<li><a href="https://illsera.iwakiseiyaku.co.jp/contact.php"><span class="txt_l">イルセラ・医療機関向けスキンケア化粧品</span>に関するお問い合わせ（<span>M-BF</span>クリーム等）</a></li>
+<li><a href="/contact_list/contract_manufacturing_form.html"><span class="txt_l">医薬品の製造受託</span><br />に関するお問い合わせ</a></li>
+<li><a href="/contact_list/study_form.html"><span class="txt_l">研究受託・共同研究・共同開発</span><br />に関するお問い合わせ</a></li>
+<li><a href="/contact_list/licensing_form.html"><span class="txt_l">ライセンシング・業務提携等の</span><br /><span class="txt_l">事業開発</span>に関するお問い合わせ</a></li>
+<li><a href="/contact_list/company_form.html"><span class="txt_l">採用及び岩城製薬</span><br />に関するお問い合わせ</a></li>
+<li><a href="/contact_list/opinion_form.html"><span class="txt_l">医療用医薬品の販売情報</span><br /><span class="txt_l">提供活動</span>に関するご意見</a></li>
+</ul>
+</div>
+</div>
+</section><footer role="presentation">
+<div class="f_logo"><img src="/dcms_media/image/common/logo.svg" alt="岩城製薬株式会社" /></div>
+<div id="footer_nav">
+<div class="footer_nav_block inner">
+<div class="fnav_unit">
+<p class="fnav_title">会社案内</p>
+<ul class="fnav_list">
+<li><a href="/company/message.html">トップメッセージ</a></li>
+<li><a href="/company/outline.html">会社概要</a></li>
+<li><a href="/company/base.html">拠点情報</a></li>
+<li><a href="/company/group.html">グループ会社</a></li>
+<li><a href="/company/recruit.html">採用情報</a></li>
+<li><a href="/financial_notice.html">電子公告・決算公告</a></li>
+</ul>
+</div>
+<div class="fnav_unit">
+<p class="fnav_title">事業案内</p>
+<ul class="fnav_list">
+<li><a href="/business_information.html">医療用・一般用医薬品</a></li>
+<li><a href="/business_information/non-prescription_drug.html">医薬品の製造受託事業及び研究受託事業</a></li>
+</ul>
+</div>
+<div class="fnav_unit">
+<p class="fnav_title">製品情報</p>
+<ul class="fnav_list">
+<li><a href="/medical.html">医療関係者向け製品情報（医療用医薬品・一般用医薬品）</a></li>
+<li><a href="https://navision.iwakiseiyaku.co.jp/?_ga=2.50032367.850358359.1595316278-67146673.1591575026">美容医療向け化粧品</a></li>
+<li><a href="/documents_for_patients.html">患者様向け資料</a></li>
+</ul>
+</div>
+<div class="fnav_unit">
+<p class="fnav_title">最新情報</p>
+<ul class="fnav_list">
+<li><a href="/news.html">お知らせ</a></li>
+</ul>
+</div>
+<div class="fnav_unit">
+<p class="fnav_title">採用情報</p>
+<ul class="fnav_list">
+<li><a href="/company/recruit.html">採用情報</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="footer_info">
+<div class="inner">
+<div class="footer_info_navi"><a href="/sitemap.html">サイトマップ</a> <a href="/privacy.html">プライバシーポリシー</a> <a href="/guidelines_for_transparency.html">透明性に関する指針</a> <a href="/en.html">English</a></div>
+<small>Copyright by Iwaki Seiyaku Co.,Ltd.All rights reserved.</small></div>
+</div>
+</footer>
+
+	</body>
+	<!-- Corporate Ver 02 (creation month 2018.05)-->
+	<!-- installation date 2019.02.22 -->
+</html>
