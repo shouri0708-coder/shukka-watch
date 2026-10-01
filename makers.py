@@ -33,6 +33,8 @@ def clean_title(t):
     for _ in range(3): t = LABEL2.sub("", LABEL.sub("", t)).strip(" 　:：・|")
     t = TAIL.sub("", t).strip(" 　:：・|")
     t = re.sub(r"[（(]\s*[^（()）]*向け[^（()）]*[)）]\s*$", "", t).strip()  # （医療関係者様向け | 特約店様向け）等
+    m = re.match(r"^下記製品の(.+?)を掲載(?:いた)?しました。?\s*(.*)$", t)  # 共和: 「下記製品の○○のご案内を掲載…・品名」→「品名 ○○のご案内」
+    if m: t = (m.group(2).strip(" ・") + " " + m.group(1)).strip()
     return t
 
 def log(*a):
