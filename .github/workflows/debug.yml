@@ -12,4 +12,4 @@ jobs:
       - run: MAKERS_DEBUG=1 python makers.py || true
       - run: |
           git config user.name bot; git config user.email bot@users.noreply.github.com
-          git checkout -- . ; git add -f debug makers_log.txt && git commit -m "debug html" && git push
+          git add -f debug makers_log.txt && git commit -m "debug html" && git pull --rebase && git push
