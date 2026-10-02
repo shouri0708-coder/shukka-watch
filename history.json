@@ -4937,5 +4937,115 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "1129010F1087",
+  "name": "エスゾピクロン錠１ｍｇ「アメル」",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年1月"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "1129010F2083",
+  "name": "エスゾピクロン錠２ｍｇ「アメル」",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年1月"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "3999001Q2058",
+  "name": "モニラック・シロップ６５％",
+  "maker": "丸石製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261002",
+  "type": "resolved",
+  "yj": "2329028F3204",
+  "name": "ラベプラゾールＮａ錠５ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "1172014C1055",
+  "name": "ヒルナミン細粒１０％",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ア. あり 2027年３月頃"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "7123703X1067",
+  "name": "マクロゴール４０００（丸石）",
+  "maker": "丸石製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261002",
+  "type": "new",
+  "yj": "2171403G1024",
+  "name": "ニトログリセリン注２５ｍｇ／５０ｍＬシリンジ「テルモ」",
+  "maker": "テルモ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261002",
+  "type": "resolved",
+  "yj": "6343423X1050",
+  "name": "乾燥ＨＢグロブリン筋注用２００単位「ニチヤク」",
+  "maker": "武田薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261002",
+  "type": "resolved",
+  "yj": "6343423X2057",
+  "name": "乾燥ＨＢグロブリン筋注用１０００単位「ニチヤク」",
+  "maker": "武田薬品工業",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261002",
+  "type": "resolved",
+  "yj": "6343408X1072",
+  "name": "破傷風グロブリン筋注用２５０単位「ニチヤク」",
+  "maker": "武田薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
