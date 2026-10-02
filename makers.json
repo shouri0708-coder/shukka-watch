@@ -6,10 +6,8 @@
  {
   "maker": "東和薬品",
   "url": "https://med.towayakuhin.co.jp/medical/product/information_supply.php",
-  "enabled": false,
-  "mode": "browser",
-  "gate": "^薬剤師（薬局）$",
-  "note": "個別案内なし（全製品供給状況一覧Excelのみ）"
+  "enabled": true,
+  "mode": "towa"
  },
  {
   "maker": "日医工",

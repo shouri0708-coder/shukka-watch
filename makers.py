@@ -146,6 +146,13 @@ def main():
     for m in conf:
         if not m.get("enabled", True): continue
         try:
+            if m.get("mode") == "towa":
+                import towa
+                items = towa.parse_history(towa.fetch_excel(log), m["maker"])
+                log(f"{m['maker']}: {len(items)}件（更新履歴シート）")
+                for it in items:
+                    if it["url"] not in state: state[it["url"]] = it; new_cnt += 1
+                time.sleep(1); continue
             html = fetch_browser(m["url"], gate=m.get("gate")) if m.get("mode") == "browser" else fetch(m["url"])
             if os.environ.get("MAKERS_DEBUG"):
                 os.makedirs(os.path.join(BASE, "debug"), exist_ok=True)
