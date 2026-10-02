@@ -13174,5 +13174,37 @@
 "date": "20261001",
 "src": "https://med.skk-net.com/significant/083786.html",
 "first_seen": "20261001"
+},
+"https://med.sawai.co.jp/file/pr115_4_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4_1.pdf",
+"date": "20261002",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261002"
+},
+"https://med.sawai.co.jp/file/pr28_1316_4.pdf": {
+"maker": "沢井製薬",
+"title": "フルボキサミンマレイン酸塩錠25mg/50mg/75mg「サワイ」販売中止のご案内（ 月更新）",
+"url": "https://med.sawai.co.jp/file/pr28_1316_4.pdf",
+"date": "20260925",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20260925"
+},
+"https://med.sawai.co.jp/file/pr27_4617_2.pdf": {
+"maker": "沢井製薬",
+"title": "イルアミクス配合錠LD/HD「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_4617_2.pdf",
+"date": "20260914",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20260914"
+},
+"https://med.sawai.co.jp/file/pr27_1251_1.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_1251_1.pdf",
+"date": "20260908",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20260908"
 }
 }
