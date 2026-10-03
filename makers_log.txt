@@ -12,7 +12,7 @@ EAファーマ: 6件
 岩城製薬: 218件
 東洋製薬化成: 45件
 皇漢堂製薬: 8件
-全星薬品工業: ERROR ConnectTimeout: HTTPSConnectionPool(host='zensei-med.jp', port=443): Max retries exceeded with url: /news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='zensei-med.jp', port=443) at 0x7fcd2d41b1d0>, 'Connection to zensei-med.jp timed out. (connect timeout=30)'))
+全星薬品工業: 28件
 三和化学研究所: 51件
 日本臓器製薬: 16件
 参天製薬: 49件
@@ -31,9 +31,6 @@ EAファーマ: 6件
   gate click: 医療従事者向け情報
   gate click: 医療従事者向け情報
 サンド: 285件
-大正製薬: ERROR TimeoutError: Page.goto: Timeout 60000ms exceeded.
-Call log:
-  - navigating to "https://medical.taisho.co.jp/medical/di-news/", waiting until "domcontentloaded"
-
+大正製薬: 47件
 持田製薬: 104件
 新規 0件 / 出力 338件
