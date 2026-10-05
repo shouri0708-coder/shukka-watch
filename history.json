@@ -5047,5 +5047,170 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2499011M1108",
+  "name": "デュタステリドカプセル０．５ｍｇＡＶ「武田テバ」",
+  "maker": "Ｔ’ｓファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 26/9月末消尽"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "1179052M1057",
+  "name": "デュロキセチンカプセル２０ｍｇ「ＫＭＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2149042F3052",
+  "name": "テルミサルタン錠８０ｍｇ「ＦＦＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "6250019F1080",
+  "name": "バラシクロビル錠５００ｍｇ「ＦＦＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "2149114F1056",
+  "name": "アムバロ配合錠「ＦＦＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "1124020F1041",
+  "name": "ブロマゼパム錠１ｍｇ「サンド」",
+  "maker": "サンド",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "1124020F2056",
+  "name": "ブロマゼパム錠２ｍｇ「サンド」",
+  "maker": "サンド",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "1124020F4059",
+  "name": "ブロマゼパム錠５ｍｇ「サンド」",
+  "maker": "サンド",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2144006F2169",
+  "name": "リシノプリル錠１０ｍｇ「サワイ」",
+  "maker": "沢井製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "6241013F2080",
+  "name": "レボフロキサシン錠２５０ｍｇ「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2655706N1041",
+  "name": "オキナゾールクリーム１％",
+  "maker": "田辺ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "2649734Q1050",
+  "name": "ナボールゲル１％",
+  "maker": "久光製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － ボルタレンゲルの通常出荷再開予定日の10月初旬以降"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2655707N1038",
+  "name": "エクセルダームクリーム１％",
+  "maker": "田辺ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261005",
+  "type": "resolved",
+  "yj": "1319742Q1055",
+  "name": "レボフロキサシン点眼液０．５％「ＦＦＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261005",
+  "type": "new",
+  "yj": "2190404A1307",
+  "name": "ニコリン注射液１００ｍｇ",
+  "maker": "Ｔ’ｓ製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 26/9月末消尽"
  }
 ]
