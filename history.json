@@ -5212,5 +5212,137 @@
   "to": "stop",
   "reason": "６．薬価削除",
   "outlook": "エ. － 26/9月末消尽"
+ },
+ {
+  "date": "20261006",
+  "type": "resolved",
+  "yj": "1179050M3077",
+  "name": "アトモキセチンカプセル２５ｍｇ「ＶＴＲＳ」",
+  "maker": "ヴィアトリス・ヘルスケア",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "2190101F1063",
+  "name": "アマルエット配合錠１番「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "2190103F1062",
+  "name": "アマルエット配合錠３番「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "2190104F1067",
+  "name": "アマルエット配合錠４番「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "resolved",
+  "yj": "6141001R1120",
+  "name": "エリスロシンドライシロップ１０％",
+  "maker": "ヴィアトリス・ヘルスケア",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "resolved",
+  "yj": "6132005C1240",
+  "name": "セファクロル細粒小児用１０％「ＪＧ」",
+  "maker": "長生堂製薬",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "resolved",
+  "yj": "6132008C1022",
+  "name": "セフスパン細粒５０ｍｇ",
+  "maker": "長生堂製薬",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "resolved",
+  "yj": "1179041F3362",
+  "name": "パロキセチン錠５ｍｇ「ＶＴＲＳ」",
+  "maker": "ヴィアトリス・ヘルスケア",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "3323701X3136",
+  "name": "トロンビン経口・外用剤５千「Ｆ」",
+  "maker": "富士製薬工業",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026年9月在庫消尽済み"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "3323701X4124",
+  "name": "トロンビン経口・外用剤１万「Ｆ」",
+  "maker": "富士製薬工業",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026年9月在庫消尽済み"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "6399436A2022",
+  "name": "トシリズマブＢＳ点滴静注２００ｍｇ「ＭＡ」",
+  "maker": "持田製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261006",
+  "type": "new",
+  "yj": "6399436A3029",
+  "name": "トシリズマブＢＳ点滴静注４００ｍｇ「ＭＡ」",
+  "maker": "持田製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
