@@ -5344,5 +5344,82 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261007",
+  "type": "worse",
+  "yj": "4490028R1066",
+  "name": "レボセチリジン塩酸塩ドライシロップ０．５％「日本臓器」",
+  "maker": "日本臓器製薬",
+  "from": "limited",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "2652701M1025",
+  "name": "５％サリチル酸ワセリン軟膏東豊",
+  "maker": "東豊薬品",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "2652701M2021",
+  "name": "１０％サリチル酸ワセリン軟膏東豊",
+  "maker": "東豊薬品",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "2649734Q1069",
+  "name": "ボルタレンゲル１％",
+  "maker": "同仁医薬化工",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － 2026/10/01"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "2649734Q2022",
+  "name": "ボルタレンローション１％",
+  "maker": "同仁医薬化工",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － 2026/10/01"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "2691702M1060",
+  "name": "マキサカルシトール軟膏２５μｇ／ｇ「タカタ」",
+  "maker": "高田製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261007",
+  "type": "resolved",
+  "yj": "7122704X1250",
+  "name": "親水クリーム「東豊」",
+  "maker": "東豊薬品",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]

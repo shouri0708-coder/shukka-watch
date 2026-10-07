@@ -25646,5 +25646,21 @@
 "date": "20240801",
 "src": "https://www.med.ts-pharma.com/di-net/news/sale/index.html",
 "first_seen": "20240801"
+},
+"https://www.med.kyorin-rmd.com/news/pdf/2026/261008genteisyukka.pdf": {
+"maker": "キョーリンリメディオ",
+"title": "【限定出荷のご案内】ミルタザピン錠15mg「杏林」",
+"url": "https://www.med.kyorin-rmd.com/news/pdf/2026/261008genteisyukka.pdf",
+"date": "20261008",
+"src": "https://www.med.kyorin-rmd.com/news/",
+"first_seen": "20261008"
+},
+"https://www.med.kyorin-rmd.com/news/pdf/2026/20261008kyokyujyokyo_list.xlsx": {
+"maker": "キョーリンリメディオ",
+"title": "「供給状況一覧」を更新しました",
+"url": "https://www.med.kyorin-rmd.com/news/pdf/2026/20261008kyokyujyokyo_list.xlsx",
+"date": "20261008",
+"src": "https://www.med.kyorin-rmd.com/news/",
+"first_seen": "20261008"
 }
 }
