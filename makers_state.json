@@ -75,7 +75,7 @@
 "maker": "日医工",
 "title": "供給状況に関するお知らせを の情報に更新しました。",
 "url": "https://www.nichiiko.co.jp/medicine/significant/excel_index.php",
-"date": "20260930",
+"date": "20261008",
 "src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
 "first_seen": "20260930"
 },
@@ -25661,6 +25661,38 @@
 "url": "https://www.med.kyorin-rmd.com/news/pdf/2026/20261008kyokyujyokyo_list.xlsx",
 "date": "20261008",
 "src": "https://www.med.kyorin-rmd.com/news/",
+"first_seen": "20261008"
+},
+"https://med.sawai.co.jp/file/pr27_143_1.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_143_1.pdf",
+"date": "20261008",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261008"
+},
+"https://med.sawai.co.jp/file/pr115_151_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_151_1.pdf",
+"date": "20261008",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261008"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1869": {
+"maker": "日本ジェネリック",
+"title": "重ソー静注7%「NS」限定出荷に関するご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1869",
+"date": "20261008",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261008"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1868": {
+"maker": "日本ジェネリック",
+"title": "セルトラリン錠25mg/50mg/100mg「JG」限定出荷に関するご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1868",
+"date": "20261008",
+"src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20261008"
 }
 }
