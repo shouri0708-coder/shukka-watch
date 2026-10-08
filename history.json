@@ -5421,5 +5421,60 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261008",
+  "type": "new",
+  "yj": "1179046F4035",
+  "name": "セルトラリンＯＤ錠２５ｍｇ「アメル」",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "２．原材料調達上の問題",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261008",
+  "type": "new",
+  "yj": "1179046F5031",
+  "name": "セルトラリンＯＤ錠５０ｍｇ「アメル」",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "２．原材料調達上の問題",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261008",
+  "type": "new",
+  "yj": "2649801M1028",
+  "name": "グリメサゾン軟膏",
+  "maker": "藤永製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261008",
+  "type": "new",
+  "yj": "2190404H4118",
+  "name": "ニコリンＨ注射液０．５ｇ",
+  "maker": "Ｔ’ｓ製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2028年2月以降"
+ },
+ {
+  "date": "20261008",
+  "type": "new",
+  "yj": "2190404H5084",
+  "name": "ニコリンＨ注射液１ｇ",
+  "maker": "Ｔ’ｓ製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2028年2月以降"
  }
 ]

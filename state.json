@@ -1,5 +1,5 @@
 {
- "asof": "20261007",
+ "asof": "20261008",
  "items": {
   "4419002B1033": {
    "yj": "4419002B1033",
@@ -33551,7 +33551,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -59659,7 +59659,7 @@
   "4490038F1020": {
    "yj": "4490038F1020",
    "name": "エクテリー錠３００ｍｇ",
-   "maker": "ＫａｌＶｉｓｔａ　Ｐｈａｒｍａｃｅｕｔｉｃａｌｓ　Ｊａｐａｎ",
+   "maker": "キエジ・ファーマ・ジャパン",
    "generic": "セベトラルスタット",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -60051,30 +60051,30 @@
    "name": "セルトラリンＯＤ錠２５ｍｇ「アメル」",
    "maker": "共和薬品工業",
    "generic": "セルトラリン塩酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
    "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "reason": "２．原材料調達上の問題",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "２５ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261008",
+   "since": "20261008"
   },
   "1179046F5031": {
    "yj": "1179046F5031",
    "name": "セルトラリンＯＤ錠５０ｍｇ「アメル」",
    "maker": "共和薬品工業",
    "generic": "セルトラリン塩酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
    "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "reason": "２．原材料調達上の問題",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "５０ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261008",
+   "since": "20261008"
   },
   "1179046F1117": {
    "yj": "1179046F1117",
@@ -72131,7 +72131,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -72161,7 +72161,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -126536,7 +126536,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -126566,7 +126566,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -132101,7 +132101,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．５％１ｇ",
    "upd": "20261007",
    "since": "20261007"
@@ -159416,7 +159416,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５％１０ｇ",
    "upd": "20261007",
    "since": ""
@@ -159431,7 +159431,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０％１０ｇ",
    "upd": "20261007",
    "since": ""
@@ -160391,7 +160391,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. － 2026/10/01",
-   "new": true,
+   "new": false,
    "spec": "１％１ｇ",
    "upd": "20261007",
    "since": ""
@@ -160406,7 +160406,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. － 2026/10/01",
-   "new": true,
+   "new": false,
    "spec": "１％１ｇ",
    "upd": "20261007",
    "since": ""
@@ -162996,15 +162996,15 @@
    "name": "グリメサゾン軟膏",
    "maker": "藤永製薬",
    "generic": "デキサメタゾン・脱脂大豆乾留タール",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
+   "vol": "D．薬価削除予定",
+   "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "１ｇ",
-   "upd": "",
-   "since": ""
+   "upd": "20261008",
+   "since": "20261008"
   },
   "1329712A1028": {
    "yj": "1329712A1028",
@@ -173516,7 +173516,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．００２５％１ｇ",
    "upd": "20261007",
    "since": ""
@@ -179336,7 +179336,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｇ",
    "upd": "20261007",
    "since": ""
@@ -197586,30 +197586,30 @@
    "name": "ニコリンＨ注射液０．５ｇ",
    "maker": "Ｔ’ｓ製薬",
    "generic": "シチコリン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
+   "vol": "A．出荷量通常",
+   "reason": "８．その他の理由",
+   "outlook": "ア. あり 2028年2月以降",
+   "new": true,
    "spec": "２５％２ｍＬ１管",
-   "upd": "",
-   "since": ""
+   "upd": "20261008",
+   "since": "20261008"
   },
   "2190404H5084": {
    "yj": "2190404H5084",
    "name": "ニコリンＨ注射液１ｇ",
    "maker": "Ｔ’ｓ製薬",
    "generic": "シチコリン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
+   "vol": "A．出荷量通常",
+   "reason": "８．その他の理由",
+   "outlook": "ア. あり 2028年2月以降",
+   "new": true,
    "spec": "２５％４ｍＬ１管",
-   "upd": "",
-   "since": ""
+   "upd": "20261008",
+   "since": "20261008"
   },
   "2190404A1340": {
    "yj": "2190404A1340",
