@@ -25694,5 +25694,29 @@
 "date": "20261008",
 "src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20261008"
+},
+"https://med.sawai.co.jp/file/pr27_1119_1.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_1119_1.pdf",
+"date": "20261008",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261008"
+},
+"https://med.sawai.co.jp/file/pr115_1502_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_1502_1.pdf",
+"date": "20261008",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261008"
+},
+"https://med.sawai.co.jp/file/pr28_1315_2.pdf": {
+"maker": "沢井製薬",
+"title": "フルボキサミンマレイン酸塩錠25mg/50mg/75mg「サワイ」販売中止のご案内（ 月更新）",
+"url": "https://med.sawai.co.jp/file/pr28_1315_2.pdf",
+"date": "20260925",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20260925"
 }
 }
