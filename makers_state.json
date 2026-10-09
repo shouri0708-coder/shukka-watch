@@ -203,7 +203,7 @@
 "maker": "日本ジェネリック",
 "title": "「全品目供給状況一覧」を更新いたしました（ 現在）",
 "url": "https://medical.nihon-generic.co.jp/uploadfiles/news/JG_product_list.pdf",
-"date": "20260907",
+"date": "20261009",
 "src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20260907"
 },
@@ -8009,9 +8009,9 @@
 },
 "https://med.skk-net.com/significant/index.html": {
 "maker": "三和化学研究所",
-"title": "供給状況に関するお知らせ 供給状況に関するお知らせ ● 医薬品出荷状況一覧 （ 現在） 供給関連情報一覧 ● 沈降炭酸カルシウム錠500mg「三和」 PTP500錠包装の流通に関するお詫びとお願い （ ） ● ジクロフェナ",
+"title": "供給状況に関するお知らせ 供給状況に関するお知らせ ● 医薬品出荷状況一覧 （ 現在） 供給関連情報一覧 ● ラグノスNF経口ゼリー分包12g 供給状況に関するお知らせ （ 更新） ● 沈降炭酸カルシウム錠500mg「三和",
 "url": "https://med.skk-net.com/significant/index.html",
-"date": "20261001",
+"date": "20261009",
 "src": "https://med.skk-net.com/significant/083786.html",
 "first_seen": "20260903"
 },
@@ -25718,5 +25718,29 @@
 "date": "20260925",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20260925"
+},
+"https://med.sawai.co.jp/file/pr115_4804_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4804_1.pdf",
+"date": "20261008",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261008"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/DICLT_CHUUSHI_2610.pdf": {
+"maker": "日本ジェネリック",
+"title": "ジクロフェナクNa錠25mg「TCK」 取扱い中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/DICLT_CHUUSHI_2610.pdf",
+"date": "20261009",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261009"
+},
+"https://med.skk-net.com/significant/item/LAGNF2610i.pdf": {
+"maker": "三和化学研究所",
+"title": "ラグノスNF経口ゼリー分包12g 供給状況に関するお知らせ",
+"url": "https://med.skk-net.com/significant/item/LAGNF2610i.pdf",
+"date": "20261009",
+"src": "https://med.skk-net.com/significant/083786.html",
+"first_seen": "20261009"
 }
 }
