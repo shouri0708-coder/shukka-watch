@@ -5795,5 +5795,148 @@
   "to": "limited",
   "reason": "３．製造トラブル（製造委託を含む）",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "1169015F2111",
+  "name": "ゾニサミドＯＤ錠２５ｍｇＴＲＥ「サンド」",
+  "maker": "サンド",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ア. あり 2027年4月"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "1169015F3118",
+  "name": "ゾニサミドＯＤ錠５０ｍｇＴＲＥ「サンド」",
+  "maker": "サンド",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ア. あり 2027年4月"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2325003F1245",
+  "name": "ファモチジン錠１０ｍｇ「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "3999002F3023",
+  "name": "ブレディニンＯＤ錠２５",
+  "maker": "旭化成ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "3999002F4020",
+  "name": "ブレディニンＯＤ錠５０",
+  "maker": "旭化成ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "1179051F2068",
+  "name": "ミルタザピン錠３０ｍｇ「ＴＣＫ」",
+  "maker": "辰巳化学",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2171701S6040",
+  "name": "ニトログリセリンテープ２７ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492413G9025",
+  "name": "ヒューマリン３／７注ミリオペン",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492413P1024",
+  "name": "ヒューマリンＮ注ミリオペン",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492413P2020",
+  "name": "ヒューマリンＲ注ミリオペン",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492420A1021",
+  "name": "インスリン　グラルギンＢＳ注カート「リリー」",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492420G1024",
+  "name": "インスリン　グラルギンＢＳ注ミリオペン「リリー」",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261015",
+  "type": "new",
+  "yj": "2492414G7027",
+  "name": "ヒューマログミックス５０注ミリオペン",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
