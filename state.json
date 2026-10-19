@@ -1,5 +1,5 @@
 {
- "asof": "20261016",
+ "asof": "20261019",
  "items": {
   "4419002B1033": {
    "yj": "4419002B1033",
@@ -716,7 +716,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "３２％１ｇ",
    "upd": "",
    "since": ""
@@ -1401,15 +1401,15 @@
    "name": "アジスロマイシン錠２５０ｍｇ「タカタ」",
    "maker": "高田製薬",
    "generic": "アジスロマイシン水和物",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
+   "vol": "B．出荷量減少",
+   "reason": "８．その他の理由",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "２５０ｍｇ１錠",
-   "upd": "20260115",
-   "since": ""
+   "upd": "20261019",
+   "since": "20261019"
   },
   "6149004F3020": {
    "yj": "6149004F3020",
@@ -1556,7 +1556,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -7271,7 +7271,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -7286,7 +7286,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２．５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -7301,7 +7301,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -7331,7 +7331,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -13766,7 +13766,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４５ｍｇ１錠",
    "upd": "20261016",
    "since": ""
@@ -30161,7 +30161,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -30176,7 +30176,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２．５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -30191,7 +30191,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -33896,7 +33896,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -41391,15 +41391,15 @@
    "name": "クレマスチン錠１ｍｇ「タカタ」",
    "maker": "高田製薬",
    "generic": "クレマスチンフマル酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
+   "vol": "B．出荷量減少",
+   "reason": "８．その他の理由",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "１ｍｇ１錠",
-   "upd": "20260326",
-   "since": ""
+   "upd": "20261019",
+   "since": "20261019"
   },
   "4419008R1136": {
    "yj": "4419008R1136",
@@ -56961,15 +56961,15 @@
    "name": "スマトリプタン錠５０ｍｇ「タカタ」",
    "maker": "高田製薬",
    "generic": "スマトリプタンコハク酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
+   "vol": "C．出荷停止",
+   "reason": "８．その他の理由",
+   "outlook": "イ. なし",
+   "new": true,
    "spec": "５０ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261019",
+   "since": "20261019"
   },
   "2160003S1020": {
    "yj": "2160003S1020",
@@ -63668,10 +63668,10 @@
    "generic": "ソブゾキサン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "４００ｍｇ１包",
    "upd": "",
    "since": ""
@@ -63683,10 +63683,10 @@
    "generic": "ソブゾキサン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "B．出荷量減少",
+   "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "８００ｍｇ１包",
    "upd": "",
    "since": ""
@@ -67391,7 +67391,7 @@
    "vol": "A．出荷量通常",
    "reason": "１．需要増",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "０．２ｍｇ１錠",
    "upd": "20260409",
    "since": "20260409"
@@ -72281,7 +72281,7 @@
    "vol": "A．出荷量通常",
    "reason": "１．需要増",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "０．５ｍｇ１錠",
    "upd": "20260210",
    "since": "20260210"
@@ -73481,7 +73481,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -73511,7 +73511,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "８０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -98966,7 +98966,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -98981,7 +98981,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -98996,7 +98996,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -99011,7 +99011,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -99026,7 +99026,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "20251210",
    "since": ""
@@ -99041,7 +99041,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -112191,15 +112191,15 @@
    "name": "ボリコナゾール錠５０ｍｇ「ＤＳＥＰ」",
    "maker": "第一三共エスファ",
    "generic": "ボリコナゾール",
-   "ship": "limited",
-   "ship_raw": "②限定出荷（自社の事情）",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
    "vol": "A．出荷量通常",
-   "reason": "８．その他の理由",
-   "outlook": "ウ. 未定",
-   "new": false,
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": true,
    "spec": "５０ｍｇ１錠",
-   "upd": "20260525",
-   "since": "20260525"
+   "upd": "20261019",
+   "since": ""
   },
   "6179001F2038": {
    "yj": "6179001F2038",
@@ -121851,29 +121851,29 @@
    "name": "モンテルカスト細粒４ｍｇ「ＤＳＥＰ」",
    "maker": "第一三共エスファ",
    "generic": "モンテルカストナトリウム",
-   "ship": "limited",
-   "ship_raw": "③限定出荷（他社品の影響）",
-   "vol": "A．出荷量通常",
-   "reason": "１．需要増",
-   "outlook": "ウ. 未定",
-   "new": false,
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "B．出荷量減少",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": true,
    "spec": "４ｍｇ１包",
-   "upd": "20250715",
-   "since": "20250715"
+   "upd": "20261019",
+   "since": ""
   },
   "4490026F1079": {
    "yj": "4490026F1079",
    "name": "モンテルカストチュアブル錠５ｍｇ「ＤＳＥＰ」",
    "maker": "第一三共エスファ",
    "generic": "モンテルカストナトリウム",
-   "ship": "limited",
-   "ship_raw": "③限定出荷（他社品の影響）",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
    "vol": "B．出荷量減少",
-   "reason": "１．需要増",
-   "outlook": "ウ. 未定",
-   "new": false,
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": true,
    "spec": "５ｍｇ１錠",
-   "upd": "",
+   "upd": "20261019",
    "since": ""
   },
   "4490026C1099": {
@@ -124391,7 +124391,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "20260825",
    "since": ""
@@ -124406,7 +124406,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "20260825",
    "since": ""
@@ -131681,7 +131681,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -134201,7 +134201,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -135551,7 +135551,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２．５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -135566,7 +135566,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -152831,7 +152831,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｃｍ×１４ｃｍ１枚",
    "upd": "",
    "since": ""
@@ -176186,7 +176186,7 @@
    "vol": "B．出荷量減少",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "２％１ｍＬ",
    "upd": "20260605",
    "since": "20260605"
@@ -194336,7 +194336,7 @@
    "vol": "A．出荷量通常",
    "reason": "３．製造トラブル（製造委託を含む）",
    "outlook": "ア. あり 2026年11月",
-   "new": true,
+   "new": false,
    "spec": "０．５％５ｍＬ１管",
    "upd": "20261016",
    "since": "20261016"
@@ -194351,7 +194351,7 @@
    "vol": "A．出荷量通常",
    "reason": "３．製造トラブル（製造委託を含む）",
    "outlook": "ア. あり 2026年11月",
-   "new": true,
+   "new": false,
    "spec": "０．５％１０ｍＬ１管",
    "upd": "20261016",
    "since": "20261016"
@@ -194366,7 +194366,7 @@
    "vol": "B．出荷量減少",
    "reason": "３．製造トラブル（製造委託を含む）",
    "outlook": "ア. あり 2026年11月",
-   "new": true,
+   "new": false,
    "spec": "０．５％２０ｍＬ１管",
    "upd": "20261016",
    "since": "20261016"
@@ -198901,6 +198901,21 @@
    "upd": "",
    "since": ""
   },
+  "2499423A1026": {
+   "yj": "2499423A1026",
+   "name": "イムシブリー皮下注１０ｍｇ",
+   "maker": "リズムファーマ",
+   "generic": "セトメラノチド酢酸塩",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "A．出荷量通常",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": true,
+   "spec": "１０ｍｇ１ｍＬ１瓶",
+   "upd": "20261019",
+   "since": ""
+  },
   "2499421D1023": {
    "yj": "2499421D1023",
    "name": "セトロタイド注射用０．２５ｍｇ",
@@ -201941,7 +201956,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５，０００低分子ヘパリン国際単位１瓶",
    "upd": "20261016",
    "since": ""
@@ -211251,15 +211266,15 @@
    "name": "光糖液３０％",
    "maker": "光製薬",
    "generic": "ブドウ糖",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
+   "ship": "limited",
+   "ship_raw": "②限定出荷（自社の事情）",
+   "vol": "D．薬価削除予定",
+   "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "３０％５００ｍＬ１袋",
-   "upd": "",
-   "since": ""
+   "upd": "20261019",
+   "since": "20261019"
   },
   "3231400G1025": {
    "yj": "3231400G1025",
