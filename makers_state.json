@@ -26014,5 +26014,69 @@
 "date": "20261001",
 "src": "https://www.santen.co.jp/medical-channel/di/information/",
 "first_seen": "20261001"
+},
+"https://med.sawai.co.jp/file/pr28_46_3.pdf": {
+"maker": "沢井製薬",
+"title": "オキサトミドDS小児用2％「サワイ」販売中止のご案内",
+"url": "https://med.sawai.co.jp/file/pr28_46_3.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr28_62_3.pdf": {
+"maker": "沢井製薬",
+"title": "トラピジル錠50mg/100mg「サワイ」販売中止のご案内",
+"url": "https://med.sawai.co.jp/file/pr28_62_3.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr28_1530_1.pdf": {
+"maker": "沢井製薬",
+"title": "バラシクロビル錠500mg「サワイ」販売中止のご案内",
+"url": "https://med.sawai.co.jp/file/pr28_1530_1.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr28_4593_1.pdf": {
+"maker": "沢井製薬",
+"title": "モンテルカストチュアブル錠5mg「サワイ」販売中止のご案内",
+"url": "https://med.sawai.co.jp/file/pr28_4593_1.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr28_4590_2.pdf": {
+"maker": "沢井製薬",
+"title": "モンテルカスト細粒4mg「サワイ」販売中止のご案内",
+"url": "https://med.sawai.co.jp/file/pr28_4590_2.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr115_4603_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4603_1.pdf",
+"date": "20261016",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261016"
+},
+"https://med.mochida.co.jp/etc/img/epa2610.pdf": {
+"maker": "持田製薬",
+"title": "『エパデールS300』「420包包装」販売中止のご案内 PDFファイル",
+"url": "https://med.mochida.co.jp/etc/img/epa2610.pdf",
+"date": "20261001",
+"src": "https://med.mochida.co.jp/products/",
+"first_seen": "20261001"
+},
+"https://med.mochida.co.jp/etc/img/rcr_202610.pdf": {
+"maker": "持田製薬",
+"title": "『ロコルナール錠50mg/100mg』製造・販売中止のご案内 PDFファイル",
+"url": "https://med.mochida.co.jp/etc/img/rcr_202610.pdf",
+"date": "20261001",
+"src": "https://med.mochida.co.jp/products/",
+"first_seen": "20261001"
 }
 }
