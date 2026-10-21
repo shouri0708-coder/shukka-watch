@@ -6070,5 +6070,126 @@
   "to": "limited",
   "reason": "６．薬価削除",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "new",
+  "yj": "2171022F4168",
+  "name": "アムロジピンＯＤ錠５ｍｇ「ケミファ」",
+  "maker": "日本薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "6149003F2046",
+  "name": "クラリスロマイシン錠２００ｍｇ「ＣＨ」",
+  "maker": "長生堂製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "2329028F3026",
+  "name": "パリエット錠５ｍｇ",
+  "maker": "エーザイ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － 10月19日より通常出荷とします。"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "1149704S1020",
+  "name": "ノルスパンテープ５ｍｇ",
+  "maker": "ムンディファーマ",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "1149704S2027",
+  "name": "ノルスパンテープ１０ｍｇ",
+  "maker": "ムンディファーマ",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "1149704S3023",
+  "name": "ノルスパンテープ２０ｍｇ",
+  "maker": "ムンディファーマ",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "7122704X1269",
+  "name": "親水クリーム「ニッコー」",
+  "maker": "日興製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261020",
+  "type": "new",
+  "yj": "7219415G2064",
+  "name": "オムニパーク３００注シリンジ５０ｍＬ",
+  "maker": "ＧＥヘルスケアファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261020",
+  "type": "new",
+  "yj": "2325401A3058",
+  "name": "ファモチジン静注液２０ｍｇ「サワイ」",
+  "maker": "沢井製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261020",
+  "type": "new",
+  "yj": "2325401A4054",
+  "name": "ファモチジン静注液１０ｍｇ「サワイ」",
+  "maker": "沢井製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261020",
+  "type": "resolved",
+  "yj": "3334400G1022",
+  "name": "ヘパリンカルシウム皮下注５千単位／０．２ｍＬシリンジ「モチダ」",
+  "maker": "持田製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
