@@ -6191,5 +6191,115 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261021",
+  "type": "resolved",
+  "yj": "2149043F2042",
+  "name": "アゼルニジピン錠１６ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "3399008F2331",
+  "name": "クロピドグレル錠７５ｍｇ「フェルゼン」",
+  "maker": "フェルゼンファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261021",
+  "type": "worse",
+  "yj": "2149042F2250",
+  "name": "テルミサルタン錠４０ｍｇ「フェルゼン」",
+  "maker": "フェルゼンファーマ",
+  "from": "limited",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261021",
+  "type": "resolved",
+  "yj": "7122704X1242",
+  "name": "親水クリーム「コザカイ・Ｍ」",
+  "maker": "小堺製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "7219415A8043",
+  "name": "オムニパーク３００注１０ｍＬ",
+  "maker": "ＧＥヘルスケアファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "7219415A9066",
+  "name": "オムニパーク３００注２０ｍＬ",
+  "maker": "ＧＥヘルスケアファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "7219415G9026",
+  "name": "オムニパーク３００注シリンジ１１０ｍＬ",
+  "maker": "ＧＥヘルスケアファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "7219415H3066",
+  "name": "オムニパーク３５０注２０ｍＬ",
+  "maker": "ＧＥヘルスケアファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "2325401A3066",
+  "name": "ファモチジン静注液２０ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261021",
+  "type": "new",
+  "yj": "2325401A4062",
+  "name": "ファモチジン静注液１０ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
