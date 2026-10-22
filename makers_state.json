@@ -2915,7 +2915,7 @@
 "maker": "辰巳化学",
 "title": "弊社製品の供給についてのお詫びとご連絡（ 掲載）",
 "url": "https://www.tatsumi-kagaku.com/public/info_medical/information.php?submit_detail2=1&im_id=3",
-"date": "20260918",
+"date": "20261022",
 "src": "https://www.tatsumi-kagaku.com/public/info_medical/information.php",
 "first_seen": "20260918"
 },
@@ -2923,7 +2923,7 @@
 "maker": "辰巳化学",
 "title": "安定供給に関連する情報",
 "url": "https://www.tatsumi-kagaku.com/public/info_medical/stable-supply.php",
-"date": "20260918",
+"date": "20261022",
 "src": "https://www.tatsumi-kagaku.com/public/info_medical/information.php",
 "first_seen": "20260918"
 },
@@ -26605,6 +26605,38 @@
 "url": "https://medical.nihon-generic.co.jp/a.php?id=1872",
 "date": "20261022",
 "src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261022"
+},
+"https://med.sawai.co.jp/file/pr27_4602_2.pdf": {
+"maker": "沢井製薬",
+"title": "イルベサルタン錠50mg/100mg/200mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_4602_2.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr27_1645_2.pdf": {
+"maker": "沢井製薬",
+"title": "カンデサルタン錠2mg/4mg/8mg/12mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_1645_2.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr115_1482_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_1482_1.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://www.med.kyorin-rmd.com/news/acb082cd4356183d9eabd4503d787d56d2866737.html": {
+"maker": "キョーリンリメディオ",
+"title": "「くすりのしおり」一時閲覧停止について",
+"url": "https://www.med.kyorin-rmd.com/news/acb082cd4356183d9eabd4503d787d56d2866737.html",
+"date": "20261022",
+"src": "https://www.med.kyorin-rmd.com/news/",
 "first_seen": "20261022"
 }
 }
