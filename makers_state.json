@@ -25723,7 +25723,7 @@
 "maker": "沢井製薬",
 "title": "製品の供給状況一覧を更新しました。",
 "url": "https://med.sawai.co.jp/file/pr115_4804_1.pdf",
-"date": "20261008",
+"date": "20261020",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261008"
 },
@@ -26573,6 +26573,38 @@
 "url": "https://med.towayakuhin.co.jp/medical/product/information_supply.php#20261022-ロラタジンOD錠10mg「トーワ」",
 "date": "20261022",
 "src": "https://med.towayakuhin.co.jp/medical/product/information_supply.php",
+"first_seen": "20261022"
+},
+"https://med.sawai.co.jp/file/pr27_1651_2.pdf": {
+"maker": "沢井製薬",
+"title": "カンデサルタンOD錠2mg/4mg/8mg/12mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_1651_2.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr27_1648_2.pdf": {
+"maker": "沢井製薬",
+"title": "カンデサルタン錠2mg/4mg/8mg/12mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_1648_2.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1873": {
+"maker": "日本ジェネリック",
+"title": "バルヒディオ配合錠MD/EX「JG」供給に関するお詫びとご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1873",
+"date": "20261022",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261022"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1872": {
+"maker": "日本ジェネリック",
+"title": "ロスバスタチンOD錠5mg「JG」供給に関するお詫びとご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1872",
+"date": "20261022",
+"src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20261022"
 }
 }
