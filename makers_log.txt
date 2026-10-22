@@ -14,7 +14,7 @@ EAファーマ: 6件
 皇漢堂製薬: 8件
 全星薬品工業: ERROR HTTPError: 503 Server Error: Service Unavailable for url: https://zensei-med.jp/news/
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7f0dd031ae10>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR SSLError: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by SSLError(SSLCertVerificationError(1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.nippon-zoki.co.jp'. (_ssl.c:1010)")))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 4件
@@ -34,4 +34,4 @@ EAファーマ: 6件
   gate click: 医療関係者です
 大正製薬: 47件
 持田製薬: 0件
-新規 4件 / 出力 442件
+新規 0件 / 出力 440件
