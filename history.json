@@ -6675,5 +6675,104 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2171022F5024",
+  "name": "アムロジン錠１０ｍｇ",
+  "maker": "住友ファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2149112F1057",
+  "name": "バルヒディオ配合錠ＭＤ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2149112F2053",
+  "name": "バルヒディオ配合錠ＥＸ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2144006F1146",
+  "name": "リシノプリル錠５ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2144006F3149",
+  "name": "リシノプリル錠２０ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2649719Q1030",
+  "name": "イドメシンコーワゾル１％",
+  "maker": "興和",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "3922400D3136",
+  "name": "グルタチオン注射用２００ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2325401A1020",
+  "name": "ガスター注射液１０ｍｇ",
+  "maker": "ＬＴＬファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261023",
+  "type": "new",
+  "yj": "2325401A2027",
+  "name": "ガスター注射液２０ｍｇ",
+  "maker": "ＬＴＬファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
