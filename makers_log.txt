@@ -6,7 +6,7 @@
 第一三共エスファ: 277件
 EAファーマ: 6件
 塩野義製薬: 13件
-興和: ERROR ConnectTimeout: HTTPSConnectionPool(host='medical.kowa.co.jp', port=443): Max retries exceeded with url: /medical/news/?category=discontinued (Caused by ConnectTimeoutError(<HTTPSConnection(host='medical.kowa.co.jp', port=443) at 0x7fd460146ed0>, 'Connection to medical.kowa.co.jp timed out. (connect timeout=30)'))
+興和: 8件
 丸石製薬: 10件
 辰巳化学: 290件
 岩城製薬: 220件
@@ -20,10 +20,10 @@ EAファーマ: 6件
 キョーリンリメディオ: 4件
   gate click: はい
 高田製薬: 81件
-共和薬品工業: ERROR TimeoutError: Page.goto: Timeout 60000ms exceeded.
-Call log:
-  - navigating to "https://www.amel-di.com/medical/di/", waiting until "domcontentloaded"
-
+  gate click: はい
+  gate click: はい
+  gate click: はい
+共和薬品工業: 31件
 ニプロ: 12件
   gate click: はい
 武田テバ(T'sファーマ): 20件
