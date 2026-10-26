@@ -8,13 +8,13 @@ EAファーマ: 6件
 塩野義製薬: 13件
 興和: 8件
 丸石製薬: 10件
-辰巳化学: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.tatsumi-kagaku.com', port=443): Max retries exceeded with url: /public/info_medical/information.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tatsumi-kagaku.com', port=443) at 0x732c7ab92690>, 'Connection to www.tatsumi-kagaku.com timed out. (connect timeout=30)'))
-岩城製薬: 220件
+辰巳化学: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.tatsumi-kagaku.com', port=443): Max retries exceeded with url: /public/info_medical/information.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tatsumi-kagaku.com', port=443) at 0x700b186da000>, 'Connection to www.tatsumi-kagaku.com timed out. (connect timeout=30)'))
+岩城製薬: 222件
 東洋製薬化成: 45件
 皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x732c7b0bf8c0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x700b19316e70>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 4件
@@ -37,4 +37,4 @@ EAファーマ: 6件
   gate click: はい
   gate click: はい
 持田製薬: 0件
-新規 3件 / 出力 436件
+新規 2件 / 出力 438件
