@@ -1,6 +1,6 @@
 沢井製薬: 11件
-  東和 Excel 275KB (2026年10月22日更新)
-東和薬品: 1620件（更新履歴シート）
+  東和 Excel 275KB (2026年10月26日更新)
+東和薬品: 1621件（更新履歴シート）
 日医工: 8件
 日本ジェネリック: ERROR HTTPError: 503 Server Error: Service Unavailable for url: https://medical.nihon-generic.co.jp/news/
 第一三共エスファ: 277件
@@ -8,7 +8,7 @@ EAファーマ: 6件
 塩野義製薬: 13件
 興和: 8件
 丸石製薬: 10件
-辰巳化学: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.tatsumi-kagaku.com', port=443): Max retries exceeded with url: /public/info_medical/information.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tatsumi-kagaku.com', port=443) at 0x7ff3f10d64b0>, 'Connection to www.tatsumi-kagaku.com timed out. (connect timeout=30)'))
+辰巳化学: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.tatsumi-kagaku.com', port=443): Max retries exceeded with url: /public/info_medical/information.php (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.tatsumi-kagaku.com', port=443) at 0x7f0e4a5d9490>, 'Connection to www.tatsumi-kagaku.com timed out. (connect timeout=30)'))
 岩城製薬: 220件
 東洋製薬化成: 45件
 皇漢堂製薬: 8件
@@ -37,4 +37,4 @@ EAファーマ: 6件
   gate click: はい
   gate click: はい
 持田製薬: 0件
-新規 0件 / 出力 430件
+新規 3件 / 出力 433件

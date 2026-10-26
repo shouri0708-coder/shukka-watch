@@ -6969,7 +6969,7 @@
 },
 "https://toyo-pharma.com/corp/wp-content/themes/medical-theme/products/content/aenka_o_sonotanoosirase2613.pdf": {
 "maker": "東洋製薬化成",
-"title": "販売・流通 亜鉛華軟膏<ハチ> 小野薬品工業株式会社 亜鉛華軟膏＜ハチ＞限定出荷解除のお知らせ",
+"title": "販売・流通 亜鉛華軟膏<ハチ> 小野薬品工業株式会社 亜鉛華軟膏＜ハチ＞ 限定出荷解除のお知らせ",
 "url": "https://toyo-pharma.com/corp/wp-content/themes/medical-theme/products/content/aenka_o_sonotanoosirase2613.pdf",
 "date": "20260803",
 "src": "https://toyo-pharma.com/medical/mediblog/",
@@ -26638,5 +26638,29 @@
 "date": "20261022",
 "src": "https://www.med.kyorin-rmd.com/news/",
 "first_seen": "20261022"
+},
+"https://med.towayakuhin.co.jp/medical/product/information_supply.php#20261026-ロスバスタチン錠5mg「トーワ」": {
+"maker": "東和薬品",
+"title": "ロスバスタチン錠5mg「トーワ」 出荷再開・限定出荷解除（⑤供給停止 → ④限定出荷（その他））",
+"url": "https://med.towayakuhin.co.jp/medical/product/information_supply.php#20261026-ロスバスタチン錠5mg「トーワ」",
+"date": "20261026",
+"src": "https://med.towayakuhin.co.jp/medical/product/information_supply.php",
+"first_seen": "20261026"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261019.pdf": {
+"maker": "丸石製薬",
+"title": "出荷状況一覧表（10月19日現在）",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261019.pdf",
+"date": "20261019",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261019"
+},
+"https://toyo-pharma.com/corp/wp-content/themes/medical-theme/products/content/hannbaityuusi_sonotanoosirase2615.pdf": {
+"maker": "東洋製薬化成",
+"title": "販売・流通 コデインリン酸塩散1%<ハチ> 小野薬品工業株式会社 コデインリン酸塩散1%＜ハチ＞ 販売中止のお知らせ",
+"url": "https://toyo-pharma.com/corp/wp-content/themes/medical-theme/products/content/hannbaityuusi_sonotanoosirase2615.pdf",
+"date": "20261026",
+"src": "https://toyo-pharma.com/medical/mediblog/",
+"first_seen": "20261026"
 }
 }
