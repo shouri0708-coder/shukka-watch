@@ -6829,5 +6829,104 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261027",
+  "type": "resolved",
+  "yj": "2239001R2052",
+  "name": "アンブロキソール塩酸塩ＤＳ３％「タカタ」",
+  "maker": "高田製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261027",
+  "type": "resolved",
+  "yj": "2329022H1086",
+  "name": "オメプラゾール錠２０ｍｇ「アメル」",
+  "maker": "共和薬品工業",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261027",
+  "type": "worse",
+  "yj": "2149026F3320",
+  "name": "ドキサゾシン錠２ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 11月17日より通常出荷再開予定です"
+ },
+ {
+  "date": "20261027",
+  "type": "resolved",
+  "yj": "4490026C1129",
+  "name": "モンテルカスト細粒４ｍｇ「タカタ」",
+  "maker": "高田製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261027",
+  "type": "new",
+  "yj": "3229002S1026",
+  "name": "Ｋ．Ｃ．Ｌ．エリキシル（１０Ｗ／Ｖ％）",
+  "maker": "丸石製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "２．原材料調達上の問題",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261027",
+  "type": "new",
+  "yj": "2612701Q3431",
+  "name": "ポビドンヨード消毒用液１０％「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026/10/26"
+ },
+ {
+  "date": "20261027",
+  "type": "resolved",
+  "yj": "2691702M1052",
+  "name": "マキサカルシトール軟膏２５μｇ／ｇ「イワキ」",
+  "maker": "岩城製薬",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261027",
+  "type": "resolved",
+  "yj": "2699801V1157",
+  "name": "ネオヨジンシュガーパスタ軟膏",
+  "maker": "岩城製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261027",
+  "type": "new",
+  "yj": "6129500D1027",
+  "name": "レカルブリオ配合点滴静注用",
+  "maker": "ＭＳＤ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "イ. なし"
  }
 ]
