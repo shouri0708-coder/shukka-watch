@@ -26710,5 +26710,45 @@
 "date": "20261020",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261020"
+},
+"https://med.sawai.co.jp/file/pr115_4606_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4606_1.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccvp-att/Quetiapine.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_クエチアピン錠",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccvp-att/Quetiapine.pdf",
+"date": "20261027",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261027"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccsv-att/Ozagrel.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_オザグレルNa点滴静注,オザグレルNa点滴静注ﾊﾞｯｸﾞ",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccsv-att/Ozagrel.pdf",
+"date": "20261027",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261027"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccp6-att/Levofloxacin.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_レボフロキサシン錠「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccp6-att/Levofloxacin.pdf",
+"date": "20261027",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261027"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccmb-att/Dimemorfan.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_ジメモルファンリン酸塩DS小児用2.5%「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000ccmb-att/Dimemorfan.pdf",
+"date": "20261027",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261027"
 }
 }
