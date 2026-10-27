@@ -6774,5 +6774,60 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261026",
+  "type": "new",
+  "yj": "6250019F1217",
+  "name": "バラシクロビル錠５００ｍｇ「ケミファ」",
+  "maker": "日本ケミファ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261026",
+  "type": "better",
+  "yj": "2189017F2215",
+  "name": "ロスバスタチン錠５ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "stop",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年1月見込み"
+ },
+ {
+  "date": "20261026",
+  "type": "resolved",
+  "yj": "2655712N1039",
+  "name": "ルリコナゾールクリーム１％「イワキ」",
+  "maker": "岩城製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261026",
+  "type": "new",
+  "yj": "2325401A3040",
+  "name": "ファモチジン静注２０ｍｇ「杏林」",
+  "maker": "キョーリンリメディオ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261026",
+  "type": "new",
+  "yj": "2325401A4046",
+  "name": "ファモチジン静注１０ｍｇ「杏林」",
+  "maker": "キョーリンリメディオ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
