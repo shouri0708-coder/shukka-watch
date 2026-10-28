@@ -6928,5 +6928,126 @@
   "to": "stop",
   "reason": "４．品質トラブル（製造委託を含む）",
   "outlook": "イ. なし"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "6131001M2327",
+  "name": "アモキシシリンカプセル２５０ｍｇ「日医工」",
+  "maker": "日医工ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2149039F1287",
+  "name": "ロサルタンカリウム錠２５ｍｇ「サンド」",
+  "maker": "サンド",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2149039F2283",
+  "name": "ロサルタンカリウム錠５０ｍｇ「サンド」",
+  "maker": "サンド",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2699801V1130",
+  "name": "ポビドリンパスタ軟膏",
+  "maker": "東亜薬品",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － 販売中止に伴う在庫消尽時期：2026年11月頃"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2454405H1024",
+  "name": "デカドロン注射液１．６５ｍｇ",
+  "maker": "サンドファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2454405H3027",
+  "name": "デカドロン注射液３．３ｍｇ",
+  "maker": "サンドファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "resolved",
+  "yj": "2454405H5020",
+  "name": "デカドロン注射液６．６ｍｇ",
+  "maker": "サンドファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261028",
+  "type": "new",
+  "yj": "3131401A3032",
+  "name": "ビスラーゼ注射液１０ｍｇ",
+  "maker": "トーアエイヨー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261028",
+  "type": "new",
+  "yj": "3131401A4020",
+  "name": "ビスラーゼ注射液２０ｍｇ",
+  "maker": "トーアエイヨー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "イ. なし"
+ },
+ {
+  "date": "20261028",
+  "type": "new",
+  "yj": "3131401A3083",
+  "name": "ホスフラン注－１０ｍｇ",
+  "maker": "扶桑薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261028",
+  "type": "new",
+  "yj": "3131401A4039",
+  "name": "ホスフラン注－２０ｍｇ",
+  "maker": "扶桑薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]

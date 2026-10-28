@@ -2,7 +2,7 @@
   東和 Excel 275KB (2026年10月26日更新)
 東和薬品: 1621件（更新履歴シート）
 日医工: 8件
-日本ジェネリック: ERROR ConnectTimeout: HTTPSConnectionPool(host='medical.nihon-generic.co.jp', port=443): Max retries exceeded with url: /news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='medical.nihon-generic.co.jp', port=443) at 0x7230c88ca030>, 'Connection to medical.nihon-generic.co.jp timed out. (connect timeout=30)'))
+日本ジェネリック: ERROR HTTPError: 503 Server Error: Service Unavailable for url: https://medical.nihon-generic.co.jp/news/
 第一三共エスファ: 278件
 EAファーマ: 6件
 塩野義製薬: 13件
@@ -14,10 +14,10 @@ EAファーマ: 6件
 皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7230c8130320>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x74d4d933c4d0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
-キョーリンリメディオ: 3件
+キョーリンリメディオ: 4件
   gate click: はい
 高田製薬: 85件
   gate click: はい
@@ -34,4 +34,4 @@ EAファーマ: 6件
   gate click: 医療関係者です
 大正製薬: 47件
 持田製薬: 0件
-新規 4件 / 出力 447件
+新規 3件 / 出力 449件
