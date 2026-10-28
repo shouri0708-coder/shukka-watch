@@ -75,7 +75,7 @@
 "maker": "日医工",
 "title": "供給状況に関するお知らせを の情報に更新しました。",
 "url": "https://www.nichiiko.co.jp/medicine/significant/excel_index.php",
-"date": "20261023",
+"date": "20261028",
 "src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
 "first_seen": "20260930"
 },
@@ -26758,5 +26758,37 @@
 "date": "20261028",
 "src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
 "first_seen": "20261028"
+},
+"https://med.sawai.co.jp/file/pr115_53_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_53_1.pdf",
+"date": "20261020",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261020"
+},
+"https://www.nichiiko.co.jp/medicine/files/20261027cI2.pdf": {
+"maker": "日医工",
+"title": "エタネルセプトBS皮下注50mgペン1.0mL「日医工」 出荷再開のお知らせ",
+"url": "https://www.nichiiko.co.jp/medicine/files/20261027cI2.pdf",
+"date": "20261028",
+"src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
+"first_seen": "20261028"
+},
+"https://www.nichiiko.co.jp/medicine/files/20261027cI1.pdf": {
+"maker": "日医工",
+"title": "アモキシシリンカプセル250mg「日医工」 限定出荷解除のお知らせ",
+"url": "https://www.nichiiko.co.jp/medicine/files/20261027cI1.pdf",
+"date": "20261028",
+"src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
+"first_seen": "20261028"
+},
+"https://www.med.ts-pharma.com/di-net/kaitei/w_20241025_2.pdf": {
+"maker": "武田テバ(T'sファーマ)",
+"title": "アリナミンF100注 限定出荷に関するお知らせ",
+"url": "https://www.med.ts-pharma.com/di-net/kaitei/w_20241025_2.pdf",
+"date": "20241025",
+"src": "https://www.med.ts-pharma.com/di-net/news/sale/index.html",
+"first_seen": "20241025"
 }
 }
