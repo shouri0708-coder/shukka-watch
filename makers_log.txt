@@ -14,7 +14,7 @@ EAファーマ: 6件
 皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7fc27c9fe6c0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x73cfbbe23cb0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 3件
@@ -24,7 +24,7 @@ EAファーマ: 6件
   gate click: はい
   gate click: はい
 共和薬品工業: 31件
-ニプロ: 12件
+ニプロ: 11件
   gate click: はい
 武田テバ(T'sファーマ): 20件
   gate click: 医療従事者向け情報
@@ -34,4 +34,4 @@ EAファーマ: 6件
   gate click: 医療関係者です
 大正製薬: 47件
 持田製薬: 0件
-新規 0件 / 出力 444件
+新規 1件 / 出力 444件
