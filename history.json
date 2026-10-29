@@ -7049,5 +7049,137 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "1139003C1044",
+  "name": "リボトリール細粒０．１％",
+  "maker": "太陽ファルマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "1139003C2040",
+  "name": "リボトリール細粒０．５％",
+  "maker": "太陽ファルマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "2189011F1025",
+  "name": "リポバス錠５",
+  "maker": "オルガノン",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 在庫消尽"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "6132005C1240",
+  "name": "セファクロル細粒小児用１０％「ＪＧ」",
+  "maker": "長生堂製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "1149117F1144",
+  "name": "トアラセット配合錠「杏林」",
+  "maker": "キョーリンリメディオ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "6250019F1276",
+  "name": "バラシクロビル錠５００ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "6250031F1102",
+  "name": "ファムシクロビル錠２５０ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "resolved",
+  "yj": "7122704X1277",
+  "name": "親水クリーム「シオエ」",
+  "maker": "シオエ製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "2325401A1039",
+  "name": "ファモチジン注射液１０ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "2325401A2035",
+  "name": "ファモチジン注射液２０ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "3929407D1110",
+  "name": "レボホリナート点滴静注用２５ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261029",
+  "type": "new",
+  "yj": "3929407D2051",
+  "name": "レボホリナート点滴静注用１００ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
