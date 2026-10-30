@@ -7181,5 +7181,71 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "new",
+  "yj": "2590016F1071",
+  "name": "タダラフィル錠２．５ｍｇＺＡ「サンド」",
+  "maker": "サンド",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "new",
+  "yj": "2590016F2078",
+  "name": "タダラフィル錠５ｍｇＺＡ「サンド」",
+  "maker": "サンド",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "better",
+  "yj": "2149117F1076",
+  "name": "テラムロ配合錠ＡＰ「トーワ」",
+  "maker": "東和薬品",
+  "from": "stop",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "better",
+  "yj": "2149117F2072",
+  "name": "テラムロ配合錠ＢＰ「トーワ」",
+  "maker": "東和薬品",
+  "from": "stop",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "worse",
+  "yj": "2399009F1190",
+  "name": "メサラジン徐放錠２５０ｍｇ「トーワ」",
+  "maker": "東和薬品",
+  "from": "limited",
+  "to": "stop",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261030",
+  "type": "new",
+  "yj": "2325006F4027",
+  "name": "プロテカジンＯＤ錠１０",
+  "maker": "大鵬薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年3月頃"
  }
 ]
