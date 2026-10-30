@@ -12,9 +12,9 @@ EAファーマ: 6件
 岩城製薬: 222件
 東洋製薬化成: 45件
 皇漢堂製薬: 8件
-全星薬品工業: 28件
+全星薬品工業: ERROR ConnectTimeout: HTTPSConnectionPool(host='zensei-med.jp', port=443): Max retries exceeded with url: /news/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='zensei-med.jp', port=443) at 0x7f3278123890>, 'Connection to zensei-med.jp timed out. (connect timeout=30)'))
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x71171f9aa090>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7f3278147710>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 4件
@@ -31,7 +31,9 @@ EAファーマ: 6件
   gate click: 医療従事者向け情報
   gate click: 医療従事者向け情報
 サンド: 292件
-  gate click: 医療関係者です
-大正製薬: 47件
+大正製薬: ERROR TimeoutError: Page.goto: Timeout 60000ms exceeded.
+Call log:
+  - navigating to "https://medical.taisho.co.jp/medical/di-news/", waiting until "domcontentloaded"
+
 持田製薬: 107件
-新規 0件 / 出力 464件
+新規 7件 / 出力 471件
