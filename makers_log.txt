@@ -1,4 +1,4 @@
-沢井製薬: 10件
+沢井製薬: 9件
   東和 Excel 276KB (2026年10月29日更新)
 東和薬品: 1630件（更新履歴シート）
 日医工: 8件
@@ -14,7 +14,7 @@ EAファーマ: 6件
 皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7a1215063380>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x709e523ced20>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 4件
@@ -33,5 +33,5 @@ EAファーマ: 6件
 サンド: 292件
   gate click: 医療関係者です
 大正製薬: 47件
-持田製薬: 107件
-新規 0件 / 出力 467件
+持田製薬: 108件
+新規 1件 / 出力 468件
