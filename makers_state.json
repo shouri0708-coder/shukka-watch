@@ -355,7 +355,7 @@
 "maker": "日本ジェネリック",
 "title": "長生堂製薬（株）川内工場製造品目における『製品供給に関するご案内』を更新いたしました（ 現在）",
 "url": "https://medical.nihon-generic.co.jp/uploadfiles/news/CH_Kawauchi_product_list.pdf",
-"date": "20261005",
+"date": "20261104",
 "src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20260603"
 },
@@ -27014,5 +27014,21 @@
 "date": "20261102",
 "src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
 "first_seen": "20261102"
+},
+"https://med.sawai.co.jp/file/pr115_129_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_129_1.pdf",
+"date": "20261104",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261104"
+},
+"https://med.sawai.co.jp/file/pr27_4583_2.pdf": {
+"maker": "沢井製薬",
+"title": "テルミサルタン錠20mg/40mg/80mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_4583_2.pdf",
+"date": "20261030",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261030"
 }
 }
