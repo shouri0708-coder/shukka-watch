@@ -7467,5 +7467,60 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261105",
+  "type": "new",
+  "yj": "1174005F2029",
+  "name": "スルモンチール錠２５ｍｇ",
+  "maker": "共和薬品工業",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261105",
+  "type": "new",
+  "yj": "1179038F3069",
+  "name": "リスペリドン錠３ｍｇ「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026/10/29"
+ },
+ {
+  "date": "20261105",
+  "type": "new",
+  "yj": "1179038F4022",
+  "name": "リスペリドン錠０．５ｍｇ「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026/10/29"
+ },
+ {
+  "date": "20261105",
+  "type": "new",
+  "yj": "2149039F2208",
+  "name": "ロサルタンカリウム錠５０ｍｇ「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026/09/29"
+ },
+ {
+  "date": "20261105",
+  "type": "new",
+  "yj": "2612701Q1099",
+  "name": "ポピヨドンスクラブ７．５％",
+  "maker": "吉田製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
  }
 ]

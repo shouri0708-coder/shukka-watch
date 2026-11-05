@@ -75,7 +75,7 @@
 "maker": "日医工",
 "title": "供給状況に関するお知らせを の情報に更新しました。",
 "url": "https://www.nichiiko.co.jp/medicine/significant/excel_index.php",
-"date": "20261028",
+"date": "20261105",
 "src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
 "first_seen": "20260930"
 },
@@ -27099,6 +27099,14 @@
 "maker": "岩城製薬",
 "title": "マキサカルシトール軟膏25μg／g「イワキ」10g×10_限定出荷のご案内",
 "url": "https://www.iwakiseiyaku.co.jp/dcms_media/other/mcoosirase20261105.pdf",
+"date": "20261105",
+"src": "https://www.iwakiseiyaku.co.jp/documents_for_medical.html",
+"first_seen": "20261105"
+},
+"https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcosirase20261105.pdf": {
+"maker": "岩城製薬",
+"title": "ケトコナゾールクリーム２％「イワキ」旧包装品出荷に関するお詫び",
+"url": "https://www.iwakiseiyaku.co.jp/dcms_media/other/kzcosirase20261105.pdf",
 "date": "20261105",
 "src": "https://www.iwakiseiyaku.co.jp/documents_for_medical.html",
 "first_seen": "20261105"

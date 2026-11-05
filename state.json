@@ -1,5 +1,5 @@
 {
- "asof": "20261104",
+ "asof": "20261105",
  "items": {
   "4419002B1033": {
    "yj": "4419002B1033",
@@ -7076,7 +7076,7 @@
    "vol": "C．出荷停止",
    "reason": "４．品質トラブル（製造委託を含む）",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "20261104",
    "since": "20260831"
@@ -10106,7 +10106,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -19361,7 +19361,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "３ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -20734,7 +20734,7 @@
   "1190032S1021": {
    "yj": "1190032S1021",
    "name": "ラジカット内用懸濁液２．１％",
-   "maker": "田辺ファーマ",
+   "maker": "塩野義製薬",
    "generic": "エダラボン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -20996,7 +20996,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．２５ｍｇ１錠",
    "upd": "20250801",
    "since": ""
@@ -27776,7 +27776,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "20261104",
    "since": ""
@@ -32936,7 +32936,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "８ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -32951,7 +32951,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１２ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -37886,7 +37886,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -38126,7 +38126,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -38141,7 +38141,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -38381,7 +38381,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -43241,7 +43241,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０％１ｇ",
    "upd": "20250801",
    "since": ""
@@ -55661,7 +55661,7 @@
    "vol": "C．出荷停止",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "４ｍｇ１錠",
    "upd": "20261104",
    "since": "20260709"
@@ -57251,7 +57251,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -57266,7 +57266,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -58556,7 +58556,7 @@
    "vol": "A．出荷量通常",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "３７５ｍｇ１包",
    "upd": "20261104",
    "since": "20261104"
@@ -58571,7 +58571,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５０ｍｇ１カプセル",
    "upd": "20260617",
    "since": ""
@@ -58736,7 +58736,7 @@
    "vol": "B．出荷量減少",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１ｇ",
    "upd": "20261104",
    "since": "20261104"
@@ -58751,7 +58751,7 @@
    "vol": "B．出荷量減少",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "５００ｍｇ１ｇ",
    "upd": "20261104",
    "since": "20261104"
@@ -59441,7 +59441,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１カプセル",
    "upd": "20251022",
    "since": ""
@@ -59456,7 +59456,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１カプセル",
    "upd": "20251022",
    "since": ""
@@ -60101,7 +60101,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -60146,7 +60146,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ１錠",
    "upd": "20261104",
    "since": ""
@@ -60161,7 +60161,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "20261104",
    "since": ""
@@ -62951,7 +62951,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０％１ｇ",
    "upd": "",
    "since": ""
@@ -67991,7 +67991,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -68726,7 +68726,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -68741,7 +68741,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -72986,7 +72986,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１カプセル",
    "upd": "20261104",
    "since": "20261104"
@@ -73001,7 +73001,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "３０ｍｇ１カプセル",
    "upd": "20261104",
    "since": "20261104"
@@ -73991,7 +73991,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "20261104",
    "since": "20261104"
@@ -74006,7 +74006,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "４０ｍｇ１錠",
    "upd": "20261104",
    "since": "20261104"
@@ -74021,7 +74021,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "８０ｍｇ１錠",
    "upd": "20261104",
    "since": "20261104"
@@ -76301,7 +76301,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -76346,7 +76346,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -76856,7 +76856,7 @@
    "vol": "A．出荷量通常",
    "reason": "２．原材料調達上の問題",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１カプセル",
    "upd": "20261104",
    "since": "20261104"
@@ -77224,7 +77224,7 @@
   "3949005F1022": {
    "yj": "3949005F1022",
    "name": "ユリス錠０．５ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "ドチヌラド",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -77239,7 +77239,7 @@
   "3949005F2029": {
    "yj": "3949005F2029",
    "name": "ユリス錠１ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "ドチヌラド",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -77254,7 +77254,7 @@
   "3949005F3025": {
    "yj": "3949005F3025",
    "name": "ユリス錠２ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "ドチヌラド",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -77981,7 +77981,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -77996,7 +77996,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -79204,7 +79204,7 @@
   "3949004F1036": {
    "yj": "3949004F1036",
    "name": "トピロリック錠２０ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "トピロキソスタット",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -79219,7 +79219,7 @@
   "3949004F2032": {
    "yj": "3949004F2032",
    "name": "トピロリック錠４０ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "トピロキソスタット",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -79234,7 +79234,7 @@
   "3949004F3039": {
    "yj": "3949004F3039",
    "name": "トピロリック錠６０ｍｇ",
-   "maker": "富士薬品",
+   "maker": "持田製薬",
    "generic": "トピロキソスタット",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -79526,7 +79526,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -81036,15 +81036,15 @@
    "name": "スルモンチール錠２５ｍｇ",
    "maker": "共和薬品工業",
    "generic": "トリミプラミンマレイン酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
    "vol": "D．薬価削除予定",
-   "reason": "７．－",
-   "outlook": "エ. － 2026年12月在庫消尽見込み",
-   "new": false,
+   "reason": "６．薬価削除",
+   "outlook": "エ. －",
+   "new": true,
    "spec": "２５ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261105",
+   "since": "20261105"
   },
   "1133002B1032": {
    "yj": "1133002B1032",
@@ -81656,7 +81656,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２００ｍｇ１カプセル",
    "upd": "",
    "since": ""
@@ -83441,7 +83441,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -83906,7 +83906,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -88436,7 +88436,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１カプセル",
    "upd": "",
    "since": ""
@@ -88466,7 +88466,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１５ｍｇ１カプセル",
    "upd": "",
    "since": ""
@@ -96821,7 +96821,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２％１ｇ",
    "upd": "",
    "since": ""
@@ -100024,7 +100024,7 @@
   "1139016S1020": {
    "yj": "1139016S1020",
    "name": "フィンテプラ内用液２．２ｍｇ／ｍＬ",
-   "maker": "ユーシービージャパン",
+   "maker": "日本新薬",
    "generic": "フェンフルラミン塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -103241,7 +103241,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -104066,7 +104066,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -104096,7 +104096,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -107171,7 +107171,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１％１ｇ",
    "upd": "",
    "since": ""
@@ -110141,7 +110141,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "４ｍｇ１錠",
    "upd": "20260624",
    "since": ""
@@ -110156,7 +110156,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "８ｍｇ１錠",
    "upd": "20260624",
    "since": ""
@@ -110171,7 +110171,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１６ｍｇ１錠",
    "upd": "20260624",
    "since": ""
@@ -119141,7 +119141,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "20261104",
    "since": "20261104"
@@ -120461,7 +120461,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -123701,7 +123701,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "20251210",
    "since": ""
@@ -123716,7 +123716,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０％１ｇ",
    "upd": "20251210",
    "since": ""
@@ -125411,7 +125411,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１錠",
    "upd": "",
    "since": ""
@@ -125666,7 +125666,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -125681,7 +125681,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -126891,30 +126891,30 @@
    "name": "リスペリドン錠３ｍｇ「ＮＰ」",
    "maker": "ニプロ",
    "generic": "リスペリドン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
    "vol": "D．薬価削除予定",
-   "reason": "７．－",
-   "outlook": "エ. － 2026年10月頃在庫消尽見込み",
-   "new": false,
+   "reason": "６．薬価削除",
+   "outlook": "エ. － 2026/10/29",
+   "new": true,
    "spec": "３ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261105",
+   "since": "20261105"
   },
   "1179038F4022": {
    "yj": "1179038F4022",
    "name": "リスペリドン錠０．５ｍｇ「ＮＰ」",
    "maker": "ニプロ",
    "generic": "リスペリドン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
    "vol": "D．薬価削除予定",
-   "reason": "７．－",
-   "outlook": "エ. － 2026年10月頃在庫消尽見込み",
-   "new": false,
+   "reason": "６．薬価削除",
+   "outlook": "エ. － 2026/10/29",
+   "new": true,
    "spec": "０．５ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261105",
+   "since": "20261105"
   },
   "1179038C1027": {
    "yj": "1179038C1027",
@@ -128971,21 +128971,6 @@
    "upd": "20260121",
    "since": "20260121"
   },
-  "3399003F1154": {
-   "yj": "3399003F1154",
-   "name": "リマプロスト　アルファデクス錠５μｇ「サワイ」",
-   "maker": "メディサ新薬",
-   "generic": "リマプロスト　アルファデクス",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
-   "spec": "５μｇ１錠",
-   "upd": "20260121",
-   "since": ""
-  },
   "3399003F1073": {
    "yj": "3399003F1073",
    "name": "オパルモン錠５μｇ",
@@ -128999,6 +128984,21 @@
    "new": false,
    "spec": "５μｇ１錠",
    "upd": "",
+   "since": ""
+  },
+  "3399003F1154": {
+   "yj": "3399003F1154",
+   "name": "リマプロスト　アルファデクス錠５μｇ「サワイ」",
+   "maker": "沢井製薬",
+   "generic": "リマプロスト　アルファデクス",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "Aプラス．出荷量増加",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": false,
+   "spec": "５μｇ１錠",
+   "upd": "20260121",
    "since": ""
   },
   "3399003F1111": {
@@ -131201,7 +131201,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５０ｍｇ１錠",
    "upd": "20250819",
    "since": ""
@@ -131216,7 +131216,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５００ｍｇ１錠",
    "upd": "20251105",
    "since": ""
@@ -131546,7 +131546,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -131951,7 +131951,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -132536,7 +132536,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１錠",
    "upd": "",
    "since": ""
@@ -134571,15 +134571,15 @@
    "name": "ロサルタンカリウム錠５０ｍｇ「ＮＰ」",
    "maker": "ニプロ",
    "generic": "ロサルタンカリウム",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
    "vol": "D．薬価削除予定",
-   "reason": "７．－",
-   "outlook": "エ. － 2026年7月頃在庫消尽見込み",
-   "new": false,
+   "reason": "６．薬価削除",
+   "outlook": "エ. － 2026/09/29",
+   "new": true,
    "spec": "５０ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261105",
+   "since": "20261105"
   },
   "2149039F3190": {
    "yj": "2149039F3190",
@@ -136766,7 +136766,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．２５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -136781,7 +136781,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -137056,10 +137056,25 @@
    "upd": "",
    "since": ""
   },
+  "2319001M1353": {
+   "yj": "2319001M1353",
+   "name": "ロペラミド塩酸塩カプセル１ｍｇ「サワイ」",
+   "maker": "沢井製薬",
+   "generic": "ロペラミド塩酸塩",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "Aプラス．出荷量増加",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": false,
+   "spec": "１ｍｇ１カプセル",
+   "upd": "",
+   "since": ""
+  },
   "2319001C2060": {
    "yj": "2319001C2060",
    "name": "ロペミン細粒０．１％",
-   "maker": "ヤンセンファーマ",
+   "maker": "帝國製薬",
    "generic": "ロペラミド塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -137074,26 +137089,11 @@
   "2319001M1213": {
    "yj": "2319001M1213",
    "name": "ロペミンカプセル１ｍｇ",
-   "maker": "ヤンセンファーマ",
+   "maker": "帝國製薬",
    "generic": "ロペラミド塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
    "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
-   "spec": "１ｍｇ１カプセル",
-   "upd": "",
-   "since": ""
-  },
-  "2319001M1353": {
-   "yj": "2319001M1353",
-   "name": "ロペラミド塩酸塩カプセル１ｍｇ「サワイ」",
-   "maker": "沢井製薬",
-   "generic": "ロペラミド塩酸塩",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
    "new": false,
@@ -152876,7 +152876,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｃｍ×１４ｃｍ１枚",
    "upd": "",
    "since": ""
@@ -154136,7 +154136,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．０５％１ｍＬ",
    "upd": "",
    "since": ""
@@ -157166,7 +157166,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. － 2026/11/04",
-   "new": true,
+   "new": false,
    "spec": "０．０５％１ｇ",
    "upd": "20261104",
    "since": ""
@@ -157256,7 +157256,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ５ｍＬ１瓶",
    "upd": "",
    "since": ""
@@ -162086,7 +162086,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．２５％１ｍＬ",
    "upd": "",
    "since": ""
@@ -162101,7 +162101,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．５％１ｍＬ",
    "upd": "",
    "since": ""
@@ -162116,7 +162116,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．２５％１ｍＬ",
    "upd": "",
    "since": ""
@@ -162131,7 +162131,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．５％１ｍＬ",
    "upd": "20260907",
    "since": ""
@@ -163046,7 +163046,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．１％１ｇ",
    "upd": "20250901",
    "since": ""
@@ -168446,7 +168446,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "（１０．８ｍｇ）１０ｃｍ×１０ｃｍ１枚",
    "upd": "",
    "since": ""
@@ -168551,7 +168551,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．１％１ｍＬ",
    "upd": "",
    "since": ""
@@ -173196,15 +173196,15 @@
    "name": "ポピヨドンスクラブ７．５％",
    "maker": "吉田製薬",
    "generic": "ポビドンヨード",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
+   "ship": "stop",
+   "ship_raw": "⑤供給停止",
+   "vol": "D．薬価削除予定",
+   "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "７．５％１０ｍＬ",
-   "upd": "",
-   "since": ""
+   "upd": "20261105",
+   "since": "20261105"
   },
   "2612701Q2117": {
    "yj": "2612701Q2117",
@@ -174116,7 +174116,7 @@
    "vol": "A．出荷量通常",
    "reason": "３．製造トラブル（製造委託を含む）",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "０．７５％１ｇ",
    "upd": "20261104",
    "since": "20261104"
@@ -174911,7 +174911,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．００５％１ｍＬ",
    "upd": "",
    "since": ""
@@ -176486,7 +176486,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．０２５％１ｍＬ",
    "upd": "20260309",
    "since": ""
@@ -176756,7 +176756,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１．５％１ｍＬ",
    "upd": "20260323",
    "since": ""
@@ -182989,7 +182989,7 @@
   "6122400D1028": {
    "yj": "6122400D1028",
    "name": "アザクタム注射用０．５ｇ",
-   "maker": "エーザイ",
+   "maker": "Ｍｅｉｊｉ　Ｓｅｉｋａファルマ",
    "generic": "アズトレオナム",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -183004,7 +183004,7 @@
   "6122400D2024": {
    "yj": "6122400D2024",
    "name": "アザクタム注射用１ｇ",
-   "maker": "エーザイ",
+   "maker": "Ｍｅｉｊｉ　Ｓｅｉｋａファルマ",
    "generic": "アズトレオナム",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -189506,7 +189506,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００万国内標準単位１瓶（溶解液付）",
    "upd": "",
    "since": ""
@@ -189521,7 +189521,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０万国内標準単位１瓶（溶解液付）",
    "upd": "",
    "since": ""
@@ -190426,6 +190426,36 @@
    "upd": "20250930",
    "since": "20250930"
   },
+  "1190401A1023": {
+   "yj": "1190401A1023",
+   "name": "ラジカット注３０ｍｇ",
+   "maker": "塩野義製薬",
+   "generic": "エダラボン",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "A．出荷量通常",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": false,
+   "spec": "３０ｍｇ２０ｍＬ１管",
+   "upd": "",
+   "since": ""
+  },
+  "1190401G1026": {
+   "yj": "1190401G1026",
+   "name": "ラジカット点滴静注バッグ３０ｍｇ",
+   "maker": "塩野義製薬",
+   "generic": "エダラボン",
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "A．出荷量通常",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": false,
+   "spec": "３０ｍｇ１００ｍＬ１キット",
+   "upd": "",
+   "since": ""
+  },
   "1190401A1112": {
    "yj": "1190401A1112",
    "name": "エダラボン点滴静注３０ｍｇ「タカタ」",
@@ -190454,36 +190484,6 @@
    "new": false,
    "spec": "３０ｍｇ１００ｍＬ１キット",
    "upd": "20260519",
-   "since": ""
-  },
-  "1190401A1023": {
-   "yj": "1190401A1023",
-   "name": "ラジカット注３０ｍｇ",
-   "maker": "田辺ファーマ",
-   "generic": "エダラボン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
-   "spec": "３０ｍｇ２０ｍＬ１管",
-   "upd": "",
-   "since": ""
-  },
-  "1190401G1026": {
-   "yj": "1190401G1026",
-   "name": "ラジカット点滴静注バッグ３０ｍｇ",
-   "maker": "田辺ファーマ",
-   "generic": "エダラボン",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
-   "spec": "３０ｍｇ１００ｍＬ１キット",
-   "upd": "",
    "since": ""
   },
   "1190401A2020": {
@@ -199301,7 +199301,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５０ｍｇ１瓶（溶解液付）",
    "upd": "",
    "since": ""
@@ -199316,7 +199316,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５００ｍｇ１瓶（溶解液付）",
    "upd": "",
    "since": ""
@@ -199886,7 +199886,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "（１ｇ）１瓶",
    "upd": "20261104",
    "since": ""
@@ -204281,7 +204281,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "３５万単位１瓶（溶解液付）",
    "upd": "",
    "since": ""
@@ -206696,7 +206696,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１０ｍＬ１管",
    "upd": "",
    "since": ""
@@ -206711,7 +206711,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ２５ｍＬ１管",
    "upd": "",
    "since": ""
@@ -208519,7 +208519,7 @@
   "1179406A1037": {
    "yj": "1179406A1037",
    "name": "ハロマンス注５０ｍｇ",
-   "maker": "ヤンセンファーマ",
+   "maker": "クリニジェン",
    "generic": "ハロペリドールデカン酸エステル",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -208534,7 +208534,7 @@
   "1179406A2033": {
    "yj": "1179406A2033",
    "name": "ハロマンス注１００ｍｇ",
-   "maker": "ヤンセンファーマ",
+   "maker": "クリニジェン",
    "generic": "ハロペリドールデカン酸エステル",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -214541,7 +214541,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "３．６ｍｇ０．３６ｍＬ１筒",
    "upd": "20261104",
    "since": ""
@@ -216544,7 +216544,7 @@
   "6419400D1037": {
    "yj": "6419400D1037",
    "name": "ベナンバックス注用３００ｍｇ",
-   "maker": "サノフィ",
+   "maker": "Ｍｅｄｉｃａｌ　Ｐａｒｋｌａｎｄ",
    "generic": "ペンタミジンイセチオン酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -217751,7 +217751,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２．５μｇ１ｍＬ１管",
    "upd": "",
    "since": ""
@@ -217781,7 +217781,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０μｇ１ｍＬ１管",
    "upd": "",
    "since": ""
@@ -220751,7 +220751,7 @@
    "vol": "B．出荷量減少",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．３ｍｇ２ｍＬ１管",
    "upd": "",
    "since": ""
@@ -222806,7 +222806,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５００ｍｇ５ｍＬ１管",
    "upd": "",
    "since": ""
@@ -228086,7 +228086,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０％２０ｍＬ１瓶",
    "upd": "20261104",
    "since": ""
@@ -228131,7 +228131,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５％５０ｍＬ１瓶",
    "upd": "20261104",
    "since": ""
@@ -228146,7 +228146,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０％５０ｍＬ１瓶",
    "upd": "20261104",
    "since": ""
