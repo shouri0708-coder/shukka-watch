@@ -27110,5 +27110,21 @@
 "date": "20261105",
 "src": "https://www.iwakiseiyaku.co.jp/documents_for_medical.html",
 "first_seen": "20261105"
+},
+"https://med.sawai.co.jp/file/pr115_1270_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_1270_1.pdf",
+"date": "20261104",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261104"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1875": {
+"maker": "日本ジェネリック",
+"title": "メトクロプラミド錠5mg「ツルハラ」限定出荷解除のご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1875",
+"date": "20261106",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261106"
 }
 }
