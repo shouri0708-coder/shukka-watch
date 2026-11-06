@@ -26683,7 +26683,7 @@
 "maker": "沢井製薬",
 "title": "製品の供給状況一覧を更新しました。",
 "url": "https://med.sawai.co.jp/file/pr115_1190_1.pdf",
-"date": "20261020",
+"date": "20261104",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261020"
 },
@@ -27125,6 +27125,22 @@
 "url": "https://medical.nihon-generic.co.jp/a.php?id=1875",
 "date": "20261106",
 "src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261106"
+},
+"https://med.sawai.co.jp/file/pr27_4582_2.pdf": {
+"maker": "沢井製薬",
+"title": "テルミサルタン錠20mg/40mg/80mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_4582_2.pdf",
+"date": "20261030",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261030"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cqui-att/Isosorbide.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_硝酸イソソルビド注5mg/5mL,50mg/50mL,50mg/100mL,100mg/100mL",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cqui-att/Isosorbide.pdf",
+"date": "20261106",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
 "first_seen": "20261106"
 }
 }

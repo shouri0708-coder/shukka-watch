@@ -7522,5 +7522,82 @@
   "to": "stop",
   "reason": "６．薬価削除",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261106",
+  "type": "new",
+  "yj": "2149044F3035",
+  "name": "オルメサルタン錠５ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261106",
+  "type": "resolved",
+  "yj": "1231013M1040",
+  "name": "チアトンカプセル５ｍｇ",
+  "maker": "ヴィアトリス製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261106",
+  "type": "new",
+  "yj": "2149042F2080",
+  "name": "テルミサルタン錠４０ｍｇ「ＮＰＩ」",
+  "maker": "日本薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ア. あり 2026/11/30"
+ },
+ {
+  "date": "20261106",
+  "type": "new",
+  "yj": "2149042F3087",
+  "name": "テルミサルタン錠８０ｍｇ「ＮＰＩ」",
+  "maker": "日本薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ア. あり 2026/11/30"
+ },
+ {
+  "date": "20261106",
+  "type": "new",
+  "yj": "4490023F1261",
+  "name": "フェキソフェナジン塩酸塩錠６０ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261106",
+  "type": "resolved",
+  "yj": "2190024F1023",
+  "name": "カルタン錠５００",
+  "maker": "ヴィアトリス製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261106",
+  "type": "new",
+  "yj": "2691702M1052",
+  "name": "マキサカルシトール軟膏２５μｇ／ｇ「イワキ」",
+  "maker": "岩城製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
  }
 ]
