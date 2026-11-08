@@ -1,6 +1,32 @@
 沢井製薬: 4件
-  東和 Excel 276KB (2026年10月29日更新)
-東和薬品: 1630件（更新履歴シート）
+東和薬品: ERROR Error: APIRequestContext.get: aborted
+Call log:
+  - → GET https://med.towayakuhin.co.jp/medical/product/fileloader.php?id=80563&t=6
+    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36
+    - accept: */*
+    - accept-encoding: gzip,deflate,br
+    - cookie: _gid=GA1.3.1222359113.1794101736; _gat_UA-36432190-1=1; _clck=kdmuw4%5E2%5Egaz%5E0%5E2503; _gcl_au=1.1.1531650039.1794101736; selected_job=eyJpdiI6IjVPUXhmaW1HMmNObUNLZjZmeER0Z3c9PSIsInZhbHVlIjoiY1MxdGlKaEp0OEtQdjJjSWVBNmxmRm5jMFljaFUwYTBWVXR4WU1FTS9uOGhtT1hqbFlYMVJGbWxDSXJOaW5yZCIsIm1hYyI6IjU2NWYwMzEyYWVmNDExNjJhN2NkYjg3ZTQ0ZTI5OTcyMWY2NjllNDI1MmQzYTdlMTczMmYzMWMzZDVkZWM1OTEiLCJ0YWciOiIifQ%3D%3D; XSRF-TOKEN=eyJpdiI6Ii85NVl5dlVYUUVrMlRKTlN4RXJxM2c9PSIsInZhbHVlIjoiQ2EyczRWMndiVXMzOVJJK3lEVHRZVXFPK0YvaWphN2JCZ1lSSUtZK1lrSkl5RmlUL2xack9aZGpubG02bWxKajFydWRrNHJKOGxzRFd3bjRFLzdRZTRvamdRUTh0WE9JWC8xc0tGenh6R1YxSFFDTHlMNEdRS1lLWlRGNFJsa1UiLCJtYWMiOiIyY2YxZGQ0YTMyZDhkZmU4ZjFlNjA0MGE1MGNjMDkxZDM1NjY1NjkzNGFmNjUyMjVjOGE2ZjQyNGYwNjU3ZWMyIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IjByRkdFUXV6YzV2MVpIR01FQ3dZc1E9PSIsInZhbHVlIjoiNW5xbkxNb2NycHk1S2JrcUpoL2hIVkdud3VjbG1iUnZyREZSLzFZQldaQUI5ZXR3QkFxc1NBQXdYdDNmWDcxYlNPYkI4TUE2cFpwN3h1aXY5U2xsaWdlRUVnMWhQZlgzeDdabVRmbWlpQU9xREFkN2s2WW0rb0FlbE51dWUwOGEiLCJtYWMiOiJlOTQ2ZjcwNmFiYTkzYzdiNDhiMzI2OTQyNjU4YzVlODRkMjI2Y2I3NzRhNzgyYzUzNjc4ZTZhZTM1NTM2ZDkzIiwidGFnIjoiIn0%3D; _ga_3EBQNQZRTY=GS2.1.s1794101735$o1$g1$t1794101739$j56$l0$h0; _ga_TFNLR3RFRY=GS2.1.s1794101735$o1$g1$t1794101739$j56$l0$h0; _ga=GA1.3.1306081068.1794101736; AWSALB=Izu0HY4fwtZQK23wOzwKSTXCNaC2fCtW8gjFAvB6zMGL9w5i0m2DyGjBBRLGdO1LYHwfkPtQQWLRu724IwO4f5P2NV6ERLARJnarIRZSMnwnsIW0MyJX+9+qgtdj; AWSALBCORS=Izu0HY4fwtZQK23wOzwKSTXCNaC2fCtW8gjFAvB6zMGL9w5i0m2DyGjBBRLGdO1LYHwfkPtQQWLRu724IwO4f5P2NV6ERLARJnarIRZSMnwnsIW0MyJX+9+qgtdj; _ga_2QBV6CK6NC=GS2.1.s1794101735$o1$g1$t1794101739$j56$l0$h0; _clsk=2xgi26%5E1794101739372%5E2%5E1%5Eh.clarity.ms%2Fcollect
+  - ← 200 OK
+    - content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    - content-length: 282838
+    - connection: keep-alive
+    - date: Sun, 08 Nov 2026 01:35:41 GMT
+    - cache-control: no-cache, private
+    - set-cookie: AWSALB=apG4WZ4Vr7Zv+4/Uf4WJADKx1RHnjYDpOd9ctv3CUv3rowTAd58vCyUkMr5MMM4gP+U3ZVkNckAAFrh4iizTF/tbwCwObjQgFgnKS2GDUTjrxHKJUUosJaO4hkaE; Expires=Sun, 15 Nov 2026 01:35:41 GMT; Path=/,AWSALBCORS=apG4WZ4Vr7Zv+4/Uf4WJADKx1RHnjYDpOd9ctv3CUv3rowTAd58vCyUkMr5MMM4gP+U3ZVkNckAAFrh4iizTF/tbwCwObjQgFgnKS2GDUTjrxHKJUUosJaO4hkaE; Expires=Sun, 15 Nov 2026 01:35:41 GMT; Path=/; SameSite=None; Secure,XSRF-TOKEN=eyJpdiI6IlFrUVRVUHZzcUpBaWw0MmZ6bGRJdUE9PSIsInZhbHVlIjoibEdYMDlhYzZJaERsY3FoR0krZ25MTnErb3o0UWErUFVvOEMwaVlHUmtqZkdKUjQ0aG5rU2hrYU1FMUhBcHNpV0VBQjNreGtQNHAvcHZmQ0dpZVhsZlZBNmpLZDNraWd0ZjBYd1h3Q2xoWmZaenBxb2E3Q1pYTHlzWU83VDJ0dGsiLCJtYWMiOiI4ZjJlOGVhMzNkYjA2OGUwY2FlNGYyYzZjNzAwNDk0NmQ1YTZiMTczYTIzMzE0ZTc0YjAzOWM2NzlhZTEyOGIwIiwidGFnIjoiIn0%3D; expires=Sun, 08 Nov 2026 03:35:41 GMT; Max-Age=7200; path=/; secure; samesite=lax,laravel_session=eyJpdiI6ImoyOGl2ekFtNmRzWTNHTjlSWVpudGc9PSIsInZhbHVlIjoiZU1vTWQ5K2RNcnZHemlZZ0k4bnFuZGdsbzc5MlE2ZWQvZkthbnB6MUJ5ZEdHVFlQditJaU45bll1QlJ1WWtOcWMwbkoxcHg5U3UzMDJlODB0UjF2ZXFZS0h0eUlIajlZQVQwSkRSRHFCTnYzd0c1dmIxcVkrZXF4b202NkF0SnQiLCJtYWMiOiIxMWE5ZGRjNWMwMDVkNjcyNTY4NTVjZmZmZTI1Nzc3NjA2MjUzMWEwNDA1MzgzNGJmYzhiNjFjNzE0MzllMzhkIiwidGFnIjoiIn0%3D; expires=Sun, 08 Nov 2026 03:35:41 GMT; Max-Age=7200; path=/; secure; httponly; samesite=lax
+    - server: Apache/2.4.68 () PHP/8.2.35
+    - x-powered-by: PHP/8.2.35
+    - content-disposition: inline; filename=_20261029.xlsx; filename*=utf-8''%E5%85%A8%E8%A3%BD%E5%93%81%E4%BE%9B%E7%B5%A6%E7%8A%B6%E6%B3%81%E4%B8%80%E8%A6%A7_20261029.xlsx
+    - x-cache: Miss from cloudfront
+    - via: 1.1 4b63c15595b60dbcca6db6aeea9d3d72.cloudfront.net (CloudFront)
+    - x-amz-cf-pop: HIO52-P5
+    - x-amz-cf-id: c4xvz4Tia9RB2N413P8Q0k9FaNf2Hje8T4PiEf5z2DZ8J5TJ_nyt2A==
+    - x-xss-protection: 1; mode=block
+    - x-frame-options: SAMEORIGIN
+    - referrer-policy: strict-origin-when-cross-origin
+    - x-content-type-options: nosniff
+    - strict-transport-security: max-age=31536000
+    - vary: Origin
+
 日医工: 8件
 日本ジェネリック: 33件
 第一三共エスファ: 279件
@@ -14,7 +40,7 @@ EAファーマ: 6件
 皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7e3c5afe52b0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7367a8ee1bb0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 4件
