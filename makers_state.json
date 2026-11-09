@@ -203,7 +203,7 @@
 "maker": "日本ジェネリック",
 "title": "「全品目供給状況一覧」を更新いたしました（ 現在）",
 "url": "https://medical.nihon-generic.co.jp/uploadfiles/news/JG_product_list.pdf",
-"date": "20261009",
+"date": "20261109",
 "src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20260907"
 },
@@ -27150,5 +27150,37 @@
 "date": "20261104",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261104"
+},
+"https://med.sawai.co.jp/file/pr27_4712_2.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_4712_2.pdf",
+"date": "20261109",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261109"
+},
+"https://med.sawai.co.jp/file/pr115_120_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_120_1.pdf",
+"date": "20261109",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261109"
+},
+"https://med.sawai.co.jp/file/pr27_4741_1.pdf": {
+"maker": "沢井製薬",
+"title": "デュロキセチンカプセル20mg/30mg「サワイ」の供給に関するお詫びとお願い",
+"url": "https://med.sawai.co.jp/file/pr27_4741_1.pdf",
+"date": "20261030",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261030"
+},
+"https://med.shionogi.co.jp/news/package/2026/261109-2_pdf.html": {
+"maker": "塩野義製薬",
+"title": "コブゴーズ筋注の供給体制に関するご案内",
+"url": "https://med.shionogi.co.jp/news/package/2026/261109-2_pdf.html",
+"date": "20261109",
+"src": "https://med.shionogi.co.jp/news/package.html",
+"first_seen": "20261109"
 }
 }
