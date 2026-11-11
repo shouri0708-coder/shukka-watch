@@ -7654,5 +7654,137 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "1179045F7110",
+  "name": "アリピプラゾールＯＤ錠２４ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "2149044F1032",
+  "name": "オルメサルタン錠１０ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "3999043S1028",
+  "name": "オルミエント内用懸濁液２ｍｇ／ｍＬ",
+  "maker": "日本イーライリリー",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年3月頃"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "7990103A1029",
+  "name": "ピコプレップ配合内用剤",
+  "maker": "日本ケミファ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "1190017F1207",
+  "name": "プレガバリンＯＤ錠２５ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "1190017F2203",
+  "name": "プレガバリンＯＤ錠７５ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "1190017F3200",
+  "name": "プレガバリンＯＤ錠１５０ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "1319703Q2116",
+  "name": "アズレン点眼液０．０２％「わかもと」",
+  "maker": "わかもと製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "2679701Q1055",
+  "name": "フロジン外用液５％",
+  "maker": "ニプロファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. － 2026/11/11"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "3140400A5072",
+  "name": "アスコルビン酸注１ｇ「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261111",
+  "type": "new",
+  "yj": "3999412A7028",
+  "name": "エスポー注射液７５０",
+  "maker": "協和キリン",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261111",
+  "type": "resolved",
+  "yj": "6132401D4214",
+  "name": "セファゾリンＮａ注射用２ｇ「ＣＨＭ」",
+  "maker": "ケミックス",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
