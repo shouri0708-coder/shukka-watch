@@ -7786,5 +7786,38 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261112",
+  "type": "resolved",
+  "yj": "1141005C2030",
+  "name": "ポンタール細粒９８．５％",
+  "maker": "ファイザー",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261112",
+  "type": "new",
+  "yj": "2189017F3181",
+  "name": "ロスバスタチンＯＤ錠２．５ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261112",
+  "type": "new",
+  "yj": "2189017F4188",
+  "name": "ロスバスタチンＯＤ錠５ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]

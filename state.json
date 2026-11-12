@@ -1,5 +1,5 @@
 {
- "asof": "20261111",
+ "asof": "20261112",
  "items": {
   "4419002B1033": {
    "yj": "4419002B1033",
@@ -10421,7 +10421,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２４ｍｇ１錠",
    "upd": "20261111",
    "since": ""
@@ -29951,7 +29951,7 @@
    "vol": "A．出荷量通常",
    "reason": "１．需要増",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "20261111",
    "since": "20261111"
@@ -48371,7 +48371,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -48386,7 +48386,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１００ｍｇ１錠",
    "upd": "20250725",
    "since": ""
@@ -51686,7 +51686,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -51701,7 +51701,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "７５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -51716,7 +51716,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１２．５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -52403,10 +52403,10 @@
    "generic": "ジメチコン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "４０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -57836,7 +57836,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. － 2026年12月ごろ在庫消尽見込み",
-   "new": true,
+   "new": false,
    "spec": "５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -57851,7 +57851,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "20251205",
    "since": "20251205"
@@ -86816,7 +86816,7 @@
    "vol": "B．出荷量減少",
    "reason": "８．その他の理由",
    "outlook": "ア. あり 2027年3月頃",
-   "new": true,
+   "new": false,
    "spec": "１５ｍｇ７．５ｍＬ１瓶",
    "upd": "20261111",
    "since": "20261111"
@@ -91571,7 +91571,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１５ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -91586,7 +91586,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "３０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -92426,7 +92426,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１包",
    "upd": "20261111",
    "since": "20261111"
@@ -103931,7 +103931,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２５ｍｇ１錠",
    "upd": "20261111",
    "since": ""
@@ -103946,7 +103946,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "７５ｍｇ１錠",
    "upd": "20261111",
    "since": ""
@@ -103961,7 +103961,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１５０ｍｇ１錠",
    "upd": "20261111",
    "since": ""
@@ -106511,7 +106511,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. － 2026年12月ごろ在庫消尽見込み",
-   "new": true,
+   "new": false,
    "spec": "１０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -106526,7 +106526,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２０ｍｇ１錠",
    "upd": "",
    "since": ""
@@ -112523,10 +112523,10 @@
    "generic": "ポリスチレンスルホン酸カルシウム",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "１ｇ",
    "upd": "",
    "since": ""
@@ -112568,10 +112568,10 @@
    "generic": "ポリスチレンスルホン酸ナトリウム",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "１ｇ",
    "upd": "",
    "since": ""
@@ -116644,7 +116644,7 @@
   "2399009F1181": {
    "yj": "2399009F1181",
    "name": "メサラジン徐放錠２５０ｍｇ「日医工Ｐ」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工岐阜工場",
    "generic": "メサラジン",
    "ship": "limited",
    "ship_raw": "③限定出荷（他社品の影響）",
@@ -116659,7 +116659,7 @@
   "2399009F2170": {
    "yj": "2399009F2170",
    "name": "メサラジン徐放錠５００ｍｇ「日医工Ｐ」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工岐阜工場",
    "generic": "メサラジン",
    "ship": "limited",
    "ship_raw": "③限定出荷（他社品の影響）",
@@ -118146,15 +118146,15 @@
    "name": "ポンタール細粒９８．５％",
    "maker": "ファイザー",
    "generic": "メフェナム酸",
-   "ship": "stop",
-   "ship_raw": "⑤供給停止",
-   "vol": "C．出荷停止",
-   "reason": "４．品質トラブル（製造委託を含む）",
-   "outlook": "ウ. 未定",
-   "new": false,
+   "ship": "normal",
+   "ship_raw": "①通常出荷",
+   "vol": "A．出荷量通常",
+   "reason": "７．－",
+   "outlook": "エ. －",
+   "new": true,
    "spec": "９８．５％１ｇ",
-   "upd": "20260803",
-   "since": "20260803"
+   "upd": "20261112",
+   "since": ""
   },
   "1141005M2094": {
    "yj": "1141005M2094",
@@ -135536,7 +135536,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１錠",
    "upd": "",
    "since": ""
@@ -135551,7 +135551,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "１錠",
    "upd": "20260617",
    "since": ""
@@ -136326,30 +136326,30 @@
    "name": "ロスバスタチンＯＤ錠２．５ｍｇ「日医工」",
    "maker": "日医工",
    "generic": "ロスバスタチンカルシウム",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "③限定出荷（他社品の影響）",
+   "vol": "A．出荷量通常",
+   "reason": "１．需要増",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "２．５ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261112",
+   "since": "20261112"
   },
   "2189017F4188": {
    "yj": "2189017F4188",
    "name": "ロスバスタチンＯＤ錠５ｍｇ「日医工」",
    "maker": "日医工",
    "generic": "ロスバスタチンカルシウム",
-   "ship": "normal",
-   "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
-   "reason": "７．－",
-   "outlook": "エ. －",
-   "new": false,
+   "ship": "limited",
+   "ship_raw": "③限定出荷（他社品の影響）",
+   "vol": "A．出荷量通常",
+   "reason": "１．需要増",
+   "outlook": "ウ. 未定",
+   "new": true,
    "spec": "５ｍｇ１錠",
-   "upd": "",
-   "since": ""
+   "upd": "20261112",
+   "since": "20261112"
   },
   "2189017F1316": {
    "yj": "2189017F1316",
@@ -150821,7 +150821,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "０．０２％５ｍＬ１瓶",
    "upd": "20261111",
    "since": "20261111"
@@ -156026,7 +156026,7 @@
    "vol": "Aプラス．出荷量増加",
    "reason": "７．－",
    "outlook": "エ. － 2026/11/11",
-   "new": true,
+   "new": false,
    "spec": "５％１ｍＬ",
    "upd": "20261111",
    "since": ""
@@ -159071,7 +159071,7 @@
    "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. － 2026年12月ごろ在庫消尽見込み",
-   "new": true,
+   "new": false,
    "spec": "５０ｍｇ１個",
    "upd": "",
    "since": ""
@@ -182831,7 +182831,7 @@
    "vol": "A．出荷量通常",
    "reason": "８．その他の理由",
    "outlook": "ウ. 未定",
-   "new": true,
+   "new": false,
    "spec": "１ｇ１管",
    "upd": "20261111",
    "since": "20261111"
@@ -191561,7 +191561,7 @@
    "vol": "D．薬価削除予定",
    "reason": "６．薬価削除",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "７５０国際単位０．５ｍＬ１管",
    "upd": "20261111",
    "since": "20261111"
@@ -197494,7 +197494,7 @@
   "4291401A1119": {
    "yj": "4291401A1119",
    "name": "シスプラチン点滴静注１０ｍｇ「マルコ」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工",
    "generic": "シスプラチン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -197509,7 +197509,7 @@
   "4291401A2115": {
    "yj": "4291401A2115",
    "name": "シスプラチン点滴静注２５ｍｇ「マルコ」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工",
    "generic": "シスプラチン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -197524,7 +197524,7 @@
   "4291401A3111": {
    "yj": "4291401A3111",
    "name": "シスプラチン点滴静注５０ｍｇ「マルコ」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工",
    "generic": "シスプラチン",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -199451,7 +199451,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "２ｇ１瓶",
    "upd": "20261111",
    "since": ""
@@ -199819,7 +199819,7 @@
   "6132400G3040": {
    "yj": "6132400G3040",
    "name": "セフォチアム静注用１ｇバッグ「日医工」",
-   "maker": "日医工ファーマ",
+   "maker": "日医工",
    "generic": "セフォチアム塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
@@ -203033,10 +203033,10 @@
    "generic": "チアミン塩化物塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "５ｍｇ１管",
    "upd": "20260918",
    "since": ""
@@ -209933,10 +209933,10 @@
    "generic": "ピリドキシン塩酸塩",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "A．出荷量通常",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "３０ｍｇ１管",
    "upd": "20260918",
    "since": ""
@@ -214106,7 +214106,7 @@
    "vol": "A．出荷量通常",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": true,
+   "new": false,
    "spec": "５００ｍｇ５０ｍＬ１瓶",
    "upd": "",
    "since": ""
@@ -221978,10 +221978,10 @@
    "generic": "リボフラビンリン酸エステルナトリウム",
    "ship": "normal",
    "ship_raw": "①通常出荷",
-   "vol": "Aプラス．出荷量増加",
+   "vol": "D．薬価削除予定",
    "reason": "７．－",
    "outlook": "エ. －",
-   "new": false,
+   "new": true,
    "spec": "５ｍｇ１管",
    "upd": "20260402",
    "since": ""
