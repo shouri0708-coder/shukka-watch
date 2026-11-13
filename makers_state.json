@@ -27254,5 +27254,77 @@
 "date": "20261109",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261109"
+},
+"https://med.sawai.co.jp/file/pr115_4583_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4583_1.pdf",
+"date": "20261113",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261113"
+},
+"https://med.sawai.co.jp/file/pr27_235_1.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_235_1.pdf",
+"date": "20261109",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261109"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/LEVOC00_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "レボフロキサシン錠250mg/500mg「CH」 販売中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/LEVOC00_CHUUSHI_2611.pdf",
+"date": "20261113",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261113"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/BEZAX00_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "ベザフィブラート徐放錠100mg/200mg「JG」 販売中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/BEZAX00_CHUUSHI_2611.pdf",
+"date": "20261113",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261113"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/DOXAJ00_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "ドキサゾシン錠0.5mg/1mg/2mg/4mg「JG」 販売中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/DOXAJ00_CHUUSHI_2611.pdf",
+"date": "20261113",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261113"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/KETOO_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "ケトチフェン点眼液0.05%「CH」 販売中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/KETOO_CHUUSHI_2611.pdf",
+"date": "20261113",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261113"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/ARIPD12_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "アリピプラゾールOD錠12mg「JG」 販売中止のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/ARIPD12_CHUUSHI_2611.pdf",
+"date": "20261113",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261113"
+},
+"https://med.shionogi.co.jp/news/package/2026/261113-3_pdf.html": {
+"maker": "塩野義製薬",
+"title": "アシテア登録医師確認用サイト再開のお知らせ",
+"url": "https://med.shionogi.co.jp/news/package/2026/261113-3_pdf.html",
+"date": "20261113",
+"src": "https://med.shionogi.co.jp/news/package.html",
+"first_seen": "20261113"
+},
+"https://med.shionogi.co.jp/news/package/2026/261113-2_pdf.html": {
+"maker": "塩野義製薬",
+"title": "アシテアWebサイト再開のお知らせ",
+"url": "https://med.shionogi.co.jp/news/package/2026/261113-2_pdf.html",
+"date": "20261113",
+"src": "https://med.shionogi.co.jp/news/package.html",
+"first_seen": "20261113"
 }
 }
