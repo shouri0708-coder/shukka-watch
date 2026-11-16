@@ -27326,5 +27326,45 @@
 "date": "20261113",
 "src": "https://med.shionogi.co.jp/news/package.html",
 "first_seen": "20261113"
+},
+"https://med.sawai.co.jp/file/pr115_1207_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_1207_1.pdf",
+"date": "20261113",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261113"
+},
+"https://medical.nihon-generic.co.jp/a.php?id=1883": {
+"maker": "日本ジェネリック",
+"title": "生食液NS出荷量制限解除のご案内",
+"url": "https://medical.nihon-generic.co.jp/a.php?id=1883",
+"date": "20261116",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261116"
+},
+"https://med.daiichisankyo-ep.co.jp/information/files/2292/gentei_20261109_E1_G.pdf": {
+"maker": "第一三共エスファ",
+"title": "テラムロ配合錠AP「DSEP」PTP100錠、PTP500錠、テラムロ配合錠BP「DSEP」PTP100錠の供給状況について",
+"url": "https://med.daiichisankyo-ep.co.jp/information/files/2292/gentei_20261109_E1_G.pdf",
+"date": "20261109",
+"src": "https://med.daiichisankyo-ep.co.jp/information/?distribution&certification=1",
+"first_seen": "20261109"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/syusi-itibu_tuujousyukka_20261116.pdf": {
+"maker": "丸石製薬",
+"title": "手指消毒剤一部製品 通常出荷再開のお知らせ",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/syusi-itibu_tuujousyukka_20261116.pdf",
+"date": "20261116",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261116"
+},
+"https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261116.pdf": {
+"maker": "丸石製薬",
+"title": "出荷状況一覧表（11月16日現在）",
+"url": "https://www.maruishi-pharm.co.jp/medical/media/syukkajokyo_20261116.pdf",
+"date": "20261116",
+"src": "https://www.maruishi-pharm.co.jp/medical/newsrelease?news-type=distribution&news-year=2026",
+"first_seen": "20261116"
 }
 }
