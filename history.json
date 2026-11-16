@@ -7819,5 +7819,49 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261116",
+  "type": "resolved",
+  "yj": "1172014B2056",
+  "name": "ヒルナミン散５０％",
+  "maker": "共和薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261116",
+  "type": "resolved",
+  "yj": "2646713N1204",
+  "name": "クロベタゾールプロピオン酸エステルクリーム０．０５％「ラクール」",
+  "maker": "東光薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261116",
+  "type": "resolved",
+  "yj": "2655709N1088",
+  "name": "ケトコナゾールクリーム２％「ＮＲ」",
+  "maker": "東光薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261116",
+  "type": "resolved",
+  "yj": "1319720Q3167",
+  "name": "ヒアルロン酸ナトリウム点眼液０．１％「ＴＳ」",
+  "maker": "テイカ製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
