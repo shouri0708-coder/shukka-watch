@@ -27390,5 +27390,21 @@
 "date": "20261117",
 "src": "https://med.nipro.co.jp/ph_news",
 "first_seen": "20261117"
+},
+"https://med.sawai.co.jp/file/pr115_181_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_181_1.pdf",
+"date": "20261113",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261113"
+},
+"https://med.sawai.co.jp/file/pr27_1323_4.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_1323_4.pdf",
+"date": "20261109",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261109"
 }
 }
