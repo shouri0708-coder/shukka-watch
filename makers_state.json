@@ -27406,5 +27406,45 @@
 "date": "20261109",
 "src": "https://med.sawai.co.jp/con_list.php",
 "first_seen": "20261109"
+},
+"https://med.sawai.co.jp/file/pr115_4690_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4690_1.pdf",
+"date": "20261113",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261113"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000crdy-att/Duloxetine30.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_デュロキセチンカプセル30mg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000crdy-att/Duloxetine30.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000crb5-att/Duloxetine20.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_デュロキセチンカプセル20mg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000crb5-att/Duloxetine20.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cr8c-att/Procaterol.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_プロカテロール塩酸塩DS0.01%「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cr8c-att/Procaterol.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cr5j-att/Alprostadil.pdf": {
+"maker": "高田製薬",
+"title": "出荷停止に関するお知らせとお詫び_アルプロスタジルアルファデクス点滴静注用 500μg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/hpj79b000000cr5j-att/Alprostadil.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
 }
 }
