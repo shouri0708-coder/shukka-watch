@@ -7863,5 +7863,104 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261118",
+  "type": "resolved",
+  "yj": "1214400A5060",
+  "name": "リドカイン塩酸塩注０．５％「日新」",
+  "maker": "日新製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261118",
+  "type": "new",
+  "yj": "2119408A2020",
+  "name": "ミルリノン注射液１０ｍｇ「Ｆ」",
+  "maker": "富士製薬工業",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. － 2026年11月在庫消尽済み"
+ },
+ {
+  "date": "20261118",
+  "type": "resolved",
+  "yj": "2149026F3320",
+  "name": "ドキサゾシン錠２ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "stop",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261118",
+  "type": "new",
+  "yj": "2189017F4056",
+  "name": "ロスバスタチンＯＤ錠５ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261118",
+  "type": "new",
+  "yj": "2251001D1061",
+  "name": "テオドール顆粒２０％",
+  "maker": "田辺ファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261118",
+  "type": "resolved",
+  "yj": "2325001F1211",
+  "name": "タガメット錠２００ｍｇ",
+  "maker": "住友ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261118",
+  "type": "resolved",
+  "yj": "2649804X1192",
+  "name": "フェノール・亜鉛華リニメント「ニッコー」",
+  "maker": "日興製薬",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261118",
+  "type": "new",
+  "yj": "3179517G1035",
+  "name": "ビタジェクト注キット",
+  "maker": "テルモ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "４．品質トラブル（製造委託を含む）",
+  "outlook": "ア. あり 限定出荷の解除見込み時期：３か月以内"
+ },
+ {
+  "date": "20261118",
+  "type": "new",
+  "yj": "3334403A2208",
+  "name": "ダルテパリンＮａ静注５０００単位／５ｍＬ「ＡＦＰ」",
+  "maker": "共創未来ファーマ",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
  }
 ]
