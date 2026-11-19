@@ -75,7 +75,7 @@
 "maker": "日医工",
 "title": "供給状況に関するお知らせを の情報に更新しました。",
 "url": "https://www.nichiiko.co.jp/medicine/significant/excel_index.php",
-"date": "20261111",
+"date": "20261119",
 "src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
 "first_seen": "20260930"
 },
@@ -27494,5 +27494,53 @@
 "date": "20261119",
 "src": "https://medical.nihon-generic.co.jp/news/",
 "first_seen": "20261119"
+},
+"https://www.nichiiko.co.jp/medicine/files/20261118-03-01.pdf": {
+"maker": "日医工",
+"title": "パロキセチン錠5mg/10mg/20mg「NIG」 販売中止のご案内",
+"url": "https://www.nichiiko.co.jp/medicine/files/20261118-03-01.pdf",
+"date": "20261119",
+"src": "https://www.nichiiko.co.jp/medicine/whatsnew/index.php",
+"first_seen": "20261119"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006qf-att/Duloxetine30.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_デュロキセチンカプセル30mg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006qf-att/Duloxetine30.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006ru-att/Duloxetine20.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_デュロキセチンカプセル20mg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006ru-att/Duloxetine20.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006t9-att/Procaterol.pdf": {
+"maker": "高田製薬",
+"title": "とお詫び_プロカテロール塩酸塩DS0.01%「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006t9-att/Procaterol.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006uo-att/Alprostadil.pdf": {
+"maker": "高田製薬",
+"title": "出荷停止に関するお知らせとお詫び_アルプロスタジルアルファデクス点滴静注用 500μg「タカタ」",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006uo-att/Alprostadil.pdf",
+"date": "20261118",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261118"
+},
+"https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006o5-att/Isosorbide.pdf": {
+"maker": "高田製薬",
+"title": "製造販売中止のご案内_硝酸イソソルビド注5mg/5mL,50mg/50mL,50mg/100mL,100mg/100mL",
+"url": "https://www.takata-seiyaku.co.jp/medical/topics/jbargn00000006o5-att/Isosorbide.pdf",
+"date": "20261106",
+"src": "https://www.takata-seiyaku.co.jp/medical/topics/2026.html",
+"first_seen": "20261106"
 }
 }
