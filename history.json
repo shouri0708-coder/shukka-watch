@@ -8017,5 +8017,93 @@
   "to": "limited",
   "reason": "１．需要増",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "3999013F1266",
+  "name": "エパルレスタット錠５０ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "2149040F4092",
+  "name": "カンデサルタン錠１２ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "2189016F2270",
+  "name": "ピタバスタチンＣａ錠２ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "2189016F3225",
+  "name": "ピタバスタチンＣａ錠４ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "３．製造トラブル（製造委託を含む）",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "2190026F1049",
+  "name": "ボセンタン錠６２．５ｍｇ「ＪＧ」",
+  "maker": "長生堂製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ア. あり 2027年02月以降速やかに限定出荷を解除いたします。"
+ },
+ {
+  "date": "20261124",
+  "type": "new",
+  "yj": "2115003X1049",
+  "name": "安息香酸ナトリウムカフェイン「ケンエー」",
+  "maker": "健栄製薬",
+  "from": "normal",
+  "to": "stop",
+  "reason": "６．薬価削除",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261124",
+  "type": "resolved",
+  "yj": "2344004X1216",
+  "name": "炭酸水素ナトリウム「フソー」",
+  "maker": "扶桑薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261124",
+  "type": "resolved",
+  "yj": "3311402G5049",
+  "name": "生食注キット「フソー」",
+  "maker": "扶桑薬品工業",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
