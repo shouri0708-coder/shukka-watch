@@ -8105,5 +8105,71 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261125",
+  "type": "new",
+  "yj": "2590010F3174",
+  "name": "シロドシンＯＤ錠２ｍｇ「ＪＧ」",
+  "maker": "日本ジェネリック",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261125",
+  "type": "new",
+  "yj": "1179052M1103",
+  "name": "デュロキセチンカプセル２０ｍｇ「タカタ」",
+  "maker": "高田製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261125",
+  "type": "new",
+  "yj": "1179052M2100",
+  "name": "デュロキセチンカプセル３０ｍｇ「タカタ」",
+  "maker": "高田製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261125",
+  "type": "new",
+  "yj": "2259004R1036",
+  "name": "プロカテロール塩酸塩ＤＳ０．０１％「タカタ」",
+  "maker": "高田製薬",
+  "from": "normal",
+  "to": "limited",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261125",
+  "type": "resolved",
+  "yj": "2259703Y1025",
+  "name": "キュバール１００エアゾール",
+  "maker": "住友ファーマ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261125",
+  "type": "worse",
+  "yj": "2190402D2106",
+  "name": "アルプロスタジルアルファデクス点滴静注用５００μｇ「タカタ」",
+  "maker": "高田製薬",
+  "from": "limited",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
  }
 ]

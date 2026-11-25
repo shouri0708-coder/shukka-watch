@@ -11,10 +11,10 @@ EAファーマ: 6件
 辰巳化学: 291件
 岩城製薬: 224件
 東洋製薬化成: 46件
-皇漢堂製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.kokando.co.jp', port=443): Max retries exceeded with url: /medical_personnel/ethical_pharmaceuticals/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.kokando.co.jp', port=443) at 0x7563b2999b50>, 'Connection to www.kokando.co.jp timed out. (connect timeout=30)'))
+皇漢堂製薬: 8件
 全星薬品工業: 28件
 三和化学研究所: 51件
-日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7563aed21f40>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
+日本臓器製薬: ERROR ConnectTimeout: HTTPSConnectionPool(host='www.nippon-zoki.co.jp', port=443): Max retries exceeded with url: /medical/news/discontinued/index.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.nippon-zoki.co.jp', port=443) at 0x7498f5c255b0>, 'Connection to www.nippon-zoki.co.jp timed out. (connect timeout=30)'))
 参天製薬: 50件
   gate click: はい
 キョーリンリメディオ: 2件
@@ -31,4 +31,4 @@ EAファーマ: 6件
   gate click: 医療関係者です
 大正製薬: 47件
 持田製薬: 108件
-新規 5件 / 出力 521件
+新規 3件 / 出力 517件

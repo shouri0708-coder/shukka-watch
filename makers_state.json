@@ -27630,5 +27630,29 @@
 "date": "20261125",
 "src": "https://www.sandoz.jp/medical/product-notice/?tab=tab2",
 "first_seen": "20261125"
+},
+"https://med.sawai.co.jp/file/pr115_4623_1.pdf": {
+"maker": "沢井製薬",
+"title": "製品の供給状況一覧を更新しました。",
+"url": "https://med.sawai.co.jp/file/pr115_4623_1.pdf",
+"date": "20261124",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261124"
+},
+"https://med.sawai.co.jp/file/pr27_234_1.pdf": {
+"maker": "沢井製薬",
+"title": "一部製品 限定出荷解除のお知らせ",
+"url": "https://med.sawai.co.jp/file/pr27_234_1.pdf",
+"date": "20261109",
+"src": "https://med.sawai.co.jp/con_list.php",
+"first_seen": "20261109"
+},
+"https://medical.nihon-generic.co.jp/uploadfiles/medicine/SLDSN4_CHUUSHI_2611.pdf": {
+"maker": "日本ジェネリック",
+"title": "シロドシン錠4mg「JG」 包装単位集約のご案内",
+"url": "https://medical.nihon-generic.co.jp/uploadfiles/medicine/SLDSN4_CHUUSHI_2611.pdf",
+"date": "20261125",
+"src": "https://medical.nihon-generic.co.jp/news/",
+"first_seen": "20261125"
 }
 }
