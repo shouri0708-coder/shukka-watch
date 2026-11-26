@@ -8171,5 +8171,71 @@
   "to": "stop",
   "reason": "８．その他の理由",
   "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261126",
+  "type": "new",
+  "yj": "1190015F1046",
+  "name": "ナルフラフィン塩酸塩ＯＤ錠２．５μｇ「フソー」",
+  "maker": "扶桑薬品工業",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261126",
+  "type": "resolved",
+  "yj": "6250019F1217",
+  "name": "バラシクロビル錠５００ｍｇ「ケミファ」",
+  "maker": "日本ケミファ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261126",
+  "type": "new",
+  "yj": "2190009A1048",
+  "name": "ケイキサレート散",
+  "maker": "鳥居薬品",
+  "from": "normal",
+  "to": "stop",
+  "reason": "８．その他の理由",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261126",
+  "type": "resolved",
+  "yj": "6241400A4064",
+  "name": "シプロフロキサシン点滴静注液２００ｍｇ「ＮＰ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261126",
+  "type": "resolved",
+  "yj": "6241400A6032",
+  "name": "シプロフロキサシン点滴静注液４００ｍｇ「ニプロ」",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
+ },
+ {
+  "date": "20261126",
+  "type": "resolved",
+  "yj": "6139500F2179",
+  "name": "ワイスタール配合静注用１ｇ",
+  "maker": "ニプロ",
+  "from": "limited",
+  "to": "normal",
+  "reason": "７．－",
+  "outlook": "エ. －"
  }
 ]
