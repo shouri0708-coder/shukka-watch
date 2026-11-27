@@ -8237,5 +8237,104 @@
   "to": "normal",
   "reason": "７．－",
   "outlook": "エ. －"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2149121F4047",
+  "name": "ジルムロ配合ＯＤ錠ＨＤ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "6131001M2327",
+  "name": "アモキシシリンカプセル２５０ｍｇ「日医工」",
+  "maker": "日医工ファーマ",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2590016F1080",
+  "name": "タダラフィル錠２．５ｍｇＺＡ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2590016F2086",
+  "name": "タダラフィル錠５ｍｇＺＡ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2149042F1211",
+  "name": "テルミサルタン錠２０ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2149042F2218",
+  "name": "テルミサルタン錠４０ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2149042F3214",
+  "name": "テルミサルタン錠８０ｍｇ「日医工」",
+  "maker": "日医工",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "1190015M1045",
+  "name": "ナルフラフィン塩酸塩カプセル２．５μｇ「ＢＭＤ」",
+  "maker": "ビオメディクス",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
+ },
+ {
+  "date": "20261127",
+  "type": "new",
+  "yj": "2189017F2312",
+  "name": "ロスバスタチン錠５ｍｇ「ＮＩＧ」",
+  "maker": "日医工岐阜工場",
+  "from": "normal",
+  "to": "limited",
+  "reason": "１．需要増",
+  "outlook": "ウ. 未定"
  }
 ]
